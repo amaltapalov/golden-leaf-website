@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+$main: #25204a;
+$text-color: #fff;
+$hover-color: #e5c573;
+$base-font: 16px;
+
+@import "./custom_bootstrap";
+@import "./navbar";
+
+body {
+  background: $main;
+  color: $text-color;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: $text-color;
+  transition: .2s;
+
+  &:hover {
+    color: $hover-color;
+    text-decoration: none;
+  }
+}

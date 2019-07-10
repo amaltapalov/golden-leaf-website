@@ -1,0 +1,37 @@
+$bg-color: #0d0b16;
+$border-color: #b1a8d7;
+
+.navbar {
+    font-size: 0.8rem;
+    background: $bg-color;
+
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+
+        li {
+            margin: 0 10px;
+            padding: 0 20px;
+        }
+
+        .bordered {
+            border: 2px solid $border-color;
+            border-radius: 1rem;
+            transition: 0.3s;
+            line-height: 1.5rem;
+
+            &:hover {
+                background: $border-color;
+            }
+
+            &:hover>a {
+                color: $bg-color;
+            }
+        }
+
+
+    }
+
+
+
+}

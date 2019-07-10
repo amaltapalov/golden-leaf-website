@@ -1,0 +1,17 @@
+{
+  "name": "project-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass scss/master.scss -o css --source-map-embed && postcss css/master.css -d css",
+    "start": "nodemon --watch scss/ --exec \"npm run build\" -e scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "postcss": "^7.0.14",
+    "cssnano": "^4.1.10"
+  }
+}
