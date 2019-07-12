@@ -2,12 +2,15 @@
 
 $main: #25204a;
 $text-color: #fff;
+$text-accent: #776bb7;
 $hover-color: #e5c573;
 $base-font: 16px;
 
 @import "./custom_bootstrap";
 @import "./navbar";
 @import "./fullScreenNav";
+@import "./gamesRow";
+
 
 
 body {
