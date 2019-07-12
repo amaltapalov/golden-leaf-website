@@ -3,7 +3,7 @@
 $main: #25204a;
 $text-color: #fff;
 $text-accent: #776bb7;
-$hover-color: #e5c573;
+$hover-color: #ae8932;
 $base-font: 16px;
 
 @import "./custom_bootstrap";
@@ -24,7 +24,10 @@ a {
   transition: .2s;
 
   &:hover {
-    color: $hover-color;
     text-decoration: none;
   }
+}
+
+img {
+  max-width: 100%;
 }

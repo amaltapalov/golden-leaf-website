@@ -8,6 +8,9 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="description" content="" />
 	<meta name="author" content="" />
+	<!-- slick -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 	<link rel="stylesheet" type="text/css" href="css/master.css" />
 	<title>Royal Ace | Homepage</title>
 </head>
@@ -52,7 +55,7 @@
 			<div class="col-5">
 				<ul class="d-flex align-items-center justify-content-end mb-0">
 					<li><a href="#">PROMOTIONS</a></li>
-					<li class="bordered"><a href="#">LOG IN</a></li>
+					<li class="bordered"><a href="#">LOGIN</a></li>
 					<li class="bordered"><a href="#">SIGNUP</a></li>
 				</ul>
 			</div>
@@ -80,41 +83,109 @@
 
 	<!-- Games row images - start -->
 	<div class="container-fluid">
-		<div class="row d-flex">
-			<div class="col image-container">
-				<img class="img-fluid" src="http://imagesmail.com/images/games/slots-wide/stardust.jpg" alt="Startdust">
-				<div class="caption">
-					<div class="blur"></div>
-					<div class="caption-text">
-						<h1>Amazing Caption</h1>
-						<p>Whatever It Is - Always Awesome</p>
+		<div class="row d-flex px-3 slick-container">
+			<div class="game-block">
+				<img class="img-fluid game-block__image"
+					src="http://imagesmail.com/images/games/slots-wide/stardust.jpg" alt="Startdust">
+				<!-- Overlay - start -->
+				<div class="overlay">
+					<div class="button button--solid">
+						<a href="#">REAL MONEY</a>
+					</div>
+					<div class="button button--ghost">
+						<a href="#">PRACTICE</a>
 					</div>
 				</div>
+				<!-- Overlay - end -->
+
 			</div>
-			<div class="col">
-				<img class="img-fluid" src="http://imagesmail.com/images/games/slots-wide/empress-wu.jpg"
-					alt="Empress Wu">
+			<div class="game-block">
+				<img class="img-fluid game-block__image"
+					src="http://imagesmail.com/images/games/slots-wide/empress-wu.jpg" alt="Empress Wu">
+				<!-- Overlay - start -->
+				<div class="overlay">
+					<div class="button button--solid">
+						<a href="#">REAL MONEY</a>
+					</div>
+					<div class="button button--ghost">
+						<a href="#">PRACTICE</a>
+					</div>
+				</div>
+				<!-- Overlay - end -->
 			</div>
-			<div class="col">
-				<img class="img-fluid" src="http://imagesmail.com/images/games/slots-wide/secret-symbol.jpg"
-					alt="Secret Symbol">
+			<div class="game-block">
+				<img class="img-fluid game-block__image"
+					src="http://imagesmail.com/images/games/slots-wide/secret-symbol.jpg" alt="Secret Symbol">
+				<!-- Overlay - start -->
+				<div class="overlay">
+					<div class="button button--solid">
+						<a href="#">REAL MONEY</a>
+					</div>
+					<div class="button button--ghost">
+						<a href="#">PRACTICE</a>
+					</div>
+				</div>
+				<!-- Overlay - end -->
 			</div>
-			<div class="col">
-				<img class="img-fluid" src="http://imagesmail.com/images/games/slots-wide/plentiful-treasure.jpg"
-					alt="Plentiful Treasure">
+			<div class="game-block">
+				<img class="img-fluid game-block__image"
+					src="http://imagesmail.com/images/games/slots-wide/plentiful-treasure.jpg" alt="Plentiful Treasure">
+				<!-- Overlay - start -->
+				<div class="overlay">
+					<div class="button button--solid">
+						<a href="#">REAL MONEY</a>
+					</div>
+					<div class="button button--ghost">
+						<a href="#">PRACTICE</a>
+					</div>
+				</div>
+				<!-- Overlay - end -->
 			</div>
-			<div class="col">
-				<img class="img-fluid" src="http://imagesmail.com/images/games/slots-wide/scuba-fishing.jpg"
-					alt="Scuba Fishing">
+			<div class="game-block">
+				<img class="img-fluid game-block__image"
+					src="http://imagesmail.com/images/games/slots-wide/scuba-fishing.jpg" alt="Scuba Fishing">
+				<!-- Overlay - start -->
+				<div class="overlay">
+					<div class="button button--solid">
+						<a href="#">REAL MONEY</a>
+					</div>
+					<div class="button button--ghost">
+						<a href="#">PRACTICE</a>
+					</div>
+				</div>
+				<!-- Overlay - end -->
 			</div>
-			<div class="col">
-				<img class="img-fluid" src="http://imagesmail.com/images/games/slots-wide/lucha-libre-2.jpg"
-					alt="Lucha Libre 2">
+			<div class="game-block">
+				<img class="img-fluid game-block__image"
+					src="http://imagesmail.com/images/games/slots-wide/lucha-libre-2.jpg" alt="Lucha Libre 2">
+				<!-- Overlay - start -->
+				<div class="overlay">
+					<div class="button button--solid">
+						<a href="#">REAL MONEY</a>
+					</div>
+					<div class="button button--ghost">
+						<a href="#">PRACTICE</a>
+					</div>
+				</div>
+				<!-- Overlay - end -->
+			</div>
+			<div class="game-block">
+				<img class="img-fluid game-block__image"
+					src="http://imagesmail.com/images/games/slots-wide/i-zombie.jpg" alt="I Zombie">
+				<!-- Overlay - start -->
+				<div class="overlay">
+					<div class="button button--solid">
+						<a href="#">REAL MONEY</a>
+					</div>
+					<div class="button button--ghost">
+						<a href="#">PRACTICE</a>
+					</div>
+				</div>
+				<!-- Overlay - end -->
 			</div>
 
 		</div>
 	</div>
-
 	<!-- Games row images - end -->
 
 
@@ -124,7 +195,10 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 	</script>
-	<!-- popper -->
+	<!-- Slick -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 
 	<!-- bootstrap -->
 	<!-- <script
