@@ -7,9 +7,13 @@ $hover-color: #ae8932;
 $base-font: 16px;
 
 @import "./custom_bootstrap";
+// blocks
 @import "./navbar";
 @import "./fullScreenNav";
 @import "./gamesRow";
+// elements
+@import "./buttons";
+
 
 body {
   background: $main;

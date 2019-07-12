@@ -40,36 +40,3 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
         }
     }
 }
-
-
-.button {
-    width: 80%;
-    font-size: 20px;
-    padding: 8px 20px;
-    border-radius: 28px;
-    margin: 5px;
-
-    &--solid {
-        background: $hover-color;
-
-        &:hover {
-            background: darken($hover-color, 10%);
-        }
-
-        a {
-            color: #fff;
-        }
-    }
-
-    &--ghost {
-        border: 1px solid $text-accent;
-
-        &:hover {
-            background: $dark-overlay-color;
-        }
-
-        a {
-            color: #fff;
-        }
-    }
-}
