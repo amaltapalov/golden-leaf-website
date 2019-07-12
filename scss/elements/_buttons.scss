@@ -9,7 +9,7 @@
         background: $hover-color;
 
         &:hover {
-            background: darken($hover-color, 10%);
+            background: darken($hover-color, 5%);
         }
 
         a {
@@ -21,7 +21,7 @@
         border: 1px solid $text-accent;
 
         &:hover {
-            background: $dark-overlay-color;
+            background: rgba(0, 0, 0, .8);
         }
 
         a {
