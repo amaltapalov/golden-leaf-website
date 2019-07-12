@@ -4,13 +4,22 @@
 	console.log("hello 6");
 })();
 
-// Slick
+// Slick - Main slider
 $(document).ready(function() {
-	$(".slick-container").slick({
-		slidesToShow: 6,
-		slidesToScroll: 1,
+	$(".slider-wrapper").slick({
+		slidesToShow: 1,
 		// autoplay: true,
 		// autoplaySpeed: 2000,
+		arrows: false
+	});
+});
+
+// Slick - Game filter
+$(document).ready(function() {
+	$(".slick-container").slick({
+		lazyLoad: "ondemand",
+		slidesToShow: 6,
+		slidesToScroll: 1,
 		arrows: false
 	});
 });

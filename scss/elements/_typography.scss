@@ -1,0 +1,18 @@
+$heading: 55px;
+$subheading: 36px;
+$link: 15px;
+
+
+.heading {
+    font-size: $heading;
+}
+
+.subheading {
+    font-size: $subheading;
+}
+
+$heading: 55px;
+
+.link {
+    font-size: $link;
+}

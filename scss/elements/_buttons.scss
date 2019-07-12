@@ -1,9 +1,9 @@
 .button {
-    width: 80%;
     font-size: 20px;
     padding: 8px 20px;
     border-radius: 28px;
     margin: 5px;
+    text-align: center;
 
     &--solid {
         background: $hover-color;
@@ -18,7 +18,7 @@
     }
 
     &--ghost {
-        border: 1px solid $text-accent;
+        border: 2px solid $text-accent;
 
         &:hover {
             background: rgba(0, 0, 0, .8);

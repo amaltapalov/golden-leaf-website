@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
+// TODO: rename variable with proper names
 $main: #25204a;
 $text-color: #fff;
 $text-accent: #776bb7;
@@ -15,6 +16,7 @@ $base-font: 16px;
 
 // elements
 @import "./elements/buttons";
+@import "./elements/typography";
 
 
 body {
@@ -36,4 +38,14 @@ a {
 
 img {
   max-width: 100%;
+}
+
+// Overwriting Slick slide height
+.slick-track {
+  display: flex;
+}
+
+.slick-track .slick-slide {
+  display: flex;
+  height: auto;
 }
