@@ -1,17 +1,17 @@
-$background--color:#1e2023;
-$icon--color:#1e2023;
-$font--color:#ffffff;
-$font--color--active:#000000;
-$font--primary:'Fira Sans',
+$background--color: #1e2023;
+$icon--color: #1e2023;
+$font--color: #ffffff;
+$font--color--active: #000000;
+$font--primary: "Fira Sans",
 sans-serif;
-$transition--length: .8;
+$transition--length: 0.8;
 
 // start - menu icon
 .menu-icon {
-    $size: 30px;
+    $size: 20px;
     height: $size;
     width: $size;
-    position: fixed;
+    position: block;
     z-index: 2;
     left: 50px;
     top: 30px;
@@ -23,7 +23,7 @@ $transition--length: .8;
         display: block;
         background-color: $font--color;
         margin-bottom: 4px;
-        transition: transform .2s ease, background-color .5s ease;
+        transition: transform 0.2s ease, background-color 0.5s ease;
     }
 
     &__line-left {
@@ -38,12 +38,13 @@ $transition--length: .8;
 
 // end - menu icon
 
+// start - Full screen menu
 .nav {
     display: none;
     $width: 100vw;
     $height: 100vh;
     $font--size--calc: calc(2vw + 10px);
-    $transition--easing: cubic-bezier(.77, 0, .175, 1);
+    $transition--easing: cubic-bezier(0.77, 0, 0.175, 1);
     position: fixed;
     z-index: 1;
 
@@ -53,7 +54,7 @@ $transition--length: .8;
         position: fixed;
         width: $width;
         height: $height;
-        background: rgba(#eaeaea, .2);
+        background: rgba(#eaeaea, 0.2);
         z-index: -1;
         transition: transform $transition--easing $transition--length + s;
         transform: translateX(0%) translateY(-100%);
@@ -65,7 +66,7 @@ $transition--length: .8;
     }
 
     &:before {
-        transition-delay: .1s;
+        transition-delay: 0.1s;
     }
 
     &__content {
@@ -86,7 +87,7 @@ $transition--length: .8;
         transition-delay: $transition--length + s;
         opacity: 0;
         transform: translate(0%, 100%);
-        transition: opacity .2s ease, transform .3s ease;
+        transition: opacity 0.2s ease, transform 0.3s ease;
         margin-right: 25px;
 
         &:before {
@@ -97,7 +98,7 @@ $transition--length: .8;
             height: 1px;
             top: 100%;
             transform: translate(0%, 0%);
-            transition: all .3s ease;
+            transition: all 0.3s ease;
             z-index: -1;
         }
 
@@ -108,6 +109,8 @@ $transition--length: .8;
         }
     }
 }
+
+// end -Full screen menu
 
 //active state
 body.nav-active {
@@ -137,7 +140,7 @@ body.nav-active {
         }
 
         &:after {
-            transition-delay: .1s;
+            transition-delay: 0.1s;
         }
 
         &:before {
@@ -147,11 +150,11 @@ body.nav-active {
         &__list-item {
             opacity: 1;
             transform: translateX(0%);
-            transition: opacity .3s ease, transform .3s ease, color .3s ease;
+            transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
 
             @for $i from 0 through $menu--items--count {
                 &:nth-child(#{$i}) {
-                    transition-delay: $transition--length * $i / 8 + .5 + s;
+                    transition-delay: $transition--length * $i / 8 + 0.5 + s;
                 }
             }
         }
