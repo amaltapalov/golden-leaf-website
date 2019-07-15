@@ -1,11 +1,12 @@
 .button {
     display: inline-block;
-    padding: 0.6rem 3rem;
+    padding: 1rem 3rem;
     border-radius: 50px;
     margin: 5px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-
+    cursor: pointer;
+    
     &--solid {
         background: $golden-color;
 
@@ -22,7 +23,21 @@
         }
     }
 
+    &--purple {
+        background: $purple-color;
 
+        &:hover {
+            background: darken($purple-color, 5%);
+        }
+
+        a {
+            color: #fff;
+        }
+
+        &--border {
+            border: 2px solid lighten($purple-color, 30%);
+        }
+    }
 
     &--ghost {
         border: 2px solid $violet-color;

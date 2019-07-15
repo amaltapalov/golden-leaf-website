@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 // Slick - Game filter
 $(document).ready(function() {
-	$(".slick-container").slick({
+	$(".games-filter-container").slick({
 		lazyLoad: "ondemand",
 		slidesToShow: 6,
 		slidesToScroll: 1,
@@ -26,8 +26,12 @@ $(document).ready(function() {
 });
 
 // Fullpage.js
+// Docs: https://github.com/alvarotrigo/fullPage.js/#fullpagejs
+
 new fullpage("#fullpage", {
 	//options here
 	autoScrolling: true,
-	scrollHorizontally: true
+	scrollHorizontally: true,
+	// after 1200px of width FullPage is disabled
+	responsiveWidth: 1200
 });

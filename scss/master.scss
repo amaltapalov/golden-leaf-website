@@ -2,8 +2,10 @@ $main: #25204a;
 $text-color: #fff;
 $violet-color: #776bb7;
 $golden-color: #ae8932;
-$bg-color: #170a24;
+$purple-color: #540965;
+$bg-color: #140721;
 $base-font: 16px;
+
 
 // Mixins
 @mixin flex($justify: center, $align: center, $direction: row) {
@@ -38,22 +40,22 @@ $base-font: 16px;
 
 // Example in scss:
 // @include fluid-font(37px, 45px, 1200px, 1400px);
-
 @import "./custom_bootstrap";
 
-// blocks
-@import "./blocks/navbar";
-@import "./blocks/fullScreenNav";
-@import "./blocks/gamesRow";
-@import "./blocks/mainSlider";
-// Addons
-@import "./fullpage.min.css";
 // elements
 @import "./elements/buttons";
 @import "./elements/typography";
 
+// blocks
+@import "./blocks/navbar";
+@import "./blocks/fullScreenNav";
+@import "./blocks/mainSlider";
+@import "./blocks/gamesRow";
+@import "./blocks/jackpot-counter";
+
+
 body {
-  background: $main;
+  background: $bg-color;
   color: $text-color;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -80,6 +82,12 @@ img {
 }
 
 .slick-track .slick-slide {
+  width: 100vw;
   display: flex;
   height: auto;
+  // margin: 0 auto;
+}
+
+.purple-border {
+  border: 2px solid $purple-color;
 }

@@ -18,21 +18,19 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
     }
 }
 
-.slick-container {
+.games-filter-container {
     .game-block {
         display: inline-block;
         position: relative;
-        margin: 5px;
+        margin: 10px !important;
 
         &__image {
-            padding: 8px;
-            border: 2px solid $violet-color;
+            padding: 8px;            
             border-radius: 5px;
         }
 
         .overlay {
-            display: none;
-            border: 2px solid $violet-color;
+            display: none;            
             border-radius: 5px;
             text-align: center;
         }

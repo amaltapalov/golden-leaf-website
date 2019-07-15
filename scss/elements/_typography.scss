@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Colus';
-    src: url(../../fonts/Colus-Regular.otf);
+    src: url(../fonts/Colus-Regular.otf);
 }
 
 $heading: 55px;
@@ -13,15 +13,17 @@ $link: 15px;
 @mixin heading {
     font-size: $heading;
     font-family: 'Colus', 'Raleway', sans-serif;
-
 }
 
 .heading {
     @include heading;
+    line-height: 1;
 }
 
 .subheading {
     font-size: $subheading;
+    line-height: 1;
+
 }
 
 .link {

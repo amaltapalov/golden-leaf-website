@@ -1,4 +1,7 @@
+$dots-color: #694fbf;
+
 .main-slider {
+    padding-top: 70px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -8,9 +11,32 @@
 }
 
 .slide-1 {
-    background: $bg-color url(../images/slider/bg-1.jpg) center /cover no-repeat;
+    background: $bg-color url(../images/slider/bg-1.jpg) center / cover no-repeat;
 }
 
 .slide-2 {
-    background: $bg-color url(../images/slider/bg-2.jpg) center /cover no-repeat;
+    background: $bg-color url(../images/slider/bg-2.jpg) center / cover no-repeat;
+}
+
+// Overwriting slick carousel (dots)
+.slick-dots {
+    width: auto;
+    right: 0;
+    bottom: 50%;
+    transform: rotateZ(90deg);
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.slick-dots li button:before {
+    border: 1px solid $dots-color;
+    border-radius: 50%;
+    color: $dots-color;
+    line-height: 19px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: $dots-color;
 }
