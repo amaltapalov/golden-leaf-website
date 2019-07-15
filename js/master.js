@@ -24,3 +24,10 @@ $(document).ready(function() {
 		arrows: false
 	});
 });
+
+// Fullpage.js
+new fullpage("#fullpage", {
+	//options here
+	autoScrolling: true,
+	scrollHorizontally: true
+});
