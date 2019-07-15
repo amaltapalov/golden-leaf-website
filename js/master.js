@@ -10,7 +10,8 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		// autoplay: true,
 		// autoplaySpeed: 2000,
-		arrows: false
+		arrows: false,
+		dots: true
 	});
 });
 

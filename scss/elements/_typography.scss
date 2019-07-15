@@ -1,17 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,800&display=swap');
+
+@font-face {
+    font-family: 'Colus';
+    src: url(../../fonts/Colus-Regular.otf);
+}
+
 $heading: 55px;
 $subheading: 36px;
 $link: 15px;
 
+@mixin heading {
+    font-size: $heading;
+    font-family: 'Colus', 'Raleway', sans-serif;
+
+}
 
 .heading {
-    font-size: $heading;
+    @include heading;
 }
 
 .subheading {
     font-size: $subheading;
 }
-
-$heading: 55px;
 
 .link {
     font-size: $link;

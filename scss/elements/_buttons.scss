@@ -1,24 +1,31 @@
 .button {
-    font-size: 20px;
-    padding: 8px 20px;
-    border-radius: 28px;
+    display: inline-block;
+    padding: 0.6rem 3rem;
+    border-radius: 50px;
     margin: 5px;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 
     &--solid {
-        background: $hover-color;
+        background: $golden-color;
 
         &:hover {
-            background: darken($hover-color, 5%);
+            background: darken($golden-color, 5%);
         }
 
         a {
             color: #fff;
         }
+
+        &--border {
+            border: 2px solid lighten($golden-color, 30%);
+        }
     }
 
+
+
     &--ghost {
-        border: 2px solid $text-accent;
+        border: 2px solid $violet-color;
 
         &:hover {
             background: rgba(0, 0, 0, .8);

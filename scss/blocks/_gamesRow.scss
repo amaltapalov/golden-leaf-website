@@ -1,11 +1,20 @@
-$dark-text-accent: darken($text-accent, 30%);
+$dark-violet-color: darken($violet-color, 30%);
 $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(68, 41, 81, 1) 100%);
 
 
 .games-filter {
     &__item {
-        color: $text-accent;
+        color: $violet-color;
         cursor: pointer;
+
+        &:hover {
+            color: $text-color;
+
+            img {
+                -webkit-filter: brightness(3);
+                filter: brightness(3);
+            }
+        }
     }
 }
 
@@ -17,13 +26,13 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
 
         &__image {
             padding: 8px;
-            border: 2px solid $text-accent;
+            border: 2px solid $violet-color;
             border-radius: 5px;
         }
 
         .overlay {
             display: none;
-            border: 2px solid $text-accent;
+            border: 2px solid $violet-color;
             border-radius: 5px;
             text-align: center;
         }

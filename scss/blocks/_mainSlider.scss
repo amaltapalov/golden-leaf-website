@@ -1,0 +1,17 @@
+.main-slider {
+    font-family: 'Raleway', sans-serif;
+}
+
+.slide-image {
+    max-width: 700px;
+    width: 100%;
+
+}
+
+.slide-1 {
+    background: $bg-color url(../images/slider/bg-1.jpg) center /cover no-repeat;
+}
+
+.slide-2 {
+    background: $bg-color url(../images/slider/bg-2.jpg) center /cover no-repeat;
+}
