@@ -2,6 +2,7 @@ $main: #25204a;
 $text-color: #fff;
 $violet-color: #776bb7;
 $golden-color: #ae8932;
+$light-golden-color: lighten(#ae8932, 20%);
 $purple-color: #540965;
 $bg-color: #140721;
 $base-font: 16px;
@@ -52,6 +53,10 @@ $base-font: 16px;
 @import "./blocks/mainSlider";
 @import "./blocks/gamesRow";
 @import "./blocks/jackpot-counter";
+@import "./blocks/features";
+@import "./blocks/download";
+
+
 
 
 body {
@@ -70,6 +75,10 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+p {
+  margin-bottom: 0;
 }
 
 img {

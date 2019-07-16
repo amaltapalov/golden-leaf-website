@@ -3,6 +3,13 @@ $dots-color: #694fbf;
 .main-slider {
     padding-top: 70px;
     font-family: 'Raleway', sans-serif;
+    .subheading {
+        font-family: "Raleway", sans-serif;
+        color: $violet-color;
+    }
+    .button {
+       color: $text-color;
+    }
 }
 
 .slide-image {

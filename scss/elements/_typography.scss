@@ -16,13 +16,16 @@ $link: 15px;
 }
 
 .heading {
-    @include heading;
+    @include heading;    
     line-height: 1;
 }
 
 .subheading {
     font-size: $subheading;
+    font-family: 'Colus','Raleway', sans-serif;
     line-height: 1;
+    margin-bottom: 0.5rem;
+
 
 }
 
