@@ -1,0 +1,19 @@
+.footer {
+    &__column {
+        color: grey;
+    }
+    &__heading {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    &__link {
+        color: grey;
+        &:hover {
+            color: $golden-color;
+        }
+    }
+}
+
+.bottom-bar {
+    background: #000;
+}

@@ -55,7 +55,7 @@ $base-font: 16px;
 @import "./blocks/jackpot-counter";
 @import "./blocks/features";
 @import "./blocks/download";
-@import "./blocks/bottom-bar";
+@import "./blocks/footer";
 
 
 // delete focus outline
@@ -89,6 +89,10 @@ img {
   max-width: 100%;
 }
 
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
 // Overwriting Slick slide height
 .slick-track {
   display: flex;
