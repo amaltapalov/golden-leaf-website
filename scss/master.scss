@@ -2,11 +2,11 @@ $main: #25204a;
 $text-color: #fff;
 $violet-color: #776bb7;
 $golden-color: #ae8932;
+$golden-gradient: linear-gradient(#cfa747, #b08a33, #cfa747);
 $light-golden-color: lighten(#ae8932, 20%);
 $purple-color: #540965;
 $bg-color: #140721;
 $base-font: 16px;
-
 
 // Mixins
 @mixin flex($justify: center, $align: center, $direction: row) {
@@ -27,7 +27,6 @@ $base-font: 16px;
 * ((100vw - #{$lower-range}) / #{(
  ($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))
 }
-
 ));
 
 @media screen and (max-width: $lower-range) {

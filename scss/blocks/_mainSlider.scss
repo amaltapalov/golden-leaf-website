@@ -38,12 +38,16 @@ $dots-color: #694fbf;
 }
 
 .slick-dots li button:before {
-    border: 1px solid $dots-color;
+    border: 2px solid $dots-color;
     border-radius: 50%;
-    color: $dots-color;
+    // color: $dots-color;
     line-height: 19px;
+    opacity: 0.55;
 }
 
 .slick-dots li.slick-active button:before {
+    font-size: 23px;
+    border: none;
+    top: 3px;
     color: $dots-color;
 }

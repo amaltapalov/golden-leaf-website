@@ -38,6 +38,9 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
             display: none;            
             border-radius: 5px;
             text-align: center;
+            .button--small {
+                width: 70%;
+            }
         }
 
         &:hover .overlay {
@@ -49,8 +52,9 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
             left: 0;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            padding-top: 1.2vw;
+            // justify-content: center;
+            // align-items: center;
         }
         .jackpot-winners {
             position: absolute;

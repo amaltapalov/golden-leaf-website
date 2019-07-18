@@ -176,7 +176,7 @@ jQuery(document).ready(function() {
       return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
       // return value.toFixed(options.decimals).replace('.', '');
     },
-    speed: 600000000
+    speed: 1000000000
   });
   function count(options) {
     var $this = jQuery(this);
