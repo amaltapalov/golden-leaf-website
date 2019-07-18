@@ -57,6 +57,7 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
             bottom: 0;
             width: 100%;
             background: $golden-color;
+            border-radius: 0 0 5px 5px;
 
             p {
                 color: $text-color;

@@ -9,6 +9,9 @@
         letter-spacing: 10;
         text-shadow: 2px 4px 6px rgba(0,0,0,0.3);
         color: $light-golden-color;
+        &::before {
+            content: "$";
+        }
     }
 }
 
