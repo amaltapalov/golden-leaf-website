@@ -38,11 +38,12 @@ $base-font: 16px;
 }
 }
 
-// Example in scss:
+// Using in scss:
 // @include fluid-font(37px, 45px, 1200px, 1400px);
 @import "./custom_bootstrap";
 
 // elements
+@import "./elements/grid";
 @import "./elements/buttons";
 @import "./elements/typography";
 
@@ -106,4 +107,11 @@ ul {
 
 .purple-border {
   border: 2px solid $purple-color;
+}
+
+.hover-fx {
+  transition: .2s;
+  &:hover {
+    transform: scale(0.97);
+  }
 }

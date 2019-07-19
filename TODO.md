@@ -6,4 +6,5 @@
 - [ ] Feature section (Show text on Feature hover)
 - [ ] Full screen menu
 - [ ] Set max-width of some container to 1700px
+- [ ] Carousel with Bootstrap
 - [ ] Try to add Fullpage.js
