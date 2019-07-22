@@ -5,11 +5,12 @@
     }
 }
 
-.foo-container {
+// Hover Fx for individual feature
+.feature {
     position: relative;
 }
 
-.foo-block {
+.feature__block {
      display: block;
      width: 100%;
      height: auto;
@@ -21,14 +22,14 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: $purple-color;
+    background-color: darken($purple-color, 10%);
     overflow: hidden;
     width: 60%;
     height: 0;
-    transition: .5s ease;
+    transition: .3s ease-in-out;
 }
 
-.foo-container:hover .overlay {
+.feature:hover .overlay {
     height: 100%;
 }
 
@@ -42,4 +43,10 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.feature:hover .text {
+    opacity: 1;
 }

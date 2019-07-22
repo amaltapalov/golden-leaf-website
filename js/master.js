@@ -8,10 +8,11 @@
 $(document).ready(function() {
 	$(".slider-wrapper").slick({
 		slidesToShow: 1,
-		// autoplay: true,
-		// autoplaySpeed: 2000,
 		arrows: false,
 		dots: true
+		// autoplay: true,
+		// autoplaySpeed: 3000,
+		// speed: 1000,
 	});
 });
 
@@ -21,8 +22,9 @@ $(document).ready(function() {
 		lazyLoad: "ondemand",
 		slidesToShow: 6,
 		slidesToScroll: 1,
-    arrows: false,
-    infinite: true
+		arrows: false,
+		infinite: true,
+		swipeToSlide: true
 	});
 });
 
@@ -177,7 +179,7 @@ jQuery(document).ready(function() {
       return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
       // return value.toFixed(options.decimals).replace('.', '');
     },
-    speed: 10000000
+    speed: 1000000000
   });
   function count(options) {
     var $this = jQuery(this);

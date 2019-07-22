@@ -8,3 +8,4 @@
 - [ ] Full screen menu
 - [ ] Carousel with Bootstrap
 - [ ] Try to add Fullpage.js
+- [ ] Add fading Fx on text in Features
