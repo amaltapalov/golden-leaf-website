@@ -1,0 +1,9 @@
+.top-winners {
+    &__winner {
+      &__amount {
+          color: $golden-color;
+          font-size: 1.5rem;
+          line-height: 1;
+      }
+    }
+}

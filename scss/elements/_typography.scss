@@ -25,10 +25,21 @@ $link: 15px;
     font-family: 'Colus','Raleway', sans-serif;
     line-height: 1;
     margin-bottom: 0.5rem;
-
-
 }
 
 .link {
     font-size: $link;
+}
+
+// Color classes
+.bold {
+    font-weight: bold;
+}
+
+.light-golden {
+    color: $light-golden-color;
+}
+
+.violet {
+    color: $violet-color;
 }

@@ -52,7 +52,8 @@ $base-font: 16px;
 @import "./blocks/fullScreenNav";
 @import "./blocks/mainSlider";
 @import "./blocks/gamesRow";
-@import "./blocks/jackpot-counter";
+@import "./blocks/topWinners";
+@import "./blocks/jackpotCounter";
 @import "./blocks/features";
 @import "./blocks/download";
 @import "./blocks/footer";
@@ -93,6 +94,8 @@ ul {
   padding-left: 0;
   list-style-type: none;
 }
+
+
 // Overwriting Slick slide height
 .slick-track {
   display: flex;

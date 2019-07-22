@@ -21,7 +21,8 @@ $(document).ready(function() {
 		lazyLoad: "ondemand",
 		slidesToShow: 6,
 		slidesToScroll: 1,
-		arrows: false
+    arrows: false,
+    infinite: true
 	});
 });
 
@@ -176,7 +177,7 @@ jQuery(document).ready(function() {
       return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
       // return value.toFixed(options.decimals).replace('.', '');
     },
-    speed: 1000000000
+    speed: 10000000
   });
   function count(options) {
     var $this = jQuery(this);
