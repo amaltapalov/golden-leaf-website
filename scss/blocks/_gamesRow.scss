@@ -79,7 +79,7 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
 
 
 .new-game {
-    &:before {
+    &::before {
         position: absolute;
         left: 5%;
         content: url(../images/games-filter/new.png);

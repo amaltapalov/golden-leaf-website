@@ -24,7 +24,20 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		arrows: false,
 		infinite: true,
-		swipeToSlide: true
+    swipeToSlide: true
+	});
+});
+
+// Slick - Reviews
+$(document).ready(function() {
+	$(".reviews-slider").slick({
+		lazyLoad: "ondemand",
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: false,
+		infinite: true,
+    swipeToSlide: true,
+    centerMode: true
 	});
 });
 

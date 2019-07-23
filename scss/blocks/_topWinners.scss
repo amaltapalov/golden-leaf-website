@@ -1,9 +1,20 @@
 .top-winners {
-    &__winner {
+  &__row {
+    display: grid;
+    justify-content: center;
+  }
+    &__winner {     
       &__amount {
           color: $golden-color;
           font-size: 1.5rem;
           line-height: 1;
       }
     }
+    // &::before {
+    //   content: url(../images/reviews/separator.png);
+    //   position: absolute;
+    //   top: 5%;
+    //   max-width: 26px; 
+    //   width: 100%;
+    // }
 }
