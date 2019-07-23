@@ -9,10 +9,10 @@ $(document).ready(function() {
 	$(".slider-wrapper").slick({
 		slidesToShow: 1,
 		arrows: false,
-		dots: true
-		// autoplay: true,
-		// autoplaySpeed: 3000,
-		// speed: 1000,
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		speed: 1000,
 	});
 });
 

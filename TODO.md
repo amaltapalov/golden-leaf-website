@@ -9,3 +9,12 @@
 - [ ] Carousel with Bootstrap
 - [ ] Try to add Fullpage.js
 - [ ] Add fading Fx on text in Features
+
+
+- [ ] Add arrow to Reviews
+- [ ] Features hover text (with limit length)
+- [ ] Download client for IOS (link to Signup)
+- [ ] Toll Free to delete
+
+- [ ] Slider #1 from Olga
+- [ ] Slider #2 from New game
