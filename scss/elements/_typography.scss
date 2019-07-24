@@ -21,7 +21,7 @@ $link: 15px;
 }
 
 .subheading {
-    font-size: $subheading;
+    @include fluid-font(22px, 36px, 992px, 1400px);
     font-family: 'Colus','Raleway', sans-serif;
     line-height: 1;
     margin-bottom: 0.5rem;

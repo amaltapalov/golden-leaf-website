@@ -5,13 +5,19 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
 .games-filter {
     &__item {
         cursor: pointer;
+        transition: 0.2s;
+
+        img {
+            -webkit-filter: brightness(1);
+            filter: brightness(1);
+        }
 
         &:hover {
             color: $text-color;
 
             img {
-                -webkit-filter: brightness(3);
-                filter: brightness(3);
+                -webkit-filter: brightness(4);
+                filter: brightness(4);
             }
         }
     }

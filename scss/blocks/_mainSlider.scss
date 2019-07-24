@@ -1,49 +1,31 @@
-$dots-color: #694fbf;
-
 .main-slider {
     padding-top: 70px;
     font-family: 'Raleway', sans-serif;
     .subheading {
         font-family: "Raleway", sans-serif;
     }
+
+    .slide-image {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .slide-1 {
+        background: $bg-color url(../images/slider/bg-1.jpg) center / cover no-repeat;
+    }
+
+    .slide-2 {
+        background: $bg-color url(../images/slider/bg-2.jpg) center / cover no-repeat;
+    }
+    // Overwriting slick carousel (dots) for main Slider
+    .slick-dots {
+        width: auto;
+        right: 0;
+        bottom: 45%;
+        transform: rotateZ(90deg);
+    }    
 }
 
-.slide-image {
-    max-width: 700px;
-    width: 100%;
-}
-
-.slide-1 {
-    background: $bg-color url(../images/slider/bg-1.jpg) center / cover no-repeat;
-}
-
-.slide-2 {
-    background: $bg-color url(../images/slider/bg-2.jpg) center / cover no-repeat;
-}
-
-// Overwriting slick carousel (dots)
-.slick-dots {
-    width: auto;
-    right: 0;
-    bottom: 45%;
-    transform: rotateZ(90deg);
-}
-
-.slick-dotted.slick-slider {
-    margin-bottom: 0;
-}
-
-.slick-dots li button:before {
-    border: 2px solid $dots-color;
-    border-radius: 50%;
-    // color: $dots-color;
-    line-height: 19px;
-    opacity: 0.55;
-}
-
-.slick-dots li.slick-active button:before {
-    font-size: 23px;
-    border: none;
-    top: 3px;
-    color: $dots-color;
+@media screen and (max-width: ) {
+    
 }

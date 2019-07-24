@@ -10,9 +10,9 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		arrows: false,
 		dots: true,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		speed: 1000,
+		// autoplay: true,
+		// autoplaySpeed: 3000,
+		// speed: 1000
 	});
 });
 
@@ -24,7 +24,15 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		arrows: false,
 		infinite: true,
-    swipeToSlide: true
+		swipeToSlide: true,
+		responsive: [
+			{
+				breakpoint: 1600,
+				settings: {
+					slidesToShow: 4
+				}
+			}
+		]
 	});
 });
 
@@ -34,10 +42,28 @@ $(document).ready(function() {
 		lazyLoad: "ondemand",
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		dots: true,
 		arrows: false,
 		infinite: true,
-    swipeToSlide: true,
-    centerMode: true
+		swipeToSlide: true,
+		centerMode: true,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					centerMode: false,
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					centerMode: false,
+          slidesToShow: 2,
+          dots: false
+				}
+			}
+		]
 	});
 });
 
@@ -202,3 +228,4 @@ jQuery(document).ready(function() {
   jQuery('#total_jackpot').each(count);
 });
 //-----------------------------
+

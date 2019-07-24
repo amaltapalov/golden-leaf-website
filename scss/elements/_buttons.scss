@@ -55,3 +55,34 @@
         }
     }
 }
+
+// Slick slider dots navigation
+// Slick dots 
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.slick-dots {
+    bottom: -50px;
+}
+
+.slick-dots .slick-active {
+        background: $slider-dots-color;
+        border-radius: 50%;
+}
+
+.slick-dots li button:before {
+    border: 2px solid $slider-dots-color;
+    border-radius: 50%;
+    line-height: 19px;
+    opacity: 0.55;
+    content: " ";
+}
+
+.slick-dots li.slick-active button:before {
+    font-size: 23px;
+    border: none;
+    top: 3px;
+    color: $slider-dots-color;
+}
+

@@ -10,7 +10,7 @@
 - [ ] Try to add Fullpage.js
 - [ ] Add fading Fx on text in Features
 
-
+- Leo's and Paula's
 - [ ] Add arrow to Reviews
 - [ ] Features hover text (with limit length)
 - [ ] Download client for IOS (link to Signup)

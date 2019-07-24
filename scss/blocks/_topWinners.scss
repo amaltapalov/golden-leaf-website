@@ -2,6 +2,10 @@
   &__row {
     display: grid;
     justify-content: center;
+    @media screen and (max-width: 992px) {
+      display: flex;
+      overflow: hidden;
+    }
   }
     &__winner {     
       &__amount {

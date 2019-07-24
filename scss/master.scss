@@ -5,6 +5,7 @@ $golden-color: #ae8932;
 $golden-gradient: linear-gradient(#cfa747, #b08a33, #cfa747);
 $light-golden-color: lighten(#ae8932, 20%);
 $purple-color: #540965;
+$slider-dots-color: #694fbf;
 $bg-color: #140721;
 $base-font: 16px;
 
@@ -65,10 +66,10 @@ $base-font: 16px;
   outline: 0;
 }
 
+
 body {
   background: $bg-color;
   color: $text-color;
-  font-size: 16px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -106,7 +107,6 @@ ul {
   width: 100vw;
   display: flex;
   height: auto;
-  // margin: 0 auto;
 }
 
 .purple-border {

@@ -15,6 +15,11 @@
         filter: brightness(70%);
         transform: scale(0.9);
         transition: 0.2s;
+        color: $violet-color;
+        @media screen and (max-width: 1200px) {
+            filter: brightness(100%);
+            color: $text-color;
+        }
     }
 
     .slick-center {
@@ -27,6 +32,8 @@
         color: white;
     }
 }
+
+
 
 
 
