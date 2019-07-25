@@ -1,5 +1,8 @@
 .reviews {
     background: $bg-color url(../images/reviews/reviews-bg.png) center / contain no-repeat;
+    @media screen and (max-width: 992px) {
+        padding-bottom: 50px;
+    }
 }
 .reviews-slider {
     &__slide {
@@ -16,7 +19,7 @@
         transform: scale(0.9);
         transition: 0.2s;
         color: $violet-color;
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1300px) {
             filter: brightness(100%);
             color: $text-color;
         }

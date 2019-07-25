@@ -1,22 +1,15 @@
 .jackpot-counter {
-    height: 50%;
+    // height: 50%;
     background: $bg-color url(../images/jackpot-bg.png) center / contain no-repeat;
     &--text {
         letter-spacing: 5;
     }
     &--amount {
-        font-size: 85px;
+        @include fluid-font(42px, 85px, 400px, 600px);
         letter-spacing: 10;
         text-shadow: 2px 4px 6px rgba(0,0,0,0.3);
         &::before {
             content: "$";
         }
-    }
-}
-
-.jackpot-winners {
-    p { 
-        font-size: 30px;
-        color: $violet-color;
     }
 }

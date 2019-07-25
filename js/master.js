@@ -31,6 +31,26 @@ $(document).ready(function() {
 				settings: {
 					slidesToShow: 4
 				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					infinite: false,
+					slidesToShow: 1.5
+				}
+      },
+      {
+				breakpoint: 468,
+				settings: {
+					infinite: false,
+					slidesToShow: 1.3
+				}
 			}
 		]
 	});
@@ -49,7 +69,7 @@ $(document).ready(function() {
 		centerMode: true,
 		responsive: [
 			{
-				breakpoint: 1200,
+				breakpoint: 1300,
 				settings: {
 					centerMode: false,
 					slidesToShow: 2

@@ -21,10 +21,13 @@ $link: 15px;
 }
 
 .subheading {
-    @include fluid-font(22px, 36px, 992px, 1400px);
-    font-family: 'Colus','Raleway', sans-serif;
+    @include fluid-font(22px, 34px, 992px, 1400px);
+    font-family: 'Colus', sans-serif;
     line-height: 1;
     margin-bottom: 0.5rem;
+    &.subheading--thin {
+        font-family: 'Raleway',sans-serif; 
+    }
 }
 
 .link {
