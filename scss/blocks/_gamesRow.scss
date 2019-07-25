@@ -46,10 +46,10 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
         }
 
         .overlay {
-            display: block;            
+            display: none;            
             border-radius: 5px;
             font-size: 1rem;
-            text-align: center;
+            text-align: center;            
             .button--small {
                 width: 80%;
                 @media screen and (max-width: 1200px) {
