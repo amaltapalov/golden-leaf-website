@@ -1,13 +1,23 @@
 .footer {
     &__column {
         color: grey;
+        li {
+            line-height: 1;
+        }
     }
     &__heading {
         font-size: 1.2rem;
+        line-height: 1;
         font-weight: bold;
+        @media screen and (max-width: 992px) {
+            font-size: 1rem
+        }
     }
     &__link {
         color: grey;
+        @media screen and (max-width: 992px) {
+            font-size: 0.8rem;
+        }
         &:hover {
             color: $golden-color;
         }

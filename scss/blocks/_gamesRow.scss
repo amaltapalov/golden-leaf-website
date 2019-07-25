@@ -46,19 +46,18 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
         }
 
         .overlay {
-            display: none;            
+            display: block;            
             border-radius: 5px;
+            font-size: 1rem;
             text-align: center;
             .button--small {
-                width: 70%;
-                @media screen and (max-width: 992px) {
-                    width: 80%;
-                }
-                 @media screen and (max-width: 768px) {
+                width: 80%;
+                @media screen and (max-width: 1200px) {
+                    font-size: .8rem;
+                }       
+                @media screen and (min-width: 468px) and (max-width: 768px) {
                      width: 70%;
-                }
-                 @media screen and (max-width: 468px) {
-                     width: 80%;
+                    font-size: 1rem;
                 }
             }
         }
@@ -73,7 +72,7 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
             display: flex;
             // padding-top: 1.2vw;
 
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1320px) {
                 font-size: 14px;
             }
             @media screen and (max-width: 768px) {
@@ -83,7 +82,16 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
                  font-size: 14px;
              }
              &.overlay--withBar {
-                 padding-top: 1.5vw;
+                 padding-top: 1.2vw;
+                 @media screen and (max-width: 1220px) {
+                    padding-top: 15px;
+                 }
+                 @media screen and (max-width: 992px) {
+                     padding-top: 10%;
+                 }
+                 @media screen and (max-width: 468px) {
+                     padding-top: 8%;
+                 }
              }
         }
         

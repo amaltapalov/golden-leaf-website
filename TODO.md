@@ -11,10 +11,10 @@
 - [ ] Add fading Fx on text in Features
 
 - Leo's and Paula's
-- [ ] Add arrow to Reviews
+- [x] Add arrow to Reviews
 - [ ] Features hover text (with limit length)
 - [ ] Download client for IOS (link to Signup)
-- [ ] Toll Free to delete
+- [x] Toll Free to delete
 
-- [ ] Slider #1 from Olga
-- [ ] Slider #2 from New game
+- [x] Slider #1 from Olga
+- [x] Slider #2 from New game

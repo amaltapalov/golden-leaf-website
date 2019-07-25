@@ -4,6 +4,7 @@
 	console.log("hello 6");
 })();
 
+
 // Slick - Main slider
 $(document).ready(function() {
 	$(".slider-wrapper").slick({
@@ -28,6 +29,12 @@ $(document).ready(function() {
 		responsive: [
 			{
 				breakpoint: 1600,
+				settings: {
+					slidesToShow: 5
+				}
+			},
+			{
+				breakpoint: 1200,
 				settings: {
 					slidesToShow: 4
 				}
