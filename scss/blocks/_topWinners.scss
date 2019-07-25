@@ -2,11 +2,15 @@
   &__row {
     display: grid;
     justify-content: center;
-      overflow: hidden;
-
+    overflow: hidden;
+    
     @media screen and (max-width: 992px) {
       display: flex;
       overflow-x: scroll;
+      &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
     }
   }
     &__winner {

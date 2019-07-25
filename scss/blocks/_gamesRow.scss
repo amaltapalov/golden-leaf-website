@@ -6,10 +6,16 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
     &__item {
         cursor: pointer;
         transition: 0.2s;
+         @media screen and (max-width: 360px) {
+             font-size: 14px;
+         }
 
         img {
             -webkit-filter: brightness(1);
             filter: brightness(1);
+            @media screen and (max-width: 576px) {
+                display: none;
+            }
         }
 
         &:hover {
@@ -115,9 +121,13 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
                 font-size: 1rem;
             }
             &__amount {
-                font-size: 1.5rem;
+                // font-size: 1.5rem;
+                @include fluid-font(1.2rem, 1.5rem, 320px, 576px);
                 line-height: 1.2;
                 font-weight: bold;
+                // @media screen and (max-width: 576px) {
+                //     @include fluid-font(37px, 16px, 1200px, 576px);
+                // }
             }
             
         }

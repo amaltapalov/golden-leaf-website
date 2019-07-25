@@ -42,10 +42,17 @@ $(document).ready(function() {
 				breakpoint: 768,
 				settings: {
 					infinite: false,
+					slidesToShow: 2.5
+				}
+			},
+			{
+				breakpoint: 720,
+				settings: {
+					infinite: false,
 					slidesToShow: 1.5
 				}
-      },
-      {
+			},
+			{
 				breakpoint: 468,
 				settings: {
 					infinite: false,
@@ -79,8 +86,16 @@ $(document).ready(function() {
 				breakpoint: 992,
 				settings: {
 					centerMode: false,
-          slidesToShow: 2,
-          dots: false
+					slidesToShow: 2,
+					dots: false
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					centerMode: false,
+					slidesToShow: 1,
+					dots: false
 				}
 			}
 		]
