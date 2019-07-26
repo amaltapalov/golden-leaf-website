@@ -1,10 +1,14 @@
+// https://codepen.io/RSH87/pen/rmgYbo
+
 const app = (() => {
 	let body;
 	let menu;
+	let menuItems;
 
 	const init = () => {
 		body = document.querySelector("body");
 		menu = document.querySelector(".menu-icon");
+		menuItems = document.querySelectorAll(".nav__list-item");
 
 		applyListeners();
 	};

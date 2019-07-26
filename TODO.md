@@ -2,6 +2,11 @@
 - [x] Jackpot animation
 - [x] Add gradient to buttons
 - [x]  Set max-width of some container to 1920px
+- [x] Toll Free to delete
+- [x] Slider #1 from Olga
+- [x] Slider #2 from New game
+- [x] Add navigation to Reviews
+
 - [ ] Try to use fluid-font for HTML or body (to see how **rem** will be changing)
 - [ ] Add fluid-font
 - [ ] Feature section (Show text on Feature hover)
@@ -11,10 +16,8 @@
 - [ ] Add fading Fx on text in Features
 
 - Leo's and Paula's
-- [x] Add arrow to Reviews
+
 - [ ] Features hover text (with limit length)
 - [ ] Download client for IOS (link to Signup)
-- [x] Toll Free to delete
 
-- [x] Slider #1 from Olga
-- [x] Slider #2 from New game
+
