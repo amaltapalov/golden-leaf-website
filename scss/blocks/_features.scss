@@ -57,6 +57,10 @@
 .feature__block__hidden {
     opacity: 0;
     width: 80%;
+    @media screen and (max-width: 576px) {
+        font-size: 14px;
+        width: 100%;
+    }
 }
 
 .feature__block:hover~.feature__block__hidden {

@@ -33,6 +33,15 @@
         filter: brightness(100%);
         transform: scale(1);
         color: white;
+    } 
+    .slick-dots {
+        opacity: 0; 
+        transition: .8s;
+
+    }
+    .slick-list:hover~.slick-dots {
+        transition:  .8s;
+        opacity: 1;
     }
 }
 
