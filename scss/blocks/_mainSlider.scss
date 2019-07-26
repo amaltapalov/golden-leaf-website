@@ -5,9 +5,20 @@
         font-family: "Raleway", sans-serif;
     }
 
+    .slide-cta {
+        order: 1;
+        @media screen and (max-width: 1000px) {
+            order: 2;
+        }
+    }
+
     .slide-image {
         max-width: 700px;
         width: 100%;
+        order: 2;
+        @media screen and (max-width: 1000px) {
+            order: 1;
+        }
     }
 
     .slide-1 {

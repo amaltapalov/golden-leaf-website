@@ -11,7 +11,7 @@ $subheading: 36px;
 $link: 15px;
 
 @mixin heading {
-    font-size: $heading;
+    @include fluid-font(40px, 55px, 468px, 1400px);
     font-family: 'Colus', 'Raleway', sans-serif;
 }
 
