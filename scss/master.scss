@@ -28,6 +28,7 @@ $base-font: 16px;
 * ((100vw - #{$lower-range}) / #{(
  ($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))
 }
+
 ));
 
 @media screen and (max-width: $lower-range) {
@@ -111,4 +112,3 @@ ul {
 .purple-border {
   border: 2px solid $purple-color;
 }
-

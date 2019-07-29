@@ -1,15 +1,20 @@
 .reviews {
     background: $bg-color url(../images/reviews/reviews-bg.png) center / contain no-repeat;
+
     @media screen and (max-width: 992px) {
         padding-bottom: 50px;
     }
 }
+
 .reviews-slider {
     &__slide {
+        cursor: pointer;
+
         &__name {
             font-size: 1.5rem;
         }
     }
+
     .slick-slide {
         -moz-transform: scale(0.9);
         -ms-transform: scale(0.9);
@@ -19,6 +24,7 @@
         transform: scale(0.9);
         transition: 0.2s;
         color: $violet-color;
+
         @media screen and (max-width: 1300px) {
             filter: brightness(100%);
             color: $text-color;
@@ -33,20 +39,16 @@
         filter: brightness(100%);
         transform: scale(1);
         color: white;
-    } 
+    }
+
     .slick-dots {
-        opacity: 0; 
+        opacity: 0;
         transition: .8s;
 
     }
+
     .slick-list:hover~.slick-dots {
-        transition:  .8s;
+        transition: .8s;
         opacity: 1;
     }
 }
-
-
-
-
-
-

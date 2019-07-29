@@ -11,29 +11,30 @@
 	<!-- Slick carousel -->
 	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-	<!-- Fullpage.js -->
-	<script src="js/fullpage/easings.min.js"></script>
-	<script src="js/fullpage/scrolloverflow.min.js"></script>
-	<script src="js/fullpage/fullpage.extensions.min.js"></script>
-	<script src="js/fullpage/fullpage.min.js"></script>
 	<!-- master.scss -->
 	<link rel="stylesheet" type="text/css" href="css/master.css" />
+
 	<link rel="stylesheet" type="text/css"
 		href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
 
-
-
 </head>
 
-<body>
+<body id="body-container">
 	<!-- Full screen nav [start] -->
-	<div class="nav">
-		<div class="nav__content">
-			<ul class="nav__list">
-				<li class="nav__list-item">Home</li>
-				<li class="nav__list-item">About</li>
-				<li class="nav__list-item">Projects</li>
-				<li class="nav__list-item">Contact</li>
+	<div class="container-fluid nav px-0">
+		<div class="row nav__content justify-content-center">
+			<ul class="col-5 nav__list text-left">
+				<li class="nav__list-item py-md-4">AAA</li>
+				<li class="nav__list-item py-md-4">Instant Play</li>
+				<li class="nav__list-item py-md-4">Download Casino</li>
+				<li class="nav__list-item py-md-4">Promos</li>
+				<li class="nav__list-item py-md-4">Concierge</li>
+			</ul>
+			<ul class="col-5 nav__list text-right">
+				<li class="nav__list-item py-md-4">VIP Program</li>
+				<li class="nav__list-item py-md-4">Banking</li>
+				<li class="nav__list-item py-md-4">Contact</li>
+				<li class="nav__list-item py-md-4">Terms & Conditions</li>
 			</ul>
 		</div>
 	</div>
@@ -45,7 +46,7 @@
 			<div class="col-5">
 				<ul class="d-flex align-items-center mb-0">
 					<!-- Hamburger [start] -->
-					<li class="menu-icon py-2">
+					<li id="hamburger" class="menu-icon py-2">
 						<span class="menu-icon__line menu-icon__line-left"></span>
 						<span class="menu-icon__line"></span>
 						<span class="menu-icon__line menu-icon__line-right"></span>
@@ -109,7 +110,7 @@
 
 	<!-- Games row filters [start] -->
 	<div class="container pt-4">
-		<div class="row justify-content-center py-4">
+		<div class="row justify-content-center pt-4 pt-lg-0 pb-3">
 			<div class="games-filter d-flex align-items-center">
 				<div class="games-filter__item px-3 violet">
 					<img src="images/games-filter/featured.png" alt="Featured games" />FEATURED
@@ -237,13 +238,13 @@
 	</div>
 	<!-- Games row images [end] -->
 
-	<!-- Testimonials [start] -->
+	<!-- Reviews [start] -->
 	<div class="container">
 		<div class="row py-5">
 			<div class="reviews col-lg-8 ">
 				<p class="subheading light-golden text-center py-3 py-lg-4">Reviews</p>
 
-		
+
 				<div class="reviews-slider row d-flex">
 					<div
 						class="reviews-slider__slide flex-column align-items-center justify-content-start text-center px-3 px-sm-5 ">
@@ -330,7 +331,7 @@
 
 		</div>
 	</div>
-	<!-- Testimonials [end] -->
+	<!-- Reviews [end] -->
 
 	<!-- Jackpot amount [start]  -->
 	<div class="container-fluid jackpot-counter d-flex justify-content-center align-items-center pb-4">
@@ -500,7 +501,8 @@
 							<p class="subheading light-golden">Over 1000 Games</p>
 							<p>Download & Instant play</p>
 						</div>
-						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico facer te, ne lup.</p>
+						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico
+							facer te, ne lup.</p>
 					</div>
 
 					<div class="feature col-6 my-2">
@@ -509,7 +511,8 @@
 							<p class="subheading light-golden">Regular Bonuses</p>
 							<p>Welcome & Deposit</p>
 						</div>
-						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico facer te, ne lup.</p>
+						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico
+							facer te, ne lup.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -519,7 +522,8 @@
 							<p class="subheading light-golden">Fast Payouts</p>
 							<p>Safe & Secure</p>
 						</div>
-						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico facer te, ne lup.</p>
+						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico
+							facer te, ne lup.</p>
 					</div>
 
 					<div class="feature col-6 my-2">
@@ -528,7 +532,8 @@
 							<p class="subheading light-golden">24/7 op support</p>
 							<p>Any day at any time</p>
 						</div>
-						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico facer te, ne lup.</p>
+						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico
+							facer te, ne lup.</p>
 					</div>
 				</div>
 			</div>
@@ -653,13 +658,13 @@
 
 	<!-- SCRIPTS -->
 	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<!-- Slick -->
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
+
 
 	<!-- Swiper -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
@@ -674,8 +679,8 @@
 
 	<!-- master script -->
 	<script src="js/master.js"></script>
-	<script src="js/nav.js"></script>
-	<script src="js/reviews.js"></script>
+	<script src="js/fullScreenNav.js"></script>
+
 </body>
 
 </html>

@@ -2,16 +2,15 @@ $background--color:#1e2023;
 $icon--color:#1e2023;
 $hamburger-color:#fff;
 $hamburger-color--active:$light-golden-color;
-$font--primary:'Fira Sans',
-sans-serif;
 $transition--length: .8;
+$size: 30px;
 
-//default state
+//Default state -------------
+
+// Hamburger icon 
 .menu-icon {
-    $size: 30px;
     height: $size;
     width: $size;
-    // position: fixed;
     z-index: 2;
     left: 50px;
     top: 30px;
@@ -35,11 +34,11 @@ $transition--length: .8;
     }
 }
 
+// Navigation ----------------
 .nav {
+    $transition--easing: cubic-bezier(.77, 0, .175, 1);
     $width: 100vw;
     $height: 100vh;
-    $font--size--calc: calc(2vw + 10px);
-    $transition--easing: cubic-bezier(.77, 0, .175, 1);
     position: fixed;
     z-index: 1;
 
@@ -49,7 +48,7 @@ $transition--length: .8;
         position: fixed;
         width: $width;
         height: $height;
-        background: rgba(#000, .2);
+        background: rgba(#000, .5);
         z-index: -1;
         transition: transform $transition--easing $transition--length + s;
         transform: translateX(0%) translateY(-100%);
@@ -69,45 +68,24 @@ $transition--length: .8;
         top: 50%;
         transform: translate(0%, -50%);
         width: 100%;
-        text-align: center;
-        font-size: $font--size--calc;
-        font-weight: 200;
+        font-size: 4.5rem;
+        line-height: 1;
+        font-weight: bold;
         cursor: pointer;
     }
 
     &__list-item {
         position: relative;
-        display: inline-block;
-        transition-delay: $transition--length + s;
-        opacity: 0;
-        transform: translate(0%, 100%);
+        // transform: translate(0%, 100%);
         transition: opacity .2s ease, transform .3s ease;
         margin-right: 25px;
-
-        &:before {
-            content: "";
-            position: absolute;
-            background: $hamburger-color--active;
-            width: 20px;
-            height: 1px;
-            top: 100%;
-            transform: translate(0%, 0%);
-            transition: all .3s ease;
-            z-index: -1;
-        }
-
-        &:hover {
-            &:before {
-                width: 100%;
-            }
-        }
     }
 }
 
-//active state
+//Active state ------------------------
 body.nav-active {
-    // $menu--items--count: 4;
 
+    // Hamburger icon 
     .menu-icon {
         &__line {
             background-color: $hamburger-color--active;
@@ -123,8 +101,9 @@ body.nav-active {
         }
     }
 
+    // Navigation --------------------
+
     .nav {
-        visibility: visible;
 
         &:before,
         &:after {
@@ -140,15 +119,45 @@ body.nav-active {
         }
 
         &__list-item {
-            opacity: 1;
-            transform: translateX(0%);
-            transition: opacity .3s ease, transform .3s ease, color .3s ease;
-            transition-delay: 0.7s;
-            // @for $i from 0 through $menu--items--count {
-            //     &:nth-child(#{$i}) {
-            //         transition-delay: $transition--length * $i / 8 + .5 + s;
-            //     }
-            // }
+            // transform: translateX(0%);
+            transition: opacity .3s ease, transform .3s ease;
+            // outline Fx
+            color: $main;
+            transition: all .3s ease;
+            text-shadow: -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff,
+                1px 1px 0 #fff;
+
+            // outline :hover Fx
+            &:hover {
+                color: #fff;
+                text-shadow: none;
+            }
         }
     }
 }
+
+// @-webkit-keyframes slide-down {
+//     0% {
+//         opacity: 0;
+//         -webkit-transform: translateY(-100%);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         -webkit-transform: translateY(0);
+//     }
+// }
+
+// @-moz-keyframes slide-down {
+//     0% {
+//         opacity: 0;
+//         -moz-transform: translateY(-100%);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         -moz-transform: translateY(0);
+//     }
+// }

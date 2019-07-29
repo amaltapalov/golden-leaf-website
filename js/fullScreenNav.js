@@ -25,3 +25,15 @@ const app = (() => {
 
 	init();
 })();
+
+// const body = $("#body-container");
+
+// jQuery("#hamburger").on("click", function() {
+// 	if (body.hasClass("nav-active")) {
+// 		$(".nav__content")
+// 			.delay(1000)
+// 			.fadeIn();
+// 	} else {
+// 		$(".nav__content").fadeOut();
+// 	}
+// });
