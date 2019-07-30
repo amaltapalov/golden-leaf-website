@@ -1,23 +1,21 @@
-- [x] Add label "NEW" for the game in Game Filter carousel (Find: gamesRow.scss => .new-game)
-- [x] Jackpot animation
-- [x] Add gradient to buttons
-- [x]  Set max-width of some container to 1920px
-- [x] Toll Free to delete
-- [x] Slider #1 from Olga
-- [x] Slider #2 from New game
-- [x] Add navigation to Reviews
+-   [x] Add label "NEW" for the game in Game Filter carousel (Find: gamesRow.scss => .new-game)
+-   [x] Jackpot animation
+-   [x] Add gradient to buttons
+-   [x] Set max-width of some container to 1920px
+-   [x] Toll Free to delete
+-   [x] Slider #1 from Olga
+-   [x] Slider #2 from New game
+-   [x] Add navigation to Reviews
 
-- [ ] Try to use fluid-font for HTML or body (to see how **rem** will be changing)
-- [ ] Add fluid-font
-- [ ] Feature section (Show text on Feature hover)
-- [ ] Full screen menu
-- [ ] Carousel with Bootstrap
-- [ ] Try to add Fullpage.js
-- [ ] Add fading Fx on text in Features
+-   [x] Try to use fluid-font for HTML or body (to see how **rem** will be changing)
+-   [x] Add fluid-font
+-   [x] Feature section (Show text on Feature hover)
+-   [x] Full screen menu
+-   [x] Add fading Fx on text in Features
 
-- Leo's and Paula's
+-   [ ] Try to add Fullpage.js
+-   [ ] Add data-src for lazy loading
 
-- [ ] Features hover text (with limit length)
-- [ ] Download client for IOS (link to Signup)
-
-
+-   Leo's and Paula's review:
+-   [x] Features hover text (with limit length)
+-   [ ] Download client for IOS (link to Signup)
