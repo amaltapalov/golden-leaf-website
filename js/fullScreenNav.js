@@ -12,8 +12,10 @@ function applyListener() {
 		setTimeout(function() {
 			$(".desktop-nav").fadeTo(200, 0);
 		}, 100);
+		$("#nav-content").show();
 	} else {
 		$(".nav__list-item").fadeTo(200, 0);
 		$(".desktop-nav").fadeTo(400, 1);
+		$("#nav-content").hide();
 	}
 }
