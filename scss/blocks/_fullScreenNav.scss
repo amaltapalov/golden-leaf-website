@@ -76,7 +76,7 @@ $size: 30px;
 
     &__list-item {
         position: relative;
-        // transform: translate(0%, 100%);
+        display: none;
         transition: opacity .2s ease, transform .3s ease;
         margin-right: 25px;
     }
@@ -119,9 +119,8 @@ body.nav-active {
         }
 
         &__list-item {
-            // transform: translateX(0%);
             transition: opacity .3s ease, transform .3s ease;
-            // outline Fx
+            // outline font Fx
             color: $main;
             transition: all .3s ease;
             text-shadow: -1px -1px 0 #fff,
@@ -129,7 +128,7 @@ body.nav-active {
                 -1px 1px 0 #fff,
                 1px 1px 0 #fff;
 
-            // outline :hover Fx
+            // outline font:hover Fx
             &:hover {
                 color: #fff;
                 text-shadow: none;

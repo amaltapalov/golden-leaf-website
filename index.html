@@ -19,12 +19,12 @@
 
 </head>
 
-<body id="body-container">
+<body>
 	<!-- Full screen nav [start] -->
 	<div class="container-fluid nav px-0">
-		<div class="row nav__content justify-content-center">
+		<div id="nav-content" class="row nav__content justify-content-center">
 			<ul class="col-5 nav__list text-left">
-				<li class="nav__list-item py-md-4">AAA</li>
+				<li class="nav__list-item py-md-4">Home</li>
 				<li class="nav__list-item py-md-4">Instant Play</li>
 				<li class="nav__list-item py-md-4">Download Casino</li>
 				<li class="nav__list-item py-md-4">Promos</li>
@@ -46,7 +46,7 @@
 			<div class="col-5">
 				<ul class="d-flex align-items-center mb-0">
 					<!-- Hamburger [start] -->
-					<li id="hamburger" class="menu-icon py-2">
+					<li id="hamburger" class="menu-icon py-2" onclick="applyListener()">
 						<span class="menu-icon__line menu-icon__line-left"></span>
 						<span class="menu-icon__line"></span>
 						<span class="menu-icon__line menu-icon__line-right"></span>
