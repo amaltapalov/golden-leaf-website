@@ -1,19 +1,19 @@
 // https://codepen.io/RSH87/pen/rmgYbo
 
 function applyListener() {
+	// Activate full screen nav
 	$("body").toggleClass("nav-active");
 
-	// if ($("body").hasClass("nav-active")) {
-	// 	$(".nav__list-item").fadeIn();
-	// } else {
-	// 	$(".nav__list-item").fadeOut();
-	// }
-
+	// Show navigation items
 	if ($("body").hasClass("nav-active")) {
 		setTimeout(function() {
 			$(".nav__list-item").fadeTo(400, 1);
 		}, 600);
+		setTimeout(function() {
+			$(".desktop-nav").fadeTo(200, 0);
+		}, 100);
 	} else {
-		$(".nav__list-item").fadeTo(100, 0);
+		$(".nav__list-item").fadeTo(200, 0);
+		$(".desktop-nav").fadeTo(400, 1);
 	}
 }

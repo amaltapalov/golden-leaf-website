@@ -71,14 +71,25 @@ $size: 30px;
         font-size: 4.5rem;
         line-height: 1;
         font-weight: bold;
-        cursor: pointer;
+
+        @media screen and (max-width: 1920px) {
+            font-size: 3.5vw;
+        }
+
+        @media screen and (max-width: 1200px) {
+            padding: 0 15px;
+            font-size: 4.5vw;
+        }
     }
 
     &__list-item {
         position: relative;
         display: none;
-        transition: opacity .2s ease, transform .3s ease;
-        margin-right: 25px;
+
+        a {
+            color: transparent;
+            cursor: pointer;
+        }
     }
 }
 
@@ -119,19 +130,21 @@ body.nav-active {
         }
 
         &__list-item {
-            transition: opacity .3s ease, transform .3s ease;
-            // outline font Fx
-            color: $main;
-            transition: all .3s ease;
-            text-shadow: -1px -1px 0 #fff,
-                1px -1px 0 #fff,
-                -1px 1px 0 #fff,
-                1px 1px 0 #fff;
 
-            // outline font:hover Fx
-            &:hover {
-                color: #fff;
-                text-shadow: none;
+            // outline font Fx
+            a {
+                color: $main;
+                transition: all .3s ease;
+                text-shadow: -1px -1px 0 #fff,
+                    1px -1px 0 #fff,
+                    -1px 1px 0 #fff,
+                    1px 1px 0 #fff;
+
+                // outline font:hover Fx
+                &:hover {
+                    color: #fff;
+                    text-shadow: none;
+                }
             }
         }
     }
