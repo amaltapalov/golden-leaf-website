@@ -8,7 +8,7 @@ function applyListener() {
 	if ($("body").hasClass("nav-active")) {
 		setTimeout(function() {
 			$(".nav__list-item").fadeTo(400, 1);
-		}, 600);
+		}, 800);
 		setTimeout(function() {
 			$(".desktop-nav").fadeTo(200, 0);
 		}, 100);

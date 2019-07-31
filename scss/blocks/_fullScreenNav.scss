@@ -4,6 +4,8 @@ $hamburger-color:#fff;
 $hamburger-color--active:$light-golden-color;
 $transition--length: .8;
 $size: 30px;
+$width: 100vw;
+$height: 100vh;
 
 //Default state -------------
 
@@ -37,8 +39,6 @@ $size: 30px;
 // Navigation ----------------
 .nav {
     $transition--easing: cubic-bezier(.77, 0, .175, 1);
-    $width: 100vw;
-    $height: 100vh;
     position: fixed;
     z-index: 1;
 
@@ -52,6 +52,9 @@ $size: 30px;
         z-index: -1;
         transition: transform $transition--easing $transition--length + s;
         transform: translateX(0%) translateY(-100%);
+        @media screen and (max-width: 768px) {
+            width: 70%;
+        }
     }
 
     &:after {
@@ -95,7 +98,6 @@ $size: 30px;
 
 //Active state ------------------------
 body.nav-active {
-
     // Hamburger icon 
     .menu-icon {
         &__line {
@@ -113,12 +115,14 @@ body.nav-active {
     }
 
     // Navigation --------------------
-
     .nav {
-
+        
         &:before,
         &:after {
             transform: translateX(0%) translateY(0%);
+            @media screen and (max-width: 768px) {
+                width: 70%;
+            }
         }
 
         &:after {
@@ -130,7 +134,6 @@ body.nav-active {
         }
 
         &__list-item {
-
             // outline font Fx
             a {
                 color: $main;
@@ -149,27 +152,3 @@ body.nav-active {
         }
     }
 }
-
-// @-webkit-keyframes slide-down {
-//     0% {
-//         opacity: 0;
-//         -webkit-transform: translateY(-100%);
-//     }
-
-//     100% {
-//         opacity: 1;
-//         -webkit-transform: translateY(0);
-//     }
-// }
-
-// @-moz-keyframes slide-down {
-//     0% {
-//         opacity: 0;
-//         -moz-transform: translateY(-100%);
-//     }
-
-//     100% {
-//         opacity: 1;
-//         -moz-transform: translateY(0);
-//     }
-// }
