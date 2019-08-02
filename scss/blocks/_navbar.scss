@@ -6,10 +6,9 @@ $border-color: #b1a8d7;
     z-index: 10;
     font-size: 0.8rem;
     background: $bg-color;
-    transition: 0.3s ease all;
     width: 100%;
     left: 0;
-
+    transition: all .45s;
 
     a {
         &:hover {
