@@ -1,5 +1,6 @@
 .show-nav aside,
-.show-nav main {
+.show-nav main,
+.show-nav .navbar {
     transform: translateX(250px);
 }
 
@@ -20,6 +21,7 @@ aside {
     transition: all .3s ease;
 }
 
+
 aside p {
     color: #cdcdcd;
     padding: 20px;
@@ -39,7 +41,6 @@ aside nav .navigation__list a {
 
 main {
     width: 100%;
-    position: absolute;
     left: 0;
     transition: 0.3s ease all;
 }

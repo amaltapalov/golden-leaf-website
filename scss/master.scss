@@ -69,6 +69,7 @@ $base-font: 16px;
 }
 
 body {
+  position: relative;
   background: $bg-color;
   color: $text-color;
   font-family: "Open Sans", sans-serif;

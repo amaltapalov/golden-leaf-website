@@ -39,6 +39,7 @@ function closeNav() {
 				$("body").addClass("show-nav");
 			}
 		});
+
 		$("#closebtn").click(function() {
 			$("body").removeClass("show-nav");
 		});
