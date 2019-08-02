@@ -1,18 +1,18 @@
 .show-nav aside,
 .show-nav main {
-    transform: translateX(500px);
+    transform: translateX(250px);
 }
 
-0 // .show-nav .position {
+// .show-nav .position {
 //     position: fixed;
 // }
 
 aside {
-    width: 500px;
+    width: 250px;
     height: 100%;
     position: fixed;
     top: 0;
-    left: -500px;
+    left: -250px;
     background: #ff0000;
     font-size: .8em;
     font-family: sans-serif;
