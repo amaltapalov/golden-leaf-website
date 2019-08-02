@@ -48,6 +48,7 @@ $base-font: 16px;
 @import "./elements/grid";
 @import "./elements/buttons";
 @import "./elements/typography";
+@import "./elements/hamMenu";
 
 // blocks
 @import "./blocks/navbar";
@@ -71,6 +72,7 @@ body {
   background: $bg-color;
   color: $text-color;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {

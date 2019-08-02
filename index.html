@@ -20,641 +20,675 @@
 </head>
 
 <body>
-	<!-- Full screen nav [start] -->
-	<div class="container-fluid nav px-0">
-		<div id="nav-content" class="row nav__content justify-content-center mx-0">
-			<ul class="col col-xl-5 nav__list text-left">
+	<aside class="navigation">
+		<nav>
+			<div class="navigation__list">
+				<a href="javascript:void(0)" id="closebtn">&times;</a>
+				<a href="#nowhere">Home</a>
+				<a href="#nowhere">Instant Play</a>
+				<a href="#nowhere">Download Casino</a>
+				<a href="#nowhere">Promos</a>
+				<a href="#nowhere">Concierge</a>
+				<a href="#nowhere">VIP Program</a>
+				<a href="#nowhere">Banking</a>
+				<a href="#nowhere">Contact</a>
+				<a href="#nowhere">Terms & Conditions</a>
+			</div>
+		</nav>
+	</aside>
+
+	<main id="main">
+		<!-- Full screen nav [start] -->
+		<!-- <div class="container-fluid nav px-0">
+		<div id="nav-content" class="row d-block d-md-flex nav__content justify-content-center mx-0">
+			<ul class="col col-xl-5 nav__list text-left mb-0">
 				<li class="nav__list-item py-md-4"><a href="#">Home</a></li>
 				<li class="nav__list-item py-md-4"><a href="#">Instant Play</a></li>
 				<li class="nav__list-item py-md-4"><a href="#">Download Casino</a></li>
 				<li class="nav__list-item py-md-4"><a href="#">Promos</a></li>
 				<li class="nav__list-item py-md-4"><a href="#">Concierge</a></li>
 			</ul>
-			<ul class="col col-xl-5 nav__list text-right">
+			<ul class="col col-xl-5 nav__list text-left text-md-right mb-0">
 				<li class="nav__list-item py-md-4"><a href="#">VIP Program</a></li>
 				<li class="nav__list-item py-md-4"><a href="#">Banking</a></li>
 				<li class="nav__list-item py-md-4"><a href="#">Contact</a></li>
 				<li class="nav__list-item py-md-4"><a href="#">Terms & Conditions</a></li>
 			</ul>
 		</div>
-	</div>
-	<!--  Full screen nav [end] -->
+	</div> -->
+		<!--  Full screen nav [end] -->
 
-	<!-- Navbar [start]-->
-	<div class="container-fluid navbar">
-		<div class="row d-flex justify-content-between align-items-center py-3">
-			<div class="col-4 col-xl-5">
-				<ul class="d-flex align-items-center mb-0">
-					<!-- Hamburger [start] -->
-					<li id="hamburger" class="menu-icon py-2" onclick="applyListener()">
+
+		<!-- Navbar [start]-->
+		<div class="container-fluid navbar">
+			<div class="row d-flex justify-content-between align-items-center py-3">
+				<div class="col-4 col-xl-5">
+					<ul class="d-flex align-items-center mb-0">
+						<!-- Hamburger [start] -->
+						<!-- <li id="hamburger" class="menu-icon py-2" onclick="applyListener()">
 						<span class="menu-icon__line menu-icon__line-left"></span>
 						<span class="menu-icon__line"></span>
 						<span class="menu-icon__line menu-icon__line-right"></span>
-					</li>
-					<!-- Hamburger [end]  -->
-					<li class="desktop-nav d-none d-xl-block"><a href="#">INSTANT PLAY</a></li>
-					<li class="desktop-nav d-none d-xl-block"><a href="#">DOWNLOAD CASINO</a></li>
-					<li class="desktop-nav d-none d-xl-block"><a href="#">CONCIERGE</a></li>
-				</ul>
-			</div>
+					</li> -->
+						<!-- Hamburger [end]  -->
+						<!-- Hamburger off-canvas [start] -->
+						<!-- <li style="font-size:30px;cursor:pointer">&#9776;</li> -->
+						<!-- Hamburger off-canvas [end] -->
 
-			<div class="col-3 col-md-4 col-xl-2 text-center">
-				<img src="images/logo.png" alt="Royal Ace" />
-			</div>
+						<!-- Hamburger of Rascia [start]-->
+						<li id="nav-toggle" class="position" style="font-size:30px;cursor:pointer">
+							&#9776;
+						</li>
+						<!-- Hamburger of Rascia [end]-->
 
-			<div class="col-4 col-xl-5">
-				<ul class="d-flex align-items-center justify-content-end mb-0">
-					<li class="desktop-nav d-none d-xl-block"><a href="#">PROMOTIONS</a></li>
-					<li class="bordered px-3 mx-2 mx-lg-3"><a href="#">LOGIN</a></li>
-					<li class="bordered px-3 mx-2 mx-lg-3"><a href="#">SIGN UP</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- Navbar [end]-->
-
-	<!-- Slider [start] -->
-	<div class="container-fluid px-0">
-		<div class="main-slider slider-wrapper">
-			<!-- Slide 1 [start] -->
-			<div class="slide-1 row d-flex justify-content-center align-items-center mx-0">
-				<div class="slide-cta text-center mx-2 pb-4 pb-xl-0">
-					<p class="heading py-2">SignUp</p>
-					<p class="subheading pb-2 violet"> Explore out latest release </p>
-					<div class="button button--solid button--solid--border subheading">
-						PLAY NOW</div>
+						<li class="desktop-nav d-none d-xl-block"><a href="#">INSTANT PLAY</a></li>
+						<li class="desktop-nav d-none d-xl-block"><a href="#">DOWNLOAD CASINO</a></li>
+						<li class="desktop-nav d-none d-xl-block"><a href="#">CONCIERGE</a></li>
+					</ul>
 				</div>
 
-				<div class="slide-image mx-2">
-					<img class="img-fluid" src="images/slider/slide-1.png" alt="New game release" />
+				<div class="col-3 col-md-4 col-xl-2 text-center">
+					<img src="images/logo.png" alt="Royal Ace" />
 				</div>
 
-			</div>
-
-			<!-- Slide 2 [start] -->
-			<div class="slide-2 row d-flex justify-content-center align-items-center mx-0">
-				<div class="slide-cta text-center mx-2 pb-4 pb-xl-0">
-					<p class="heading py-2">New Game</p>
-					<p class="subheading pb-2 violet"> Explore out latest release </p>
-					<div class="button button--solid button--solid--border subheading">PLAY NOW</div>
-				</div>
-
-				<div class="slide-image mx-2 ">
-					<img class="img-fluid" src="images/slider/slide-2.png" alt="New game release" />
-				</div>
-
-			</div>
-		</div>
-	</div>
-	<!-- Slider [end] -->
-
-	<!-- Games row filters [start] -->
-	<div class="container pt-4">
-		<div class="row justify-content-center pt-4 pt-lg-0 pb-3">
-			<div class="games-filter d-flex align-items-center">
-				<div class="games-filter__item px-3 violet">
-					<img src="images/games-filter/featured.png" alt="Featured games" />FEATURED
-				</div>
-				<div class="games-filter__item px-sm-3 violet">
-					<img src="images/games-filter/new-games.png" alt="New games" />NEW GAMES
-				</div>
-				<div class="games-filter__item px-3 violet">
-					<img src="images/games-filter/all-games.png" alt="All games" />ALL GAMES
+				<div class="col-4 col-xl-5">
+					<ul class="d-flex align-items-center justify-content-end mb-0">
+						<li class="desktop-nav d-none d-xl-block"><a href="#">PROMOTIONS</a></li>
+						<li class="bordered px-3 mx-2 mx-lg-3"><a href="#">LOGIN</a></li>
+						<li class="bordered px-3 mx-2 mx-lg-3"><a href="#">SIGN UP</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Games row filters [end] -->
+		<!-- Navbar [end]-->
 
-	<!-- Games row images [start] -->
-	<div class="container-fluid">
-		<div class="row d-flex px-3 games-filter-container">
-			<div class="game-block new-game">
-				<img class="img-fluid game-block__image purple-border "
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/stardust.jpg"
-					alt="Startdust" />
-				<!-- Overlay - start -->
-				<div class="overlay purple-border flex-column justify-content-center align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
+		<!-- Slider [start] -->
+		<div class="container-fluid px-0">
+			<div class="main-slider slider-wrapper">
+				<!-- Slide 1 [start] -->
+				<div class="slide-1 row d-flex justify-content-center align-items-center mx-0">
+					<div class="slide-cta text-center mx-2 pb-4 pb-xl-0">
+						<p class="heading py-2">SignUp</p>
+						<p class="subheading pb-2 violet"> Explore out latest release </p>
+						<div class="button button--solid button--solid--border subheading">
+							PLAY NOW</div>
 					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
+
+					<div class="slide-image mx-2">
+						<img class="img-fluid" src="images/slider/slide-1.png" alt="New game release" />
 					</div>
+
 				</div>
-				<!-- Overlay - end -->
-			</div>
-			<div class="game-block">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/empress-wu.jpg"
-					alt="Empress Wu" />
-				<!-- Overlay - start -->
-				<div class="overlay purple-border flex-column justify-content-center align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
+
+				<!-- Slide 2 [start] -->
+				<div class="slide-2 row d-flex justify-content-center align-items-center mx-0">
+					<div class="slide-cta text-center mx-2 pb-4 pb-xl-0">
+						<p class="heading py-2">New Game</p>
+						<p class="subheading pb-2 violet"> Explore out latest release </p>
+						<div class="button button--solid button--solid--border subheading">PLAY NOW</div>
 					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
+
+					<div class="slide-image mx-2 ">
+						<img class="img-fluid" src="images/slider/slide-2.png" alt="New game release" />
 					</div>
+
 				</div>
-				<!-- Overlay - end -->
-			</div>
-			<div class="game-block">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/secret-symbol.jpg"
-					alt="Secret Symbol" />
-				<!-- Overlay - start -->
-				<div class="overlay purple-border flex-column justify-content-center align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
-					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
-				</div>
-				<!-- Overlay - end -->
-			</div>
-			<div class="game-block">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/plentiful-treasure.jpg"
-					alt="Plentiful Treasure" />
-				<!-- Overlay - start -->
-				<div class="overlay purple-border flex-column justify-content-center align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
-					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
-				</div>
-				<!-- Overlay - end -->
-			</div>
-			<div class="game-block">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/scuba-fishing.jpg"
-					alt="Scuba Fishing" />
-				<!-- Overlay - start -->
-				<div class="overlay purple-border flex-column justify-content-center align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
-					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
-				</div>
-				<!-- Overlay - end -->
-			</div>
-			<div class="game-block">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/lucha-libre-2.jpg"
-					alt="Lucha Libre 2" />
-				<!-- Overlay - start -->
-				<div class="overlay purple-border flex-column justify-content-center align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
-					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
-				</div>
-				<!-- Overlay - end -->
-			</div>
-			<div class="game-block">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/i-zombie.jpg"
-					alt="I Zombie" />
-				<!-- Overlay - start -->
-				<div class="overlay purple-border flex-column justify-content-center align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
-					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
-				</div>
-				<!-- Overlay - end -->
 			</div>
 		</div>
-	</div>
-	<!-- Games row images [end] -->
+		<!-- Slider [end] -->
 
-	<!-- Reviews [start] -->
-	<div class="container">
-		<div class="row py-5">
-			<div class="reviews col-lg-8 ">
-				<p class="subheading light-golden text-center py-3 py-lg-4">Reviews</p>
-
-
-				<div class="reviews-slider row d-flex">
-					<div
-						class="reviews-slider__slide flex-column align-items-center justify-content-start text-center px-3 px-sm-5 ">
-						<img src="images/reviews/2.png" alt="Customer 2">
-						<p class="reviews-slider__slide__name py-4 bold">Jeffery I.</p>
-						<p>Sit te omnium qualisque. Qui dico facer te, ne luptatum platonem est, mea interesset
-							complectitur cu.</p>
+		<!-- Games row filters [start] -->
+		<div class="container pt-4">
+			<div class="row justify-content-center pt-4 pt-lg-0 pb-3">
+				<div class="games-filter d-flex align-items-center">
+					<div class="games-filter__item px-3 violet">
+						<img src="images/games-filter/featured.png" alt="Featured games" />FEATURED
 					</div>
-					<div
-						class="reviews-slider__slide flex-column align-items-center justify-content-start text-center px-3 px-sm-5 ">
-						<img src="images/reviews/3.png" alt="Customer 3">
-						<p class="reviews-slider__slide__name py-4 bold">Jessica P.</p>
-						<p>Sit te omnium qualisque. Qui dico facer te, ne luptatum platonem est, mea interesset
-							complectitur cu.</p>
+					<div class="games-filter__item px-sm-3 violet">
+						<img src="images/games-filter/new-games.png" alt="New games" />NEW GAMES
 					</div>
-					<div
-						class="reviews-slider__slide flex-column align-items-center justify-content-start text-center px-3 px-sm-5 ">
-						<img src="images/reviews/4.png" alt="Customer 4">
-						<p class="reviews-slider__slide__name py-4 bold">Alfred T.</p>
-						<p>Sit te omnium qualisque. Qui dico facer te, ne luptatum platonem est, mea interesset
-							complectitur cu.</p>
+					<div class="games-filter__item px-3 violet">
+						<img src="images/games-filter/all-games.png" alt="All games" />ALL GAMES
 					</div>
-					<div
-						class="reviews-slider__slide flex-column align-items-center justify-content-start text-center px-3 px-sm-5">
-						<img src="images/reviews/1.png" alt="Customer 1">
-						<p class="reviews-slider__slide__name py-4 bold">Iren A.</p>
-						<p>Sit te omnium qualisque. Qui dico facer te, ne luptatum platonem est, mea interesset
-							complectitur cu.</p>
-					</div>
-
 				</div>
-
 			</div>
-			<div class="col-lg-4 top-winners justify-content-center">
-				<p class="subheading text-center light-golden pt-3 py-lg-4">Top winners</p>
-				<div class="top-winners__row justify-content-start justify-content-lg-center">
-					<div class="top-winners__winner d-inline-flex justify-content-start align-items-center py-4">
-						<img src="images/top-winners/number-1.png" alt="Top Winner game">
-						<img class="px-3" src="images/top-winners/game-1.png" alt="Top Winner game">
-						<div>
-							<p><span class="bold">Antony B.</span> won</p>
-							<p class="top-winners__winner__amount bold">$134,132</p>
-							<p>in <span class="bold violet">Empress Wu</span></p>
+		</div>
+		<!-- Games row filters [end] -->
+
+		<!-- Games row images [start] -->
+		<div class="container-fluid">
+			<div class="row d-flex px-3 games-filter-container">
+				<div class="game-block new-game">
+					<img class="img-fluid game-block__image purple-border "
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/stardust.jpg"
+						alt="Startdust" />
+					<!-- Overlay - start -->
+					<div class="overlay purple-border flex-column justify-content-center align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
 						</div>
 					</div>
-					<div class="top-winners__winner d-inline-flex justify-content-start align-items-center py-4">
-						<img src="images/top-winners/number-2.png" alt="Top Winner game">
-						<img class="px-3" src="images/top-winners/game-2.png" alt="Top Winner game">
-						<div>
-							<p><span class="bold">Antony B.</span> won</p>
-							<p class="top-winners__winner__amount bold">$134,132</p>
-							<p>in <span class="bold violet">Golden Panda</span></p>
+					<!-- Overlay - end -->
+				</div>
+				<div class="game-block">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/empress-wu.jpg"
+						alt="Empress Wu" />
+					<!-- Overlay - start -->
+					<div class="overlay purple-border flex-column justify-content-center align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
 						</div>
 					</div>
-					<div class="top-winners__winner d-inline-flex justify-content-start align-items-center py-4">
-						<img src="images/top-winners/number-3.png" alt="Top Winner game">
-						<img class="px-3" src="images/top-winners/game-3.png" alt="Top Winner game">
-						<div>
-							<p><span class="bold">Antony B.</span> won</p>
-							<p class="top-winners__winner__amount bold">$134,132</p>
-							<p>in <span class="bold violet">Bubble Bubble 2</span></p>
+					<!-- Overlay - end -->
+				</div>
+				<div class="game-block">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/secret-symbol.jpg"
+						alt="Secret Symbol" />
+					<!-- Overlay - start -->
+					<div class="overlay purple-border flex-column justify-content-center align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
 						</div>
 					</div>
-					<div class="top-winners__winner d-inline-flex justify-content-start align-items-center py-4">
-						<img src="images/top-winners/number-4.png" alt="Top Winner game">
-						<img class="px-3" src="images/top-winners/game-4.png" alt="Top Winner game">
-						<div>
-							<p><span class="bold">Antony B.</span> won</p>
-							<p class="top-winners__winner__amount bold">$134,132</p>
-							<p>in <span class="bold violet">Lucha Libre 2</span></p>
+					<!-- Overlay - end -->
+				</div>
+				<div class="game-block">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/plentiful-treasure.jpg"
+						alt="Plentiful Treasure" />
+					<!-- Overlay - start -->
+					<div class="overlay purple-border flex-column justify-content-center align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
 						</div>
 					</div>
-					<div class="top-winners__winner d-inline-flex justify-content-start align-items-center py-4">
-						<img src="images/top-winners/number-5.png" alt="Top Winner game">
-						<img class="px-3" src="images/top-winners/game-5.png" alt="Top Winner game">
-						<div>
-							<p><span class="bold">Antony B.</span> won</p>
-							<p class="top-winners__winner__amount bold">$134,132</p>
-							<p>in <span class="bold violet">Asgard</span></p>
+					<!-- Overlay - end -->
+				</div>
+				<div class="game-block">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/scuba-fishing.jpg"
+						alt="Scuba Fishing" />
+					<!-- Overlay - start -->
+					<div class="overlay purple-border flex-column justify-content-center align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
 						</div>
 					</div>
+					<!-- Overlay - end -->
 				</div>
-			</div>
-
-		</div>
-	</div>
-	<!-- Reviews [end] -->
-
-	<!-- Jackpot amount [start]  -->
-	<div class="container-fluid jackpot-counter d-flex justify-content-center align-items-center pb-4">
-		<div class="row text-center py-5">
-			<div class="col-12 subheading py-2 py-md-3 jackpot-counter--text">TOTAL JACKPOT</div>
-			<div id="total_jackpot" data-from="56723.69" data-to="70723.69"
-				class="col-12 heading jackpot-counter--amount py-md-3 light-golden "></div>
-			<div class="button button--purple button--purple--border subheading mt-3 mx-auto">
-				PLAY NOW</div>
-		</div>
-	</div>
-	<!-- Jackpot amount [end] -->
-
-	<!-- Games jackpot [start] -->
-	<div class="container-fluid jackpot-winners-container">
-		<p class="text-center subheading subheading--thin violet">TOP JACKPOT WINNERS</p>
-		<div class="row d-flex px-3 games-filter-container">
-			<div class="game-block game-block__winners">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/stardust.jpg"
-					alt="Startdust" />
-				<!-- Overlay - start -->
-				<div class="overlay overlay--withBar purple-border flex-column align-items-center">
-					<div class="button button--small button--solid ">
-						<a href="#">REAL MONEY</a>
+				<div class="game-block">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/lucha-libre-2.jpg"
+						alt="Lucha Libre 2" />
+					<!-- Overlay - start -->
+					<div class="overlay purple-border flex-column justify-content-center align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
+						</div>
 					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
+					<!-- Overlay - end -->
 				</div>
-				<!-- Overlay - end -->
-				<div class="jackpot-winners text-center py-1">
-					<p class="jackpot-winners__name">Jason R. won</p>
-					<p class="jackpot-winners__amount">$52,3112</p>
-				</div>
-			</div>
-
-			<div class="game-block game-block__winners">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/empress-wu.jpg"
-					alt="Empress Wu" />
-				<!-- Overlay - start -->
-				<div class="overlay overlay--withBar purple-border flex-column align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
+				<div class="game-block">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/i-zombie.jpg"
+						alt="I Zombie" />
+					<!-- Overlay - start -->
+					<div class="overlay purple-border flex-column justify-content-center align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
+						</div>
 					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
-				</div>
-				<!-- Overlay - end -->
-				<div class="jackpot-winners text-center py-1">
-					<p class="jackpot-winners__name">Jason R. won</p>
-					<p class="jackpot-winners__amount">$52,3112</p>
-				</div>
-			</div>
-			<div class="game-block game-block__winners">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/secret-symbol.jpg"
-					alt="Secret Symbol" />
-				<!-- Overlay - start -->
-				<div class="overlay overlay--withBar purple-border flex-column align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
-					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
-				</div>
-				<!-- Overlay - end -->
-				<div class="jackpot-winners text-center py-1">
-					<p class="jackpot-winners__name">Jason R. won</p>
-					<p class="jackpot-winners__amount">$52,3112</p>
-				</div>
-			</div>
-			<div class="game-block game-block__winners">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/plentiful-treasure.jpg"
-					alt="Plentiful Treasure" />
-				<!-- Overlay - start -->
-				<div class="overlay overlay--withBar purple-border flex-column align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
-					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
-				</div>
-				<!-- Overlay - end -->
-				<div class="jackpot-winners text-center py-1">
-					<p class="jackpot-winners__name">Jason R. won</p>
-					<p class="jackpot-winners__amount">$52,3112</p>
-				</div>
-			</div>
-			<div class="game-block game-block__winners">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/scuba-fishing.jpg"
-					alt="Scuba Fishing" />
-				<!-- Overlay - start -->
-				<div class="overlay overlay--withBar purple-border flex-column align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
-					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
-				</div>
-				<!-- Overlay - end -->
-				<div class="jackpot-winners text-center py-1">
-					<p class="jackpot-winners__name">Jason R. won</p>
-					<p class="jackpot-winners__amount">$52,3112</p>
-				</div>
-			</div>
-			<div class="game-block game-block__winners">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/lucha-libre-2.jpg"
-					alt="Lucha Libre 2" />
-				<!-- Overlay - start -->
-				<div class="overlay overlay--withBar purple-border flex-column align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
-					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
-				</div>
-				<!-- Overlay - end -->
-				<div class="jackpot-winners text-center py-1">
-					<p class="jackpot-winners__name">Jason R. won</p>
-					<p class="jackpot-winners__amount">$52,3112</p>
-				</div>
-			</div>
-			<div class="game-block game-block__winners">
-				<img class="img-fluid game-block__image purple-border"
-					src="https://www.royalacecasino.com/modules/webplay/images/casinogames/i-zombie.jpg"
-					alt="I Zombie" />
-				<!-- Overlay - start -->
-				<div class="overlay overlay--withBar purple-border flex-column align-items-center">
-					<div class="button button--small button--solid">
-						<a href="#">REAL MONEY</a>
-					</div>
-					<div class="button button--small button--ghost">
-						<a href="#">PRACTICE</a>
-					</div>
-				</div>
-				<!-- Overlay - end -->
-				<div class="jackpot-winners text-center py-1">
-					<p class="jackpot-winners__name">Jason R. won</p>
-					<p class="jackpot-winners__amount">$52,3112</p>
+					<!-- Overlay - end -->
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Games jackpot [end] -->
+		<!-- Games row images [end] -->
 
-	<!-- Features [start]-->
-	<div class="container features">
-		<div class="row d-flex justify-content-center align-items-start p-lg-5">
-			<div class="col-0 col-xl-4 d-none d-xl-block order-2 order-lg-1 py-4 text-center">
-				<img class="img-fluid features__mainImage pt-5" src="images/features/features.png" alt="Features">
-			</div>
-			<div class="col-12 col-xl-8 order-1 order-lg-2 py-4">
-				<div class="row">
-					<div class="feature col-6 my-2">
-						<div class="feature__block text-center px-md-4 py-2">
-							<img src="images/features/feature-1.png" class="pb-3" alt="Over 1000 games">
-							<p class="subheading light-golden">Over 1000 Games</p>
-							<p>Download & Instant play</p>
+		<!-- Reviews [start] -->
+		<div class="container">
+			<div class="row py-5">
+				<div class="reviews col-lg-8 ">
+					<p class="subheading light-golden text-center py-3 py-lg-4">Reviews</p>
+
+
+					<div class="reviews-slider row d-flex">
+						<div
+							class="reviews-slider__slide flex-column align-items-center justify-content-start text-center px-3 px-sm-5 ">
+							<img src="images/reviews/2.png" alt="Customer 2">
+							<p class="reviews-slider__slide__name py-4 bold">Jeffery I.</p>
+							<p>Sit te omnium qualisque. Qui dico facer te, ne luptatum platonem est, mea interesset
+								complectitur cu.</p>
 						</div>
-						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico
-							facer te, ne lup.</p>
+						<div
+							class="reviews-slider__slide flex-column align-items-center justify-content-start text-center px-3 px-sm-5 ">
+							<img src="images/reviews/3.png" alt="Customer 3">
+							<p class="reviews-slider__slide__name py-4 bold">Jessica P.</p>
+							<p>Sit te omnium qualisque. Qui dico facer te, ne luptatum platonem est, mea interesset
+								complectitur cu.</p>
+						</div>
+						<div
+							class="reviews-slider__slide flex-column align-items-center justify-content-start text-center px-3 px-sm-5 ">
+							<img src="images/reviews/4.png" alt="Customer 4">
+							<p class="reviews-slider__slide__name py-4 bold">Alfred T.</p>
+							<p>Sit te omnium qualisque. Qui dico facer te, ne luptatum platonem est, mea interesset
+								complectitur cu.</p>
+						</div>
+						<div
+							class="reviews-slider__slide flex-column align-items-center justify-content-start text-center px-3 px-sm-5">
+							<img src="images/reviews/1.png" alt="Customer 1">
+							<p class="reviews-slider__slide__name py-4 bold">Iren A.</p>
+							<p>Sit te omnium qualisque. Qui dico facer te, ne luptatum platonem est, mea interesset
+								complectitur cu.</p>
+						</div>
+
 					</div>
 
-					<div class="feature col-6 my-2">
-						<div class="feature__block text-center px-md-4 py-2">
-							<img src="images/features/feature-2.png" class="pb-3" alt="Over 1000 games">
-							<p class="subheading light-golden">Regular Bonuses</p>
-							<p>Welcome & Deposit</p>
+				</div>
+				<div class="col-lg-4 top-winners justify-content-center">
+					<p class="subheading text-center light-golden pt-3 py-lg-4">Top winners</p>
+					<div class="top-winners__row justify-content-start justify-content-lg-center">
+						<div class="top-winners__winner d-inline-flex justify-content-start align-items-center py-4">
+							<img src="images/top-winners/number-1.png" alt="Top Winner game">
+							<img class="px-3" src="images/top-winners/game-1.png" alt="Top Winner game">
+							<div>
+								<p><span class="bold">Antony B.</span> won</p>
+								<p class="top-winners__winner__amount bold">$134,132</p>
+								<p>in <span class="bold violet">Empress Wu</span></p>
+							</div>
 						</div>
-						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico
-							facer te, ne lup.</p>
+						<div class="top-winners__winner d-inline-flex justify-content-start align-items-center py-4">
+							<img src="images/top-winners/number-2.png" alt="Top Winner game">
+							<img class="px-3" src="images/top-winners/game-2.png" alt="Top Winner game">
+							<div>
+								<p><span class="bold">Antony B.</span> won</p>
+								<p class="top-winners__winner__amount bold">$134,132</p>
+								<p>in <span class="bold violet">Golden Panda</span></p>
+							</div>
+						</div>
+						<div class="top-winners__winner d-inline-flex justify-content-start align-items-center py-4">
+							<img src="images/top-winners/number-3.png" alt="Top Winner game">
+							<img class="px-3" src="images/top-winners/game-3.png" alt="Top Winner game">
+							<div>
+								<p><span class="bold">Antony B.</span> won</p>
+								<p class="top-winners__winner__amount bold">$134,132</p>
+								<p>in <span class="bold violet">Bubble Bubble 2</span></p>
+							</div>
+						</div>
+						<div class="top-winners__winner d-inline-flex justify-content-start align-items-center py-4">
+							<img src="images/top-winners/number-4.png" alt="Top Winner game">
+							<img class="px-3" src="images/top-winners/game-4.png" alt="Top Winner game">
+							<div>
+								<p><span class="bold">Antony B.</span> won</p>
+								<p class="top-winners__winner__amount bold">$134,132</p>
+								<p>in <span class="bold violet">Lucha Libre 2</span></p>
+							</div>
+						</div>
+						<div class="top-winners__winner d-inline-flex justify-content-start align-items-center py-4">
+							<img src="images/top-winners/number-5.png" alt="Top Winner game">
+							<img class="px-3" src="images/top-winners/game-5.png" alt="Top Winner game">
+							<div>
+								<p><span class="bold">Antony B.</span> won</p>
+								<p class="top-winners__winner__amount bold">$134,132</p>
+								<p>in <span class="bold violet">Asgard</span></p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="feature col-6 my-2">
-						<div class="feature__block text-center px-md-4 py-2">
-							<img src="images/features/feature-3.png" class="pb-3" alt="Over 1000 games">
-							<p class="subheading light-golden">Fast Payouts</p>
-							<p>Safe & Secure</p>
-						</div>
-						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico
-							facer te, ne lup.</p>
-					</div>
 
-					<div class="feature col-6 my-2">
-						<div class="feature__block text-center px-md-4 py-2">
-							<img src="images/features/feature-4.png" class="pb-3" alt="Over 1000 games">
-							<p class="subheading light-golden">24/7 op support</p>
-							<p>Any day at any time</p>
+			</div>
+		</div>
+		<!-- Reviews [end] -->
+
+		<!-- Jackpot amount [start]  -->
+		<div class="container-fluid jackpot-counter d-flex justify-content-center align-items-center pb-4">
+			<div class="row text-center py-5">
+				<div class="col-12 subheading py-2 py-md-3 jackpot-counter--text">TOTAL JACKPOT</div>
+				<div id="total_jackpot" data-from="56723.69" data-to="70723.69"
+					class="col-12 heading jackpot-counter--amount py-md-3 light-golden "></div>
+				<div class="button button--purple button--purple--border subheading mt-3 mx-auto">
+					PLAY NOW</div>
+			</div>
+		</div>
+		<!-- Jackpot amount [end] -->
+
+		<!-- Games jackpot [start] -->
+		<div class="container-fluid jackpot-winners-container">
+			<p class="text-center subheading subheading--thin violet">TOP JACKPOT WINNERS</p>
+			<div class="row d-flex px-3 games-filter-container">
+				<div class="game-block game-block__winners">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/stardust.jpg"
+						alt="Startdust" />
+					<!-- Overlay - start -->
+					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
+						<div class="button button--small button--solid ">
+							<a href="#">REAL MONEY</a>
 						</div>
-						<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui dico
-							facer te, ne lup.</p>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
+						</div>
+					</div>
+					<!-- Overlay - end -->
+					<div class="jackpot-winners text-center py-1">
+						<p class="jackpot-winners__name">Jason R. won</p>
+						<p class="jackpot-winners__amount">$52,3112</p>
+					</div>
+				</div>
+
+				<div class="game-block game-block__winners">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/empress-wu.jpg"
+						alt="Empress Wu" />
+					<!-- Overlay - start -->
+					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
+						</div>
+					</div>
+					<!-- Overlay - end -->
+					<div class="jackpot-winners text-center py-1">
+						<p class="jackpot-winners__name">Jason R. won</p>
+						<p class="jackpot-winners__amount">$52,3112</p>
+					</div>
+				</div>
+				<div class="game-block game-block__winners">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/secret-symbol.jpg"
+						alt="Secret Symbol" />
+					<!-- Overlay - start -->
+					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
+						</div>
+					</div>
+					<!-- Overlay - end -->
+					<div class="jackpot-winners text-center py-1">
+						<p class="jackpot-winners__name">Jason R. won</p>
+						<p class="jackpot-winners__amount">$52,3112</p>
+					</div>
+				</div>
+				<div class="game-block game-block__winners">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/plentiful-treasure.jpg"
+						alt="Plentiful Treasure" />
+					<!-- Overlay - start -->
+					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
+						</div>
+					</div>
+					<!-- Overlay - end -->
+					<div class="jackpot-winners text-center py-1">
+						<p class="jackpot-winners__name">Jason R. won</p>
+						<p class="jackpot-winners__amount">$52,3112</p>
+					</div>
+				</div>
+				<div class="game-block game-block__winners">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/scuba-fishing.jpg"
+						alt="Scuba Fishing" />
+					<!-- Overlay - start -->
+					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
+						</div>
+					</div>
+					<!-- Overlay - end -->
+					<div class="jackpot-winners text-center py-1">
+						<p class="jackpot-winners__name">Jason R. won</p>
+						<p class="jackpot-winners__amount">$52,3112</p>
+					</div>
+				</div>
+				<div class="game-block game-block__winners">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/lucha-libre-2.jpg"
+						alt="Lucha Libre 2" />
+					<!-- Overlay - start -->
+					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
+						</div>
+					</div>
+					<!-- Overlay - end -->
+					<div class="jackpot-winners text-center py-1">
+						<p class="jackpot-winners__name">Jason R. won</p>
+						<p class="jackpot-winners__amount">$52,3112</p>
+					</div>
+				</div>
+				<div class="game-block game-block__winners">
+					<img class="img-fluid game-block__image purple-border"
+						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/i-zombie.jpg"
+						alt="I Zombie" />
+					<!-- Overlay - start -->
+					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
+						<div class="button button--small button--solid">
+							<a href="#">REAL MONEY</a>
+						</div>
+						<div class="button button--small button--ghost">
+							<a href="#">PRACTICE</a>
+						</div>
+					</div>
+					<!-- Overlay - end -->
+					<div class="jackpot-winners text-center py-1">
+						<p class="jackpot-winners__name">Jason R. won</p>
+						<p class="jackpot-winners__amount">$52,3112</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Features [end]-->
+		<!-- Games jackpot [end] -->
 
-	<!-- Download client for Desktop [start]-->
-	<div class="container d-none d-md-block">
-		<div class="download row d-flex justify-content-center align-items-start p-5">
-			<div class="download__block col-md-12 col-xl-5 pt-md-5 order-2 order-xl-1">
-				<p class="subheading pb-5 text-center light-golden">Mobile & Download Client</p>
-				<!-- Download client [start] -->
-				<div class="d-flex align-items-start pb-md-5">
-					<img src="images/download/download-1.png" alt="Download Client">
-					<div class="px-3">
-						<p class="pb-1 download__subheading violet"><strong>Download Client</strong></p>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit doloremque laudantium, totam rem aperiam,
-							eaque ipsa quae
-							explicabo. </p>
+		<!-- Features [start]-->
+		<div class="container features">
+			<div class="row d-flex justify-content-center align-items-start p-lg-5">
+				<div class="col-0 col-xl-4 d-none d-xl-block order-2 order-lg-1 py-4 text-center">
+					<img class="img-fluid features__mainImage pt-5" src="images/features/features.png" alt="Features">
+				</div>
+				<div class="col-12 col-xl-8 order-1 order-lg-2 py-4">
+					<div class="row">
+						<div class="feature col-6 my-2">
+							<div class="feature__block text-center px-md-4 py-2">
+								<img src="images/features/feature-1.png" class="pb-3" alt="Over 1000 games">
+								<p class="subheading light-golden">Over 1000 Games</p>
+								<p>Download & Instant play</p>
+							</div>
+							<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui
+								dico
+								facer te, ne lup.</p>
+						</div>
+
+						<div class="feature col-6 my-2">
+							<div class="feature__block text-center px-md-4 py-2">
+								<img src="images/features/feature-2.png" class="pb-3" alt="Over 1000 games">
+								<p class="subheading light-golden">Regular Bonuses</p>
+								<p>Welcome & Deposit</p>
+							</div>
+							<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui
+								dico
+								facer te, ne lup.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="feature col-6 my-2">
+							<div class="feature__block text-center px-md-4 py-2">
+								<img src="images/features/feature-3.png" class="pb-3" alt="Over 1000 games">
+								<p class="subheading light-golden">Fast Payouts</p>
+								<p>Safe & Secure</p>
+							</div>
+							<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui
+								dico
+								facer te, ne lup.</p>
+						</div>
+
+						<div class="feature col-6 my-2">
+							<div class="feature__block text-center px-md-4 py-2">
+								<img src="images/features/feature-4.png" class="pb-3" alt="Over 1000 games">
+								<p class="subheading light-golden">24/7 op support</p>
+								<p>Any day at any time</p>
+							</div>
+							<p class="feature__block__hidden text-center px-md-3 mx-auto">Sit te omnium qualisque. Qui
+								dico
+								facer te, ne lup.</p>
+						</div>
 					</div>
 				</div>
-				<!-- Download client [end] -->
+			</div>
+		</div>
+		<!-- Features [end]-->
 
-				<!-- Webplay version [start] -->
-				<div class="d-flex align-items-start pb-md-5">
-					<img src="images/download/download-2.png" alt="Webplay version">
-					<div class="px-3">
-						<p class="pb-1 download__subheading violet"><strong>Webplay version</strong></p>
-						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-							anim id est laborum.
-						</p>
+		<!-- Download client for Desktop [start]-->
+		<div class="container d-none d-md-block">
+			<div class="download row d-flex justify-content-center align-items-start p-5">
+				<div class="download__block col-md-12 col-xl-5 pt-md-5 order-2 order-xl-1">
+					<p class="subheading pb-5 text-center light-golden">Mobile & Download Client</p>
+					<!-- Download client [start] -->
+					<div class="d-flex align-items-start pb-md-5">
+						<img src="images/download/download-1.png" alt="Download Client">
+						<div class="px-3">
+							<p class="pb-1 download__subheading violet"><strong>Download Client</strong></p>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit doloremque laudantium, totam rem
+								aperiam,
+								eaque ipsa quae
+								explicabo. </p>
+						</div>
 					</div>
-				</div>
-				<!-- Webplay version [end] -->
+					<!-- Download client [end] -->
 
-				<!-- Play on mobile [start] -->
-				<div class="d-flex align-items-start">
-					<img src="images/download/download-3.png" alt="Play on Mobile">
-					<div class="px-3">
-						<p class="pb-1 download__subheading violet"><strong>Play on Mobile</strong></p>
-						<p>Lorem ipsum dolor sit amet, consectetur 1000 elit, sed do eiusmod, sit amet.</p>
+					<!-- Webplay version [start] -->
+					<div class="d-flex align-items-start pb-md-5">
+						<img src="images/download/download-2.png" alt="Webplay version">
+						<div class="px-3">
+							<p class="pb-1 download__subheading violet"><strong>Webplay version</strong></p>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+								anim id est laborum.
+							</p>
+						</div>
 					</div>
+					<!-- Webplay version [end] -->
+
+					<!-- Play on mobile [start] -->
+					<div class="d-flex align-items-start">
+						<img src="images/download/download-3.png" alt="Play on Mobile">
+						<div class="px-3">
+							<p class="pb-1 download__subheading violet"><strong>Play on Mobile</strong></p>
+							<p>Lorem ipsum dolor sit amet, consectetur 1000 elit, sed do eiusmod, sit amet.</p>
+						</div>
+					</div>
+					<!-- Play on mobile [end] -->
+					<!-- CTA download client [start] -->
+					<div class="mt-md-5 text-center">
+						<div class="button button--solid button--solid--border subheading">DOWNLOAD CLIENT</div>
+					</div>
+					<!-- CTA download client [end] -->
 				</div>
-				<!-- Play on mobile [end] -->
-				<!-- CTA download client [start] -->
-				<div class="mt-md-5 text-center">
-					<div class="button button--solid button--solid--border subheading">DOWNLOAD CLIENT</div>
+				<div class=" col-md-12 col-xl-7 text-center pt-0 pt-xl-5 order-1 order-xl-2">
+					<img src="images/download/download-main.png" alt="Download & Play on mobile">
 				</div>
-				<!-- CTA download client [end] -->
-			</div>
-			<div class=" col-md-12 col-xl-7 text-center pt-0 pt-xl-5 order-1 order-xl-2">
-				<img src="images/download/download-main.png" alt="Download & Play on mobile">
 			</div>
 		</div>
-	</div>
-	<!-- Download client for Desktop [end] -->
+		<!-- Download client for Desktop [end] -->
 
-	<!-- Footer for Desktop [start] -->
-	<div class="container footer d-none d-sm-block">
-		<div class="row align-items-start py-5">
-			<div class="col d-none d-md-block text-center px-4">
-				<ul>
-					<li class="pb-3"><img src="images/logo.png" alt="Logo"></li>
-					<li class="py-3"><img src="images/footer/shields.png" alt="Logo"></li>
-				</ul>
-			</div>
-			<div class="col footer__column">
-				<p class="footer__heading pb-3">Games</p>
-				<ul>
-					<li class="py-2"><a class="footer__link" href="#">Slots</a></li>
-					<li class="py-2"><a class="footer__link" href="#">Blackjack</a></li>
-					<li class="py-2"><a class="footer__link" href="#">Video Poker</a></li>
-					<li class="py-2"><a class="footer__link" href="#">Roulette</a></li>
-					<li class="py-2"><a class="footer__link" href="#">Mobile Casino</a></li>
-				</ul>
-			</div>
-			<div class="col footer__column">
-				<p class="footer__heading pb-3">Royal Ace</p>
-				<ul>
-					<li class="py-2"><a class="footer__link" href="#">Home</a></li>
-					<li class="py-2"><a class="footer__link" href="#">Webplay</a></li>
-					<li class="py-2"><a class="footer__link" href="#">Concierge</a></li>
-					<li class="py-2"><a class="footer__link" href="#">VIP Program</a></li>
-					<li class="py-2"><a class="footer__link" href="#">Banking</a></li>
-				</ul>
-			</div>
-			<div class="col footer__column">
-				<p class="footer__heading pb-3">Promotions</p>
-				<ul>
-					<li class="py-2"><a class="footer__link" href="#">Bonus Codes</a></li>
-					<li class="py-2"><a class="footer__link" href="#">Real Money Casino</a></li>
-					<li class="py-2"><a class="footer__link" href="#">VIP Bonuses</a></li>
-				</ul>
-			</div>
-			<div class="col footer__column">
-				<p class="footer__heading pb-3">Information</p>
-				<ul>
-					<li class="py-2"><a class="footer__link" href="#">Contact</a></li>
-					<li class="py-2"><a class="footer__link" href="#">Available Countries</a></li>
-					<li class="py-2"><a class="footer__link" href="#">Terms & Conditions</a></li>
-				</ul>
+		<!-- Footer for Desktop [start] -->
+		<div class="container footer d-none d-sm-block">
+			<div class="row align-items-start py-5">
+				<div class="col d-none d-md-block text-center px-4">
+					<ul>
+						<li class="pb-3"><img src="images/logo.png" alt="Logo"></li>
+						<li class="py-3"><img src="images/footer/shields.png" alt="Logo"></li>
+					</ul>
+				</div>
+				<div class="col footer__column">
+					<p class="footer__heading pb-3">Games</p>
+					<ul>
+						<li class="py-2"><a class="footer__link" href="#">Slots</a></li>
+						<li class="py-2"><a class="footer__link" href="#">Blackjack</a></li>
+						<li class="py-2"><a class="footer__link" href="#">Video Poker</a></li>
+						<li class="py-2"><a class="footer__link" href="#">Roulette</a></li>
+						<li class="py-2"><a class="footer__link" href="#">Mobile Casino</a></li>
+					</ul>
+				</div>
+				<div class="col footer__column">
+					<p class="footer__heading pb-3">Royal Ace</p>
+					<ul>
+						<li class="py-2"><a class="footer__link" href="#">Home</a></li>
+						<li class="py-2"><a class="footer__link" href="#">Webplay</a></li>
+						<li class="py-2"><a class="footer__link" href="#">Concierge</a></li>
+						<li class="py-2"><a class="footer__link" href="#">VIP Program</a></li>
+						<li class="py-2"><a class="footer__link" href="#">Banking</a></li>
+					</ul>
+				</div>
+				<div class="col footer__column">
+					<p class="footer__heading pb-3">Promotions</p>
+					<ul>
+						<li class="py-2"><a class="footer__link" href="#">Bonus Codes</a></li>
+						<li class="py-2"><a class="footer__link" href="#">Real Money Casino</a></li>
+						<li class="py-2"><a class="footer__link" href="#">VIP Bonuses</a></li>
+					</ul>
+				</div>
+				<div class="col footer__column">
+					<p class="footer__heading pb-3">Information</p>
+					<ul>
+						<li class="py-2"><a class="footer__link" href="#">Contact</a></li>
+						<li class="py-2"><a class="footer__link" href="#">Available Countries</a></li>
+						<li class="py-2"><a class="footer__link" href="#">Terms & Conditions</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Footer for Desktop [end] -->
+		<!-- Footer for Desktop [end] -->
 
-	<!-- Bottom bar [start]-->
-	<div class="container-fluid bottom-bar">
-		<div class="row justify-content-center p-2">
-			<div class="bottom-bar__partners p-2">
-				<img src="images/bottom-bar/partners.png" alt="Partners">
-			</div>
-			<div class="bottom-bar__deposit p-2">
-				<img class="deposit-methods img-fluid"
-					src="https://www.royalacecasino.com/modules/core/images/dep-usd.svg" alt="Deposit methods">
+		<!-- Bottom bar [start]-->
+		<div class="container-fluid bottom-bar">
+			<div class="row justify-content-center p-2">
+				<div class="bottom-bar__partners p-2">
+					<img src="images/bottom-bar/partners.png" alt="Partners">
+				</div>
+				<div class="bottom-bar__deposit p-2">
+					<img class="deposit-methods img-fluid"
+						src="https://www.royalacecasino.com/modules/core/images/dep-usd.svg" alt="Deposit methods">
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Bottom bar [end]-->
-
+		<!-- Bottom bar [end]-->
+	</main>
 
 	<!-- SCRIPTS -->
 	<!-- jQuery -->

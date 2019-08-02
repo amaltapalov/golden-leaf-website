@@ -1,8 +1,50 @@
 // wait document to load
-
 (() => {
 	console.log("hello 6");
 })();
+
+// Hamburger off-canvas
+//www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push
+function openNav() {
+	if ($(window).width() > 768) {
+		document.getElementById("mySidenav").style.width = "100vw";
+		document.getElementById("main").style.transform = "translateX(256px)";
+	} else {
+		document.getElementBlyId("mySidenav").style.width = "256px";
+		document.getElementById("main").style.transform = "translateX(256px)";
+	}
+}
+
+function closeNav() {
+	if ($(window).width() > 768) {
+		document.getElementById("mySidenav").style.width = "0";
+	} else {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.transform = "translateX(0)";
+	}
+}
+
+// HamMenu [start]
+//www.taniarascia.com/off-canvas-navigation/
+
+(function($) {
+	$(function() {
+		// DOM Ready
+		// Toggle navigation
+		$("#nav-toggle").click(function() {
+			this.classList.toggle("active");
+			if ($("body").hasClass("show-nav")) {
+				$("body").removeClass("show-nav");
+			} else {
+				$("body").addClass("show-nav");
+			}
+		});
+		$("#closebtn").click(function() {
+			$("body").removeClass("show-nav");
+		});
+	});
+})(jQuery);
+// HamMenu [end]
 
 // Slick - Main slider
 $(document).ready(function() {

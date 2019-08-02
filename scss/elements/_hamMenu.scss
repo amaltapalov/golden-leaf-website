@@ -1,0 +1,45 @@
+.show-nav aside,
+.show-nav main {
+    transform: translateX(500px);
+}
+
+// .show-nav .position {
+//     position: fixed;
+// }
+
+aside {
+    width: 500px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -500px;
+    background: #ff0000;
+    font-size: .8em;
+    font-family: sans-serif;
+    font-weight: 300;
+    transition: all .3s ease;
+}
+
+aside p {
+    color: #cdcdcd;
+    padding: 20px;
+}
+
+aside .navigation .navigation__list {
+    margin: 0;
+    padding: 0;
+}
+
+aside nav .navigation__list a {
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: 0.3s ease all;
+}
