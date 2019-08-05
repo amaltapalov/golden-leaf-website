@@ -3,30 +3,8 @@
 	console.log("hello 6");
 })();
 
-// Hamburger off-canvas
-//www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push
-function openNav() {
-	if ($(window).width() > 768) {
-		document.getElementById("mySidenav").style.width = "100vw";
-		document.getElementById("main").style.transform = "translateX(256px)";
-	} else {
-		document.getElementBlyId("mySidenav").style.width = "256px";
-		document.getElementById("main").style.transform = "translateX(256px)";
-	}
-}
-
-function closeNav() {
-	if ($(window).width() > 768) {
-		document.getElementById("mySidenav").style.width = "0";
-	} else {
-		document.getElementById("mySidenav").style.width = "0";
-		document.getElementById("main").style.transform = "translateX(0)";
-	}
-}
-
 // HamMenu [start]
 //www.taniarascia.com/off-canvas-navigation/
-
 (function($) {
 	$(function() {
 		// DOM Ready
@@ -40,7 +18,7 @@ function closeNav() {
 			}
 		});
 
-		$("#closebtn").click(function() {
+		$("#closeBtn").click(function() {
 			$("body").removeClass("show-nav");
 		});
 	});

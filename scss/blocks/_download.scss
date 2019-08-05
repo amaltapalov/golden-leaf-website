@@ -1,8 +1,16 @@
-.download {
+.download--desktop {
     &__subheading {
         font-size: 18px;
     }
+
     .button {
         font-family: "Raleway", sans-serif;
     }
+}
+
+.download--mobile {
+    border: 2px solid $light-golden-color;
+    border-radius: 7px;
+    margin: 0 10px;
+    background: black;
 }

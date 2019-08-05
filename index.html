@@ -20,10 +20,13 @@
 </head>
 
 <body>
-	<aside class="navigation">
+	<!-- Side menu navigation [start] -->
+	<aside id="navigation"  class="navigation">
 		<nav>
 			<div class="navigation__list">
-				<a href="javascript:void(0)" id="closebtn">&times;</a>
+				<a href="javascript:void(0)" id="closeBtn" class="navigation__button">
+					<img src="images/cancel.svg" alt="cancel">
+				</a>
 				<a href="#nowhere">Home</a>
 				<a href="#nowhere">Instant Play</a>
 				<a href="#nowhere">Download Casino</a>
@@ -36,11 +39,12 @@
 			</div>
 		</nav>
 	</aside>
+	<!-- Side menu navigation [end] -->
 
 	<!-- Navbar [start]-->
 		<div class="container-fluid navbar">
 			<div class="row d-flex justify-content-between align-items-center py-3">
-				<div class="col-4 col-xl-5">
+				<div class="col-auto col-md-4 col-xl-5">
 					<ul class="d-flex align-items-center mb-0">
 						<!-- Hamburger [start] -->
 						<!-- <li id="hamburger" class="menu-icon py-2" onclick="applyListener()">
@@ -65,15 +69,15 @@
 					</ul>
 				</div>
 
-				<div class="col-3 col-md-4 col-xl-2 text-center">
+				<div class="col col-md-3 col-md-4 col-xl-2 text-left text-md-center px-0">
 					<img src="images/logo.png" alt="Royal Ace" />
 				</div>
 
-				<div class="col-4 col-xl-5">
+				<div class="col-auto col-md-4 col-xl-5">
 					<ul class="d-flex align-items-center justify-content-end mb-0">
 						<li class="desktop-nav d-none d-xl-block"><a href="#">PROMOTIONS</a></li>
-						<li class="bordered px-3 mx-2 mx-lg-3"><a href="#">LOGIN</a></li>
-						<li class="bordered px-3 mx-2 mx-lg-3"><a href="#">SIGN UP</a></li>
+						<li class="bordered px-2 px-md-3 mx-1 mx-md-2 mx-lg-3"><a href="#">LOGIN</a></li>
+						<li class="bordered px-2 px-md-3 mx-1 mx-md-2 mx-lg-3"><a href="#">SIGN UP</a></li>
 					</ul>
 				</div>
 			</div>
@@ -578,8 +582,8 @@
 
 		<!-- Download client for Desktop [start]-->
 		<div class="container d-none d-md-block">
-			<div class="download row d-flex justify-content-center align-items-start p-5">
-				<div class="download__block col-md-12 col-xl-5 pt-md-5 order-2 order-xl-1">
+			<div class="download--desktop row d-flex justify-content-center align-items-start p-5">
+				<div class="col-md-12 col-xl-5 pt-md-5 order-2 order-xl-1">
 					<p class="subheading pb-5 text-center light-golden">Mobile & Download Client</p>
 					<!-- Download client [start] -->
 					<div class="d-flex align-items-start pb-md-5">
@@ -627,6 +631,29 @@
 			</div>
 		</div>
 		<!-- Download client for Desktop [end] -->
+
+		<!-- Download client for Mobile [start]-->
+		<div class="container-fluid d-md-none">
+			<div class="download--mobile row my-4 py-3 py-sm-0 align-items-center">
+				<div class="col-sm-6 order-2 order-sm-1 py-2 text-center text-sm-left">
+					<p class="subheading light-golden">Mobile & Download Client</p>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					</p>
+					<div class="button button--purple button--purple--border px-4 py-2 mt-3 mx-auto">
+					DOWNLOAD CLIENT</div>
+				</div>
+				<div class="col-sm-6 d-none d-sm-block px-0 order-1 order-sm-2">
+					<img src="images/download/download-mobile.png" alt="Download client">
+				</div>
+				<div class="col-sm-6 d-block d-sm-none px-0 order-1 order-sm-2">
+					<img src="images/download/download-mobile-full.png" alt="Download client">
+				</div>
+			</div>
+		</div>
+		<!-- Download client for Mobile [end]-->
+
+
 
 		<!-- Footer for Desktop [start] -->
 		<div class="container footer d-none d-sm-block">
@@ -676,6 +703,34 @@
 			</div>
 		</div>
 		<!-- Footer for Desktop [end] -->
+
+		<!-- Footer for Mobile [start] -->
+		<div class="container footer d-block d-sm-none pt-5">
+			<div>
+				<img src="images/logo.png" alt="Royal Ace">
+			</div>
+			<div class="row py-3">				
+				<div class="col-6">
+					<ul>
+						<li class="py-1"><a class="footer__link" href="#">Home</a></li>
+						<li class="py-1"><a class="footer__link" href="#">Games</a></li>
+						<li class="py-1"><a class="footer__link" href="#">Promotions</a></li>
+						<li class="py-1"><a class="footer__link" href="#">Concierge</a></li>
+					</ul>
+				</div>
+				<div class="col-6">
+					<ul>
+						<li class="py-1"><a class="footer__link" href="#">VIP Program</a></li>
+						<li class="py-1"><a class="footer__link" href="#">Banking</a></li>
+						<li class="py-1"><a class="footer__link" href="#">Contact</a></li>
+						<li class="py-1"><a class="footer__link" href="#">Terms</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Footer for Mobile [end] -->
+
+
 
 		<!-- Bottom bar [start]-->
 		<div class="container-fluid bottom-bar">

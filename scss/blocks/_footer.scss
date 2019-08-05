@@ -24,6 +24,10 @@
             font-size: 0.8rem;
         }
 
+        @media screen and (max-width: 576px) {
+            font-size: 1.1rem;
+        }
+
         &:hover {
             color: $golden-color;
         }

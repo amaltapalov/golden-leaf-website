@@ -19,25 +19,39 @@ aside {
     font-family: sans-serif;
     font-weight: 300;
     transition: all .45s;
+
+    .navigation {
+        &__list {
+            margin: 0;
+            padding: 0;
+
+            a {
+                padding: 10px 20px;
+                display: block;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        &__button {
+            position: absolute;
+            right: 0;
+
+            img {
+                width: 15px;
+                fill: white
+            }
+        }
+    }
+
+    p {
+        color: #cdcdcd;
+        padding: 20px;
+    }
 }
 
 
-aside p {
-    color: #cdcdcd;
-    padding: 20px;
-}
 
-aside .navigation .navigation__list {
-    margin: 0;
-    padding: 0;
-}
-
-aside nav .navigation__list a {
-    padding: 10px 20px;
-    display: block;
-    color: #fff;
-    text-decoration: none;
-}
 
 main {
     width: 100%;
