@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 // Slick - Game filter
 $(document).ready(function() {
-	$(".games-filter-container").slick({
+	$(".games-slider-container").slick({
 		lazyLoad: "ondemand",
 		slidesToShow: 6,
 		slidesToScroll: 1,

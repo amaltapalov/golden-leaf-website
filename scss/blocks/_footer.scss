@@ -1,16 +1,10 @@
 .footer {
-    &__column {
-        color: grey;
-
-        li {
-            line-height: 1;
-        }
-    }
 
     &__heading {
         font-size: 1.2rem;
         line-height: 1;
         font-weight: bold;
+        color: #808080;
 
         @media screen and (max-width: 992px) {
             font-size: 1rem
@@ -18,7 +12,8 @@
     }
 
     &__link {
-        color: grey;
+        line-height: 1;
+        color: #808080;
 
         @media screen and (max-width: 992px) {
             font-size: 0.8rem;
@@ -28,9 +23,12 @@
             font-size: 1.1rem;
         }
 
-        &:hover {
-            color: $golden-color;
-        }
+        a {
+            color: #808080;
+            &:hover {
+                color: $golden-color;
+            }
+        }        
     }
 }
 
@@ -38,6 +36,6 @@
     background: #000;
 
     .deposit-methods {
-        width: 480px;
+        width: 420px;
     }
 }

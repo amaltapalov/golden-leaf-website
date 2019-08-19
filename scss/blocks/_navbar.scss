@@ -10,30 +10,27 @@ $border-color: #b1a8d7;
     left: 0;
     transition: all .45s;
 
-    a {
+    a :hover {
+        color: $golden-color;
+    }  
+
+    li {
+        padding: 0 1vw;
+    }
+
+    .bordered {
+        border: 2px solid $border-color;
+        border-radius: 1rem;
+        transition: 0.3s;
+        line-height: 1.5rem;
+
         &:hover {
-            color: $golden-color;
+            background: $border-color;
+        }
+
+        &:hover>a {
+            color: $bg-color;
         }
     }
 
-    ul {
-        li {
-            padding: 0 1vw;
-        }
-
-        .bordered {
-            border: 2px solid $border-color;
-            border-radius: 1rem;
-            transition: 0.3s;
-            line-height: 1.5rem;
-
-            &:hover {
-                background: $border-color;
-            }
-
-            &:hover>a {
-                color: $bg-color;
-            }
-        }
-    }
 }

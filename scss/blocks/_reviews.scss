@@ -1,6 +1,12 @@
 .reviews {
     background: $bg-color url(../images/reviews/reviews-bg.png) center / contain no-repeat;
 
+    &:hover {
+        .slick-dots {
+            opacity: 1;
+        }
+    }
+
     @media screen and (max-width: 992px) {
         padding-bottom: 50px;
     }
@@ -12,6 +18,7 @@
 
         &__name {
             font-size: 1.5rem;
+            line-height: 1;
         }
     }
 
@@ -38,17 +45,11 @@
         -webkit-transform: scale(1);
         filter: brightness(100%);
         transform: scale(1);
-        color: white;
+        color: $text-color;
     }
 
     .slick-dots {
         opacity: 0;
-        transition: .8s;
-
-    }
-
-    .slick-list:hover~.slick-dots {
-        transition: .8s;
-        opacity: 1;
+        transition: .5s;
     }
 }

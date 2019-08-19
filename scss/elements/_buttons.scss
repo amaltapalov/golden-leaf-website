@@ -5,10 +5,12 @@
     margin: 5px;
     text-align: center;
     font-family: 'Raleway', sans-serif !important;
-    cursor: pointer;
+    cursor: pointer;   
+    color: #ffffff; 
 
     &--small {
         padding: 0.5rem 2rem;
+        border: none;
     }
 
     &--solid {
@@ -16,11 +18,7 @@
 
         &:hover {
             background: $golden-color;
-        }
-
-        a {
-            color: #fff;
-        }
+        }  
 
         &--border {
             border: 2px solid lighten($golden-color, 30%);
@@ -32,11 +30,7 @@
 
         &:hover {
             background: darken($purple-color, 5%);
-        }
-
-        a {
-            color: #fff;
-        }
+        }      
 
         &--border {
             border: 2px solid lighten($purple-color, 30%);
@@ -44,15 +38,16 @@
     }
 
     &--ghost {
+        background: rgba($purple-color, 0.4);
         border: 2px solid $violet-color;
 
         &:hover {
-            background: rgba($purple-color, 0.8);
-        }
+            background: rgba($purple-color, 1);
+        }     
+    }
 
-        a {
-            color: #fff;
-        }
+    a {
+        color: #ffffff;
     }
 }
 

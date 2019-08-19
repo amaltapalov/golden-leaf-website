@@ -1,12 +1,16 @@
+.show-nav {
+    overflow: hidden;
+}
+
 .show-nav aside,
 .show-nav main,
 .show-nav .navbar {
     transform: translateX(250px);
-}
 
-// .show-nav .position {
-//     position: fixed;
-// }
+    @media screen and (min-width: 1200px) {
+        transform: translateX(100vw);
+    }
+}
 
 aside {
     width: 250px;
@@ -18,7 +22,13 @@ aside {
     font-size: .8em;
     font-family: sans-serif;
     font-weight: 300;
-    transition: all .45s;
+    transition: all .5s;
+
+    @media screen and (min-width: 1200px) {
+        width: 100vw;
+        left: -100vw;
+
+    }
 
     .navigation {
         &__list {
@@ -50,11 +60,8 @@ aside {
     }
 }
 
-
-
-
 main {
     width: 100%;
     left: 0;
-    transition: all .45s;
+    transition: all .5s;
 }

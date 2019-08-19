@@ -6,32 +6,22 @@
     src: url(../fonts/Colus-Regular.otf);
 }
 
-$heading: 55px;
-$subheading: 36px;
-$link: 15px;
-
-@mixin heading {
-    @include fluid-font(40px, 55px, 468px, 1400px);
-    font-family: 'Colus', 'Raleway', sans-serif;
+.heading, .subheading {
+    font-family: 'Colus', sans-serif;
+    line-height: 1;
 }
 
 .heading {
-    @include heading;    
+    @include fluid-font(40px, 55px, 468px, 1400px); 
     line-height: 1;
 }
 
 .subheading {
     @include fluid-font(22px, 34px, 992px, 1400px);
-    font-family: 'Colus', sans-serif;
-    line-height: 1;
     margin-bottom: 0.5rem;
     &.subheading--thin {
         font-family: 'Raleway',sans-serif; 
     }
-}
-
-.link {
-    font-size: $link;
 }
 
 // Color classes

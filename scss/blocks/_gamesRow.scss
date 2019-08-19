@@ -1,7 +1,6 @@
 $dark-violet-color: darken($violet-color, 30%);
 $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(68, 41, 81, 1) 100%);
 
-
 .games-filter {
     &__item {
         cursor: pointer;
@@ -29,7 +28,7 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
     }
 }
 
-.games-filter-container {
+.games-slider-container {
     .game-block {
         display: inline-block;
         position: relative;
@@ -49,14 +48,14 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
             display: none;            
             border-radius: 5px;
             font-size: 1rem;
-            text-align: center;            
+            text-align: center;   
+
             .button--small {
-                width: 80%;
+                width: 200px;
                 @media screen and (max-width: 1200px) {
                     font-size: .8rem;
                 }       
                 @media screen and (min-width: 468px) and (max-width: 768px) {
-                     width: 70%;
                     font-size: 1rem;
                 }
             }
@@ -70,7 +69,6 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
             top: 0;
             left: 0;
             display: flex;
-            // padding-top: 1.2vw;
 
             @media screen and (max-width: 1320px) {
                 font-size: 14px;
@@ -81,6 +79,7 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
              @media screen and (max-width: 468px) {
                  font-size: 14px;
              }
+
              &.overlay--withBar {
                  padding-top: 1.2vw;
                  @media screen and (max-width: 1220px) {
@@ -95,19 +94,7 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
              }
         }
         
-
-       
-
-        // .jackpot-winners-container {
-        //     .game-block {
-        //         &:hover .overlay {
-        //             padding-top: 1.2vw;
-        //             justify-content: start;
-        //         }
-        //     }
-        // }
-
-
+        // Addition to games slider - Name and jackpot amount won
         .jackpot-winners {
             position: absolute;
             bottom: 0;
@@ -120,24 +107,13 @@ $dark-overlay-color: linear-gradient(to bottom, rgba(79, 37, 79, 0.8) 1%, rgba(6
                     justify-content: start;
                     padding-top: 1.2vw;
                 }
-            }
+            }        
 
-            p {
-                color: $text-color;
-            }
-            &__name {
-                font-size: 1rem;
-            }
             &__amount {
-                // font-size: 1.5rem;
                 @include fluid-font(1.2rem, 1.5rem, 320px, 576px);
                 line-height: 1.2;
                 font-weight: bold;
-                // @media screen and (max-width: 576px) {
-                //     @include fluid-font(37px, 16px, 1200px, 576px);
-                // }
-            }
-            
+            }            
         }
     }
 }

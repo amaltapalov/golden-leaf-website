@@ -1,9 +1,10 @@
 .jackpot-counter {
-    // height: 50%;
     background: $bg-color url(../images/jackpot-bg.png) center / contain no-repeat;
+    
     &--text {
         letter-spacing: 5;
     }
+    
     &--amount {
         @include fluid-font(42px, 85px, 400px, 600px);
         letter-spacing: 10;

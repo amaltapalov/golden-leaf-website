@@ -1,60 +1,20 @@
 .features {
-    &__mainImage {
+    &__hero {
         max-width: 550px;
         width: 100%;
-        ;
     }
 }
 
-// Hover Fx for individual feature
 .feature {
     position: relative;
+    &__block {
+        display: block;
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
 }
 
-.feature__block {
-    display: block;
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background-color: darken($purple-color, 10%);
-    overflow: hidden;
-    width: 60%;
-    height: 0;
-    transition: .3s ease-in-out;
-}
-
-.feature:hover .overlay {
-    height: 100%;
-}
-
-.text {
-    color: white;
-    font-size: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0;
-    transition: .3s ease-in-out;
-}
-
-.feature:hover .text {
-    opacity: 1;
-}
-
-
-// Features additional hovering text
 .feature__block__hidden {
     opacity: 0;
     width: 80%;

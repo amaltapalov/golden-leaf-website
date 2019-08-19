@@ -9,14 +9,6 @@ $slider-dots-color: #694fbf;
 $bg-color: #140721;
 $base-font: 16px;
 
-// Mixins
-@mixin flex($justify: center, $align: center, $direction: row) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-  flex-direction: $direction;
-}
-
 @mixin fluid-font($min-font-size: 12px,
   $max-font-size: 21px,
   $lower-range: 320px,
@@ -52,7 +44,6 @@ $base-font: 16px;
 
 // blocks
 @import "./blocks/navbar";
-@import "./blocks/fullScreenNav";
 @import "./blocks/mainSlider";
 @import "./blocks/gamesRow";
 @import "./blocks/reviews";
