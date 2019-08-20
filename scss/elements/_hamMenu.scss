@@ -1,3 +1,7 @@
+/*
+!!! Please keep transition: 0.45s
+for main and aside elements to avoid slider glitch
+*/
 .show-nav {
     overflow: hidden;
 }
@@ -12,6 +16,12 @@
     // }
 }
 
+main {
+    width: 100%;
+    left: 0;
+    transition: all .45s;
+}
+
 aside {
     width: 250px;
     height: 100%;
@@ -22,7 +32,7 @@ aside {
     font-size: 1rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    transition: all .5s;
+    transition: all .45s;
 
     // @media screen and (min-width: 1200px) {
     //     width: 100vw;
@@ -52,17 +62,25 @@ aside {
         margin: 0;
         padding: 0;
 
-
         a {
-            padding: 13px 20px;
-            display: block;
-            font-size: .9rem;
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            font-size: 0.9rem;
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             cursor: pointer;
             &:hover {
                 background: $purple-color;
+                img {
+                    transform: scale(1.12)
+                }
+            }
+            img {
+                width: 24px;
+                margin: 0 8px 0 0;
+                transition: all 0.2s;
             }
         }
     }
@@ -74,13 +92,13 @@ aside {
         padding: 25px 0;
         background: $purple-color;
         text-align: center;
+        color: $text-color;
         font-weight: bold;
         letter-spacing: 1;
+        &:hover {
+            background: darken($purple-color, 5%);
+            color: $light-golden-color;
+        }
     }
 }
 
-main {
-    width: 100%;
-    left: 0;
-    transition: all .5s;
-}

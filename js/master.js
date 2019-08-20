@@ -13,11 +13,14 @@
 			this.classList.toggle("active");
 			if ($("body").hasClass("show-nav")) {
 				$("body").removeClass("show-nav");
+				$(".desktop-nav").fadeTo(200, 1)
 			} else {
 				$("body").addClass("show-nav");
+				$(".desktop-nav").fadeTo(200, 0)
 			};
 			event.stopPropagation();
 		});
+
 		$("#closeBtn").click(function() {
 			$("body").removeClass("show-nav");
 		});
@@ -37,10 +40,10 @@ $(document).ready(function() {
 	$(".slider-wrapper").slick({
 		slidesToShow: 1,
 		arrows: false,
-		dots: true
+		dots: true,
 		// autoplay: true,
 		// autoplaySpeed: 3000,
-		// speed: 1000
+		// speed: 800
 	});
 });
 

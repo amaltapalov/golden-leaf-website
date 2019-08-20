@@ -15,35 +15,40 @@
 	<link rel="stylesheet" type="text/css" href="css/master.css" />
 </head>
 
-<!-- TODO: Do not forget to delete show-nav class -->
-<body class="show-nav">
+<!-- TODO: Do not forget to delete show-nav class from body -->
+
+<body>
 	<!-- Side menu navigation [start] -->
-	<aside id="navigation" >
+	<aside id="navigation">
 		<nav>
-			<div class="navigation__user">					
+			<div class="navigation__user">
 				<img class="navigation__user__avatar" src="images/avatars/avatar.jpg" alt="User avatar">
 				<div class="px-3">
 					<div class="navigation__user__username">USERNAME</div>
 					<div>Level</div>
-				</div>							
+				</div>
 			</div>
 			<div class="navigation__list">
 				<!-- <a href="javascript:void(0)" id="closeBtn" class="navigation__closeButton">
 					<img src="images/cancel.svg" alt="cancel">
-				</a> -->				
-				<a href="https://www.google.com">Home</a>
-				<a href="https://www.google.com">Instant Play</a>
+				</a> -->
+				<a href="https://www.google.com">
+					<span><img src="images/avatars/home.svg" alt=""></span> Home
+				</a>
+				<a href="https://www.google.com">
+					<span><img src="images/avatars/play.svg" alt=""></span>Instant Play
+				</a>
 				<a href="https://www.google.com">Download Casino</a>
 				<a href="https://www.google.com">Promos</a>
 				<a href="https://www.google.com">Concierge</a>
 				<a href="https://www.google.com">VIP Program</a>
 				<a href="https://www.google.com">Banking</a>
 				<a href="https://www.google.com">Contact</a>
-				<a href="https://www.google.com">Terms & Conditions</a>				
+				<a href="https://www.google.com">Terms & Conditions</a>
 			</div>
-			<div class="navigation__logout">
-				<a class="navigation__logout__link" href="#">LOG OUT</a>
-			</div>
+			<a href="#" class="navigation__logout">
+				LOG OUT
+			</a>
 		</nav>
 	</aside>
 	<!-- Side menu navigation [end] -->
@@ -60,9 +65,9 @@
 					</li>
 					<!-- Hamburger of Rascia [end]-->
 
-					<li class="d-none d-xl-block"><a href="#">INSTANT PLAY</a></li>
-					<li class="d-none d-xl-block"><a href="#">DOWNLOAD CASINO</a></li>
-					<li class="d-none d-xl-block"><a href="#">CONCIERGE</a></li>
+					<li class="desktop-nav d-none d-xl-block"><a href="#">INSTANT PLAY</a></li>
+					<li class="desktop-nav d-none d-xl-block"><a href="#">DOWNLOAD CASINO</a></li>
+					<li class="desktop-nav d-none d-xl-block"><a href="#">CONCIERGE</a></li>
 				</ul>
 			</div>
 
@@ -72,7 +77,7 @@
 
 			<div class="col-auto col-md-4 col-xl-5">
 				<ul class="d-flex align-items-center justify-content-end mb-0">
-					<li class="d-none d-xl-block"><a href="#">PROMOTIONS</a></li>
+					<li class="desktop-nav d-none d-xl-block"><a href="#">PROMOTIONS</a></li>
 					<li class="bordered px-2 px-md-3 mx-1 mx-md-2 mx-lg-3"><a href="#">LOGIN</a></li>
 					<li class="bordered px-2 px-md-3 mx-1 mx-md-2 mx-lg-3"><a href="#">SIGN UP</a></li>
 				</ul>
@@ -743,7 +748,7 @@
 
 		<!-- Footer for Mobile [start] -->
 		<div class="container footer d-block d-sm-none pt-5 px-4">
-			<img src="images/logo.png" alt="Royal Ace">		
+			<img src="images/logo.png" alt="Royal Ace">
 			<div class="row py-3">
 				<div class="col-6">
 					<ul>

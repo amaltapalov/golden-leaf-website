@@ -13,7 +13,6 @@
 -   [x] Full screen menu
 -   [x] Add fading Fx on text in Features
 
--   [ ] Try to add Fullpage.js
 -   [ ] Add data-src for lazy loading
 
 -   Leo's and Paula's review:
