@@ -9,18 +9,25 @@
 	$(function() {
 		// DOM Ready
 		// Toggle navigation
-		$("#nav-toggle").click(function() {
+		$("#nav-toggle").click(function(event) {
 			this.classList.toggle("active");
 			if ($("body").hasClass("show-nav")) {
 				$("body").removeClass("show-nav");
 			} else {
 				$("body").addClass("show-nav");
-			}
+			};
+			event.stopPropagation();
 		});
-
 		$("#closeBtn").click(function() {
 			$("body").removeClass("show-nav");
 		});
+
+		// Hide menu clicking outside of side navigation
+		$(document).click(function(e) {
+			if ($(e.target).closest("#navigation").length === 0) {
+				$("body").removeClass("show-nav");
+			}
+		})
 	});
 })(jQuery);
 // HamMenu [end]
@@ -104,6 +111,7 @@ $(document).ready(function() {
 		autoplay: true,
 		autoplaySpeed: 3000,
 		speed: 500,
+		focusOnSelect:true,
 		responsive: [
 			{
 				breakpoint: 1300,

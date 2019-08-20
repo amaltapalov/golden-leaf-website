@@ -15,23 +15,34 @@
 	<link rel="stylesheet" type="text/css" href="css/master.css" />
 </head>
 
-<body>
+<!-- TODO: Do not forget to delete show-nav class -->
+<body class="show-nav">
 	<!-- Side menu navigation [start] -->
-	<aside id="navigation" class="navigation">
+	<aside id="navigation" >
 		<nav>
+			<div class="navigation__user">					
+				<img class="navigation__user__avatar" src="images/avatars/avatar.jpg" alt="User avatar">
+				<div class="px-3">
+					<div class="navigation__user__username">USERNAME</div>
+					<div>Level</div>
+				</div>							
+			</div>
 			<div class="navigation__list">
-				<a href="javascript:void(0)" id="closeBtn" class="navigation__button">
+				<!-- <a href="javascript:void(0)" id="closeBtn" class="navigation__closeButton">
 					<img src="images/cancel.svg" alt="cancel">
-				</a>
-				<a href="#nowhere">Home</a>
-				<a href="#nowhere">Instant Play</a>
-				<a href="#nowhere">Download Casino</a>
-				<a href="#nowhere">Promos</a>
-				<a href="#nowhere">Concierge</a>
-				<a href="#nowhere">VIP Program</a>
-				<a href="#nowhere">Banking</a>
-				<a href="#nowhere">Contact</a>
-				<a href="#nowhere">Terms & Conditions</a>
+				</a> -->				
+				<a href="https://www.google.com">Home</a>
+				<a href="https://www.google.com">Instant Play</a>
+				<a href="https://www.google.com">Download Casino</a>
+				<a href="https://www.google.com">Promos</a>
+				<a href="https://www.google.com">Concierge</a>
+				<a href="https://www.google.com">VIP Program</a>
+				<a href="https://www.google.com">Banking</a>
+				<a href="https://www.google.com">Contact</a>
+				<a href="https://www.google.com">Terms & Conditions</a>				
+			</div>
+			<div class="navigation__logout">
+				<a class="navigation__logout__link" href="#">LOG OUT</a>
 			</div>
 		</nav>
 	</aside>
@@ -731,10 +742,8 @@
 		<!-- Footer for Desktop [end] -->
 
 		<!-- Footer for Mobile [start] -->
-		<div class="container footer d-block d-sm-none pt-5">
-			<div>
-				<img src="images/logo.png" alt="Royal Ace">
-			</div>
+		<div class="container footer d-block d-sm-none pt-5 px-4">
+			<img src="images/logo.png" alt="Royal Ace">		
 			<div class="row py-3">
 				<div class="col-6">
 					<ul>

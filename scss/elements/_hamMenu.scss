@@ -7,9 +7,9 @@
 .show-nav .navbar {
     transform: translateX(250px);
 
-    @media screen and (min-width: 1200px) {
-        transform: translateX(100vw);
-    }
+    // @media screen and (min-width: 1200px) {
+    //     transform: translateX(100vw);
+    // }
 }
 
 aside {
@@ -19,44 +19,63 @@ aside {
     top: 0;
     left: -250px;
     background: $bg-color;
-    font-size: .8em;
-    font-family: sans-serif;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     transition: all .5s;
 
-    @media screen and (min-width: 1200px) {
-        width: 100vw;
-        left: -100vw;
+    // @media screen and (min-width: 1200px) {
+    //     width: 100vw;
+    //     left: -100vw;
+    // }
 
-    }
+    .navigation__user {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $purple-color;
 
-    .navigation {
-        &__list {
-            margin: 0;
-            padding: 0;
-
-            a {
-                padding: 10px 20px;
-                display: block;
-                color: #fff;
-                text-decoration: none;
-            }
+        &__avatar {
+            border-radius: 50%;
+            max-width: 60px;
         }
 
-        &__button {
-            position: absolute;
-            right: 0;
-
-            img {
-                width: 15px;
-                fill: white
-            }
+        &__username {
+            font-size: 1rem;
+            font-weight: bold;
         }
     }
 
-    p {
-        color: #cdcdcd;
-        padding: 20px;
+    .navigation__list {
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+
+        a {
+            padding: 13px 20px;
+            display: block;
+            font-size: .9rem;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover {
+                background: $purple-color;
+            }
+        }
+    }
+
+    .navigation__logout {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 25px 0;
+        background: $purple-color;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1;
     }
 }
 
