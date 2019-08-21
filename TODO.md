@@ -12,7 +12,11 @@
 -   [x] Feature section (Show text on Feature hover)
 -   [x] Full screen menu
 -   [x] Add fading Fx on text in Features
-
+-   [x] Side menu implemented
+-   [ ] Side menu icons ('ll be provided)
+-   [x] Fade Navbar menu when side menu opened
+-   [x] Signup and Login button are rounded (need test) 
+ 
 -   [ ] Add data-src for lazy loading
 
 -   Leo's and Paula's review:
