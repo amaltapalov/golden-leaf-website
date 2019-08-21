@@ -3,6 +3,12 @@
 	console.log("hello 6");
 })();
 
+// LazyLoad init
+// www.andreaverlicchi.eu/lazyload/
+var lazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+});
+
 // HamMenu [start]
 //www.taniarascia.com/off-canvas-navigation/
 (function($) {
@@ -13,14 +19,17 @@
 			this.classList.toggle("active");
 			if ($("body").hasClass("show-nav")) {
 				$("body").removeClass("show-nav");
-				$(".desktop-nav").fadeTo(200, 1)
+				// $('#navbar').css('width', '100vw');
+				$(".desktop-nav").fadeTo(100, 1)
 			} else {
 				$("body").addClass("show-nav");
-				$(".desktop-nav").fadeTo(200, 0)
+				// $('#navbar').css('width', '100vw').css('width', '-=250px');
+				$(".desktop-nav").fadeTo(100, 0)
 			};
 			event.stopPropagation();
 		});
 
+		// Close side navigation clicking on close button icon
 		$("#closeBtn").click(function() {
 			$("body").removeClass("show-nav");
 		});

@@ -15,8 +15,6 @@
 	<link rel="stylesheet" type="text/css" href="css/master.css" />
 </head>
 
-<!-- TODO: Do not forget to delete show-nav class from body -->
-
 <body>
 	<!-- Side menu navigation [start] -->
 	<aside id="navigation">
@@ -54,7 +52,7 @@
 	<!-- Side menu navigation [end] -->
 
 	<!-- Navbar [start]-->
-	<div class="container-fluid navbar">
+	<div id="navbar" class="container-fluid navbar">
 		<div class="row d-flex justify-content-between align-items-center py-3">
 			<div class="col-auto col-md-4 col-xl-5">
 				<ul class="d-flex align-items-center mb-0">
@@ -72,14 +70,14 @@
 			</div>
 
 			<div class="col col-md-3 col-md-4 col-xl-2 text-left text-md-center px-0">
-				<img src="images/logo.png" alt="Royal Ace" />
+				<img class="logo lazy" data-src="images/logo.png" alt="Royal Ace" />
 			</div>
 
 			<div class="col-auto col-md-4 col-xl-5">
 				<ul class="d-flex align-items-center justify-content-end mb-0">
 					<li class="desktop-nav d-none d-xl-block"><a href="#">PROMOTIONS</a></li>
-					<li class="bordered px-2 px-md-3 mx-1 mx-md-2 mx-lg-3"><a href="#">LOGIN</a></li>
-					<li class="bordered px-2 px-md-3 mx-1 mx-md-2 mx-lg-3"><a href="#">SIGN UP</a></li>
+					<li class="bordered px-2 px-md-3 mx-1 mx-md-2"><a href="#">LOGIN</a></li>
+					<li class="bordered px-2 px-md-3 mx-1 mx-md-2"><a href="#">SIGN UP</a></li>
 				</ul>
 			</div>
 		</div>
@@ -132,13 +130,13 @@
 			<div class="row justify-content-center pt-4 pt-lg-0 pb-3">
 				<div class="games-filter d-flex align-items-center">
 					<div class="games-filter__item px-3 violet">
-						<img src="images/games-filter/featured.png" alt="Featured games" />FEATURED
+						<img class="lazy" data-src="images/games-filter/featured.png" alt="Featured games" />FEATURED
 					</div>
 					<div class="games-filter__item px-sm-3 violet">
-						<img src="images/games-filter/new-games.png" alt="New games" />NEW GAMES
+						<img class="lazy" data-src="images/games-filter/new-games.png" alt="New games" />NEW GAMES
 					</div>
 					<div class="games-filter__item px-3 violet">
-						<img src="images/games-filter/all-games.png" alt="All games" />ALL GAMES
+						<img class="lazy" data-src="images/games-filter/all-games.png" alt="All games" />ALL GAMES
 					</div>
 				</div>
 			</div>
@@ -149,10 +147,10 @@
 		<div class="container-fluid">
 			<div class="row d-flex px-3 games-slider-container">
 				<div class="game-block new-game">
-					<img class="img-fluid game-block__image purple-border "
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/stardust.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/stardust.jpg"
 						alt="Startdust" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay purple-border flex-column justify-content-center align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid">
@@ -165,13 +163,13 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 				</div>
 				<div class="game-block">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/empress-wu.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/empress-wu.jpg"
 						alt="Empress Wu" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay purple-border flex-column justify-content-center align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid">
@@ -184,13 +182,13 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 				</div>
 				<div class="game-block">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/secret-symbol.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/secret-symbol.jpg"
 						alt="Secret Symbol" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay purple-border flex-column justify-content-center align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid">
@@ -203,13 +201,13 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 				</div>
 				<div class="game-block">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/plentiful-treasure.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/plentiful-treasure.jpg"
 						alt="Plentiful Treasure" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay purple-border flex-column justify-content-center align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid">
@@ -222,13 +220,13 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 				</div>
 				<div class="game-block">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/scuba-fishing.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/scuba-fishing.jpg"
 						alt="Scuba Fishing" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay purple-border flex-column justify-content-center align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid">
@@ -241,13 +239,13 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 				</div>
 				<div class="game-block">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/lucha-libre-2.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/lucha-libre-2.jpg"
 						alt="Lucha Libre 2" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay purple-border flex-column justify-content-center align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid">
@@ -260,13 +258,13 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 				</div>
 				<div class="game-block">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/i-zombie.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/i-zombie.jpg"
 						alt="I Zombie" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay purple-border flex-column justify-content-center align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid">
@@ -279,7 +277,7 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 				</div>
 			</div>
 		</div>
@@ -288,8 +286,10 @@
 		<!-- Reviews [start] -->
 		<div class="container">
 			<div class="row py-5">
+				<!-- Reviews [start] -->
 				<div class="reviews col-lg-8 ">
 					<p class="subheading light-golden text-center py-3 py-lg-4">Reviews</p>
+					
 					<div class="reviews-slider row d-flex">
 						<div
 							class="reviews-slider__slide flex-column align-items-center justify-content-start text-center px-3 px-sm-5 ">
@@ -319,10 +319,10 @@
 							<p>I’ve tried hundreds of casinos –both online and offline – over the years and my
 								experience at Royal Ace has always been one of the best.</p>
 						</div>
-
 					</div>
-
 				</div>
+				<!-- Reviews [end] -->
+
 				<div class="col-lg-4 top-winners justify-content-center">
 					<p class="subheading text-center light-golden pt-3 py-lg-4">Top winners</p>
 					<div class="top-winners__row d-flex justify-content-start justify-content-lg-center">
@@ -382,8 +382,10 @@
 		<div class="container-fluid jackpot-counter d-flex justify-content-center align-items-center pb-4">
 			<div class="row text-center py-5">
 				<div class="col-12 subheading py-2 py-md-3 jackpot-counter--text">TOTAL JACKPOT</div>
+				<!-- Jackpot [start] -->
 				<div id="total_jackpot" data-from="56723.69" data-to="70723.69"
-					class="col-12 heading jackpot-counter--amount py-md-3 light-golden "></div>
+					class="col-12 heading jackpot-counter--amount py-md-3 light-golden"></div>
+				<!-- Jackpot [end] -->
 				<a href="#" class="mt-3 mx-auto">
 					<div class="button button--purple button--purple--border subheading ">
 						PLAY NOW
@@ -398,10 +400,10 @@
 			<p class="text-center subheading subheading--thin violet">TOP JACKPOT WINNERS</p>
 			<div class="row d-flex px-3 games-slider-container">
 				<div class="game-block game-block__winners">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/stardust.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/stardust.jpg"
 						alt="Startdust" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid ">
@@ -414,7 +416,7 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 					<div class="jackpot-winners text-center py-1">
 						<p class="jackpot-winners__name">Jason R. won</p>
 						<p class="jackpot-winners__amount">$52,3112</p>
@@ -422,10 +424,10 @@
 				</div>
 
 				<div class="game-block game-block__winners">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/empress-wu.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/empress-wu.jpg"
 						alt="Empress Wu" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid ">
@@ -438,17 +440,17 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 					<div class="jackpot-winners text-center py-1">
 						<p class="jackpot-winners__name">Jason R. won</p>
 						<p class="jackpot-winners__amount">$52,3112</p>
 					</div>
 				</div>
 				<div class="game-block game-block__winners">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/secret-symbol.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/secret-symbol.jpg"
 						alt="Secret Symbol" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid ">
@@ -461,17 +463,17 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 					<div class="jackpot-winners text-center py-1">
 						<p class="jackpot-winners__name">Jason R. won</p>
 						<p class="jackpot-winners__amount">$52,3112</p>
 					</div>
 				</div>
 				<div class="game-block game-block__winners">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/plentiful-treasure.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/plentiful-treasure.jpg"
 						alt="Plentiful Treasure" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid ">
@@ -484,17 +486,17 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 					<div class="jackpot-winners text-center py-1">
 						<p class="jackpot-winners__name">Jason R. won</p>
 						<p class="jackpot-winners__amount">$52,3112</p>
 					</div>
 				</div>
 				<div class="game-block game-block__winners">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/scuba-fishing.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/scuba-fishing.jpg"
 						alt="Scuba Fishing" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid ">
@@ -507,17 +509,17 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 					<div class="jackpot-winners text-center py-1">
 						<p class="jackpot-winners__name">Jason R. won</p>
 						<p class="jackpot-winners__amount">$52,3112</p>
 					</div>
 				</div>
 				<div class="game-block game-block__winners">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/lucha-libre-2.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/lucha-libre-2.jpg"
 						alt="Lucha Libre 2" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid ">
@@ -530,17 +532,17 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 					<div class="jackpot-winners text-center py-1">
 						<p class="jackpot-winners__name">Jason R. won</p>
 						<p class="jackpot-winners__amount">$52,3112</p>
 					</div>
 				</div>
 				<div class="game-block game-block__winners">
-					<img class="img-fluid game-block__image purple-border"
-						src="https://www.royalacecasino.com/modules/webplay/images/casinogames/i-zombie.jpg"
+					<img class="img-fluid game-block__image purple-border lazy"
+						data-src="https://www.royalacecasino.com/modules/webplay/images/casinogames/i-zombie.jpg"
 						alt="I Zombie" />
-					<!-- Overlay - start -->
+					<!-- Overlay - [start] -->
 					<div class="overlay overlay--withBar purple-border flex-column align-items-center">
 						<a href="#">
 							<div class="button button--small button--solid ">
@@ -553,7 +555,7 @@
 							</div>
 						</a>
 					</div>
-					<!-- Overlay - end -->
+					<!-- Overlay - [end] -->
 					<div class="jackpot-winners text-center py-1">
 						<p class="jackpot-winners__name">Jason R. won</p>
 						<p class="jackpot-winners__amount">$52,3112</p>
@@ -669,7 +671,7 @@
 					<!-- CTA download client [end] -->
 				</div>
 				<div class=" col-md-12 col-xl-7 text-center pt-0 pt-xl-5 order-1 order-xl-2">
-					<img src="images/download/download-main.png" alt="Download & Play on mobile">
+					<img class="lazy" data-src="images/download/download-main.png" alt="Download & Play on mobile">
 				</div>
 			</div>
 		</div>
@@ -794,6 +796,8 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 
+	<!-- lazyLoad -->
+	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
 
 	<!-- Swiper -->
 	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script> -->

@@ -41,9 +41,10 @@ $base-font: 16px;
 @import "./elements/buttons";
 @import "./elements/typography";
 @import "./elements/hamMenu";
+@import "./elements/navbar";
+
 
 // blocks
-@import "./blocks/navbar";
 @import "./blocks/mainSlider";
 @import "./blocks/gamesRow";
 @import "./blocks/reviews";

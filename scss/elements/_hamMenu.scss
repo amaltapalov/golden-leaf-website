@@ -102,3 +102,9 @@ aside {
     }
 }
 
+// Move [SignUp] and [Login] buttons when side menu is opened
+.show-nav > .navbar {
+    @media screen and (min-width: 992px) {
+        width: calc(100vw - 250px)
+    }
+}

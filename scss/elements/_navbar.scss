@@ -7,8 +7,13 @@ $border-color: #b1a8d7;
     font-size: 0.8rem;
     background: $bg-color;
     width: 100%;
+    min-height: 82px;
     left: 0;
     transition: all .45s;
+
+    .logo {
+        min-width: 202px;
+    }
 
     a:hover {
         color: $golden-color;
