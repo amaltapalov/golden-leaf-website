@@ -1,13 +1,7 @@
 // wait document to load
-(() => {
-	console.log("hello 6");
-})();
-
-// LazyLoad init
-// www.andreaverlicchi.eu/lazyload/
-var lazyLoad = new LazyLoad({
-    elements_selector: ".lazy"
-});
+// (() => {
+// 	console.log("hello 6");
+// })();
 
 // HamMenu [start]
 //www.taniarascia.com/off-canvas-navigation/
