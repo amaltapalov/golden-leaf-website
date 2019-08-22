@@ -1,3 +1,4 @@
+// HOMEPAGE slider [start]
 .main-slider {
     padding-top: 70px;
     font-family: 'Raleway', sans-serif;
@@ -36,4 +37,15 @@
         transform: rotateZ(90deg);
     }    
 }
+// HOMEPAGE slider [end]
+
+// PROMOTION PAGE slider [start]
+.promotion-slider-nav {
+    .slick-current img {
+        transition: .3s;
+        filter: brightness(180%)
+    }
+}
+// PROMOTION PAGE slider [end]
+
 

@@ -17,7 +17,7 @@
 -   [x] Fade Navbar menu when side menu opened
 -   [x] Signup and Login button are rounded (need test) 
  
--   [ ] Add data-src for lazy loading
+-   [ ] !!! Mobile Logo Resizing
 
 -   Leo's and Paula's review:
 -   [x] Features hover text (with limit length)

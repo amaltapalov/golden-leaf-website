@@ -25,6 +25,8 @@
         }
     }
 
+    
+
     .slick-slide {
         -moz-transform: scale(0.9);
         -ms-transform: scale(0.9);
@@ -38,6 +40,10 @@
         @media screen and (max-width: 1300px) {
             filter: brightness(100%);
             color: $text-color;
+        }
+
+        img {
+            margin: 0 auto;
         }
     }
 
@@ -55,4 +61,5 @@
         opacity: 0;
         transition: .5s;
     }
+    
 }

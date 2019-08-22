@@ -40,10 +40,12 @@
 
 // Slick - Main slider
 $(document).ready(function() {
-	$(".slider-wrapper").slick({
+	$("#slider-wrapper").slick({
 		slidesToShow: 1,
 		arrows: false,
 		dots: true,
+		// "rows" deletes nested div in .slick-slide (https://github.com/kenwheeler/slick/issues/3110)
+		rows: 0,
 		// autoplay: true,
 		// autoplaySpeed: 3000,
 		// speed: 800
@@ -105,7 +107,7 @@ $(document).ready(function() {
 
 // Slick - Reviews
 $(document).ready(function() {
-	$(".reviews-slider").slick({
+	$("#reviews-slider").slick({
 		lazyLoad: "ondemand",
 		slidesToShow: 3,
 		slidesToScroll: 1,
@@ -146,7 +148,50 @@ $(document).ready(function() {
 	});
 });
 
-// Jackpot amount counter ----------------------------------------
+// Slick - Promotion page - Slider
+$(document).ready(function() {
+	$('#promotion-slider-for').slick({
+		// autoplay: true,
+		// autoplaySpeed: 3000,
+		// speed: 800,
+		// "rows" deletes nested div in .slick-slide
+		rows: 0,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,		
+		asNavFor: '#promotion-slider-nav'
+	  });
+	$('#promotion-slider-nav').slick({
+		slidesToShow: 4,
+		arrows: false,
+		dots: false,
+		arrows: false,
+		focusOnSelect: true,
+		asNavFor: '#promotion-slider-for',
+		responsive: [	
+			{
+				breakpoint: 868,
+				settings: {
+					slidesToShow: 3,
+					dots: true,
+					infinite: true
+				}
+			},		
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					dots: true,
+					infinite: true
+				}
+			}
+		]
+	});
+});
+
+
+// Jackpot amount counter [start] -----------------------------
 (function(factory) {
 	if (typeof define === "function" && define.amd) {
 		// AMD
@@ -314,4 +359,4 @@ jQuery(document).ready(function() {
 	}
 	jQuery("#total_jackpot").each(count);
 });
-//-----------------------------
+// Jackpot amount counter [end] -----------------------------

@@ -58,12 +58,12 @@
 }
 
 .slick-dots {
-    bottom: -50px;
+    bottom: -25px;
 }
 
 .slick-dots .slick-active {
-        background: $slider-dots-color;
-        border-radius: 50%;
+    background: $slider-dots-color;
+    border-radius: 50%;
 }
 
 .slick-dots li button:before {
@@ -75,7 +75,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-    font-size: 23px;
+    font-size: 20px;
     border: none;
     top: 3px;
     color: $slider-dots-color;
