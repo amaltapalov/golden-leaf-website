@@ -23,6 +23,11 @@
         &--border {
             border: 2px solid lighten($golden-color, 30%);
         }
+  
+        span {
+            @include fluid-font(0.8rem, 1.3rem, 992px, 1400px);
+        }
+   
     }
 
     &--purple {
@@ -44,6 +49,19 @@
         &:hover {
             background: rgba($purple-color, 1);
         }     
+    }
+
+    &--redeem {
+        margin: 0;
+        padding: .5rem 1rem;
+        background: $violet-color;
+        border: 1px dashed #fff;
+        border-radius: 5px;
+        font-family: 'Colus', sans-serif !important;
+
+        span {
+            @include fluid-font(1rem, 1.3rem, 992px, 1400px);
+        }
     }
 
     a {

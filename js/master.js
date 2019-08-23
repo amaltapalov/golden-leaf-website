@@ -151,10 +151,10 @@ $(document).ready(function() {
 // Slick - Promotion page - Slider
 $(document).ready(function() {
 	$('#promotion-slider-for').slick({
-		// autoplay: true,
-		// autoplaySpeed: 3000,
-		// speed: 800,
-		// "rows" deletes nested div in .slick-slide
+		autoplay: true,
+		autoplaySpeed: 3000,
+		speed: 800,
+		// "rows" deletes nested div in .slick-slide. try to use "rows: 0" or "rows: 1"
 		rows: 0,
 		slidesToShow: 1,
 		slidesToScroll: 1,

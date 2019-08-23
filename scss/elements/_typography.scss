@@ -22,10 +22,24 @@
 
 .subheading {
     @include fluid-font(22px, 34px, 992px, 1400px);
-    margin-bottom: 0.5rem;
     &.subheading--thin {
         font-family: 'Raleway',sans-serif; 
     }
+}
+
+.caption-text {
+    font-size: 0.8rem;
+    color: rgba($text-color, 0.7)
+}
+
+.circle-number {
+    font-family: 'Colus', serif;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 2px 7px;
+    margin-top: 2px;
+    border: 2px solid $light-golden-color;
+    border-radius: 50%;
 }
 
 // Color classes
@@ -38,5 +52,5 @@
 }
 
 .violet {
-    color: $violet-color;
+    color: lighten($violet-color, 10%);
 }

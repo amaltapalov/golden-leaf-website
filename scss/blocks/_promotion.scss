@@ -1,0 +1,17 @@
+.promotion {
+    &__image {
+        min-width: 150px;
+    }
+    &__subheading {
+        text-transform: uppercase;
+    }
+    &__feature {
+        &__heading {
+            font-size: 1.2rem;
+        }
+        &__desc {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+    }   
+}
