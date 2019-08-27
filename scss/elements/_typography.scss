@@ -21,10 +21,12 @@
 }
 
 .subheading {
-    @include fluid-font(22px, 34px, 992px, 1400px);
-    &.subheading--thin {
-        font-family: 'Raleway',sans-serif; 
-    }
+    @include fluid-font(22px, 34px, 768px, 1400px);
+}
+
+.subheading--thin {
+    @include fluid-font(22px, 34px, 768px, 1400px);
+    font-family: 'Raleway',sans-serif; 
 }
 
 .caption-text {

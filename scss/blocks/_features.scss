@@ -12,15 +12,21 @@
         width: 100%;
         height: auto;
         cursor: pointer;
+        @media screen and (max-width: 768px) {
+            font-size: 14px;            
+        }
+        .subheading {
+            @include fluid-font(20px, 30px, 468px, 992px);
+        } 
     }
 }
 
 .feature__block__hidden {
     opacity: 0;
     width: 80%;
+    font-size: 14px;
 
     @media screen and (max-width: 992px) {
-        font-size: 14px;
         width: 100%;
     }
 
