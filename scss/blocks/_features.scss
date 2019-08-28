@@ -15,9 +15,6 @@
         @media screen and (max-width: 768px) {
             font-size: 14px;            
         }
-        .subheading {
-            @include fluid-font(20px, 30px, 468px, 992px);
-        } 
     }
 }
 
