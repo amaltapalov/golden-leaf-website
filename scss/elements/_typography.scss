@@ -10,9 +10,9 @@
          url('../fonts/Colus-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
   }
 
-.heading, .subheading {
+.heading, .subheading, .subheading--smaller {
     font-family: 'Colus', sans-serif;
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .heading {
@@ -22,6 +22,10 @@
 
 .subheading {
     @include fluid-font(22px, 34px, 768px, 1400px);
+}
+
+.subheading--smaller {
+    @include fluid-font(20px, 24px, 768px, 1400px);
 }
 
 .subheading--thin {
