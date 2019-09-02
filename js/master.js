@@ -1,11 +1,13 @@
-// wait document to load
-// (() => {
-// 	console.log("hello 6");
-// })();
+// (function($) {
+// 	$(document).ready(function() {
+// 		...
+// 	})
+// })(jQuery);
 
-// HamMenu [start]
+
+// Hamburger Menu [start]
 //www.taniarascia.com/off-canvas-navigation/
-(function($) {
+$(document).ready(function() {
 	$(function() {
 		// DOM Ready
 		// Toggle navigation
@@ -14,12 +16,12 @@
 			if ($("body").hasClass("show-nav")) {
 				$("body").removeClass("show-nav");
 				// $('#navbar').css('width', '100vw');
-				$(".desktop-nav").fadeTo(100, 1)
+				$(".desktop-nav").fadeTo(100, 1);
 			} else {
 				$("body").addClass("show-nav");
 				// $('#navbar').css('width', '100vw').css('width', '-=250px');
-				$(".desktop-nav").fadeTo(100, 0)
-			};
+				$(".desktop-nav").fadeTo(100, 0);
+			}
 			event.stopPropagation();
 		});
 
@@ -33,27 +35,25 @@
 			if ($(e.target).closest("#navigation").length === 0) {
 				$("body").removeClass("show-nav");
 			}
-		})
+		});
 	});
-})(jQuery);
-// HamMenu [end]
+});
+// Hamburger Menu [end]
 
-// Slick - Main slider
+// Slick carousel [start]
 $(document).ready(function() {
+	// Slick - Main slider
 	$("#slider-wrapper").slick({
 		slidesToShow: 1,
 		arrows: false,
 		dots: true,
 		// "rows" deletes nested div in .slick-slide (https://github.com/kenwheeler/slick/issues/3110)
-		rows: 0,
+		rows: 0
 		// autoplay: true,
 		// autoplaySpeed: 3000,
 		// speed: 800
 	});
-});
-
-// Slick - Game filter
-$(document).ready(function() {
+	// Slick - Game filter
 	$(".games-slider-container").slick({
 		lazyLoad: "ondemand",
 		slidesToShow: 6,
@@ -103,10 +103,7 @@ $(document).ready(function() {
 			}
 		]
 	});
-});
-
-// Slick - Reviews
-$(document).ready(function() {
+	// Slick - Reviews
 	$("#reviews-slider").slick({
 		lazyLoad: "ondemand",
 		slidesToShow: 3,
@@ -119,7 +116,7 @@ $(document).ready(function() {
 		autoplay: true,
 		autoplaySpeed: 3000,
 		speed: 500,
-		focusOnSelect:true,
+		focusOnSelect: true,
 		responsive: [
 			{
 				breakpoint: 1300,
@@ -147,49 +144,7 @@ $(document).ready(function() {
 		]
 	});
 });
-
-// Slick - Promotion page - Slider
-$(document).ready(function() {
-	$('#promotion-slider-for').slick({
-		autoplay: true,
-		autoplaySpeed: 3000,
-		speed: 800,
-		// "rows" deletes nested div in .slick-slide. try to use "rows: 0" or "rows: 1"
-		rows: 0,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		fade: true,		
-		asNavFor: '#promotion-slider-nav'
-	  });
-	$('#promotion-slider-nav').slick({
-		slidesToShow: 4,
-		arrows: false,
-		dots: false,
-		arrows: false,
-		focusOnSelect: true,
-		asNavFor: '#promotion-slider-for',
-		responsive: [	
-			{
-				breakpoint: 868,
-				settings: {
-					slidesToShow: 3,
-					dots: true,
-					infinite: true
-				}
-			},		
-			{
-				breakpoint: 576,
-				settings: {
-					slidesToShow: 2,
-					dots: true,
-					infinite: true
-				}
-			}
-		]
-	});
-});
-
+// Slick carousel [end]
 
 // Jackpot amount counter [start] -----------------------------
 (function(factory) {
