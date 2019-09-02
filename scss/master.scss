@@ -57,6 +57,11 @@ $base-font: 16px;
 
 
 // delete focus outline
+
+html {
+  scroll-behavior: smooth;
+}
+
 *:focus {
   outline: 0;
 }

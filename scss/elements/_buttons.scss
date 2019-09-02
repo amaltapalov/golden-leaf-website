@@ -5,8 +5,13 @@
     margin: 5px;
     text-align: center;
     font-family: 'Raleway', sans-serif !important;
-    cursor: pointer;   
-    color: #ffffff; 
+    cursor: pointer;
+    color: #ffffff;
+
+    &:focus,
+    &.focus {
+        outline: 0;
+    }
 
     &--small {
         padding: 0.5rem 2rem;
@@ -18,16 +23,16 @@
 
         &:hover {
             background: $golden-color;
-        }  
+        }
 
         &--border {
             border: 2px solid lighten($golden-color, 30%);
         }
-  
+
         span {
             @include fluid-font(0.8rem, 1.3rem, 992px, 1400px);
         }
-   
+
     }
 
     &--purple {
@@ -35,7 +40,7 @@
 
         &:hover {
             background: darken($purple-color, 5%);
-        }      
+        }
 
         &--border {
             border: 2px solid lighten($purple-color, 30%);
@@ -48,7 +53,7 @@
 
         &:hover {
             background: rgba($purple-color, 1);
-        }     
+        }
     }
 
     &--redeem {
@@ -98,4 +103,3 @@
     top: 3px;
     color: $slider-dots-color;
 }
-
