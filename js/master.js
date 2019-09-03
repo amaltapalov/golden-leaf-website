@@ -143,8 +143,48 @@ $(document).ready(function() {
 			}
 		]
 	});
+	// Slick - Promotion page slider
+	$('#promotion-slider-for').slick({
+		// autoplay: true,
+		// autoplaySpeed: 3000,
+		// speed: 800,
+		// "rows" deletes nested div in .slick-slide
+		rows: 0,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,		
+		asNavFor: '#promotion-slider-nav'
+	  });
+	$('#promotion-slider-nav').slick({
+		slidesToShow: 4,
+		arrows: false,
+		dots: false,
+		arrows: false,
+		focusOnSelect: true,
+		asNavFor: '#promotion-slider-for',
+		responsive: [	
+			{
+				breakpoint: 868,
+				settings: {
+					slidesToShow: 3,
+					dots: true,
+					infinite: true
+				}
+			},		
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					dots: true,
+					infinite: true
+				}
+			}
+		]
+	});
 });
 // Slick carousel [end]
+
 
 // Jackpot amount counter [start] -----------------------------
 (function(factory) {
