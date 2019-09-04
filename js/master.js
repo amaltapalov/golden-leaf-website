@@ -11,7 +11,7 @@ $(document).ready(function() {
 	$(function() {
 		// DOM Ready
 		// Toggle navigation
-		$("#nav-toggle").click(function(event) {
+		$(".nav-toggle").click(function(event) {
 			this.classList.toggle("active");
 			if ($("body").hasClass("show-nav")) {
 				$("body").removeClass("show-nav");
@@ -19,21 +19,22 @@ $(document).ready(function() {
 				$(".desktop-nav").fadeTo(100, 1);
 			} else {
 				$("body").addClass("show-nav");
-				// $('#navbar').css('width', '100vw').css('width', '-=250px');
 				$(".desktop-nav").fadeTo(100, 0);
+				// $('#navbar').css('width', '100vw').css('width', '-=250px');
 			}
-			event.stopPropagation();
+			event.stopPropagation();		
 		});
 
 		// Close side navigation clicking on close button icon
-		$("#closeBtn").click(function() {
-			$("body").removeClass("show-nav");
-		});
+		// $("#closeBtn").click(function() {
+		// 	$("body").removeClass("show-nav");
+		// });
 
 		// Hide menu clicking outside of side navigation
 		$(document).click(function(e) {
-			if ($(e.target).closest("#navigation").length === 0) {
+			if ($(e.target).closest(".navigation").length === 0) {
 				$("body").removeClass("show-nav");
+				$(".desktop-nav").fadeTo(100, 1);
 			}
 		});
 	});
@@ -143,6 +144,7 @@ $(document).ready(function() {
 			}
 		]
 	});
+
 	// Slick - Promotion page slider
 	$('#promotion-slider-for').slick({
 		// autoplay: true,
