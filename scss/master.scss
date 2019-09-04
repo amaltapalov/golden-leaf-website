@@ -43,7 +43,6 @@ $base-font: 16px;
 @import "./elements/hamMenu";
 @import "./elements/navbar";
 
-
 // blocks
 @import "./blocks/mainSlider";
 @import "./blocks/gamesRow";
@@ -98,6 +97,15 @@ ul {
   list-style-type: none;
 }
 
+// Deposit methods - banking page
+.deposit-image {
+  &.visa, &.mastercard {
+    width: 80px;
+  }
+  &.neteller, &.bitcoin  {
+    width: 120px;
+  }
+}
 
 // Overwriting Slick slide height
 .slick-track {
