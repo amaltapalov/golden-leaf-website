@@ -1,10 +1,3 @@
-// (function($) {
-// 	$(document).ready(function() {
-// 		...
-// 	})
-// })(jQuery);
-
-
 // Hamburger Menu [start]
 //www.taniarascia.com/off-canvas-navigation/
 $(document).ready(function() {
