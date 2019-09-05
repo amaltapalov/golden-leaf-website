@@ -5,7 +5,7 @@ $golden-color: #ae8932;
 $golden-gradient: linear-gradient(#cfa747, #b08a33, #cfa747);
 $light-golden-color: lighten(#ae8932, 20%);
 $purple-color: #540965;
-$slider-dots-color: #694fbf;
+$slider-dots-color: #cfa747;
 $bg-color: #140721;
 $base-font: 16px;
 
@@ -20,7 +20,6 @@ $base-font: 16px;
   * ((100vw - #{$lower-range}) / #{(
   ($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))
   }
-
   ));
 
   @media screen and (max-width: $lower-range) {
