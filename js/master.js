@@ -34,6 +34,8 @@ $(document).ready(function() {
 });
 // Hamburger Menu [end]
 
+
+
 // Slick carousel [start]
 $(document).ready(function() {
 	// Slick - Main slider

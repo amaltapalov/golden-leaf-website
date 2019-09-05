@@ -1,0 +1,36 @@
+.faqAccordion {
+    p {
+        font-size: 15px;
+        margin: 5px 0 10px 0;
+    }
+    
+    ul, ol {
+        font-size: 15px;
+       
+        padding: 0 0 0 20px !important;
+    }
+
+    ul {
+        list-style-type:disc;
+    }
+
+    .accordion__answer {
+        margin: 0 0 5px 0;
+        border-bottom: 1px solid $light-golden-color;
+    }
+
+    .accordion__title {
+        font-weight: bold;
+        a:hover  {
+            color: $light-golden-color; 
+        }
+    }    
+    
+    a.accordion__link {
+        color: $light-golden-color; 
+    }
+}
+
+.ui-accordion-header-active {
+    color: $light-golden-color !important; 
+}
