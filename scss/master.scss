@@ -107,6 +107,14 @@ ul {
   }
 }
 
+// Contact Page
+.hero-section {
+  padding-top: 120px;
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;;
+  }
+}
+
 // Overwriting Slick slide height
 .slick-track {
   display: flex;
