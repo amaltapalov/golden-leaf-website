@@ -1,286 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link
+			rel="shortcut icon"
+			href="images/favicon.ico"
+			type="image/x-icon"
+		/>
+		<title>Banking | Royal Ace</title>
+		<meta name="description" content="" />
+		<meta name="author" content="AT" />
+		<!-- master.scss -->
+		<link rel="stylesheet" type="text/css" href="css/master.css" />
+	</head>
 
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-	<title>Banking | Royal Ace</title>
-	<meta name="description" content="" />
-	<meta name="author" content="AT" />
-	<!-- master.scss -->
-	<link rel="stylesheet" type="text/css" href="css/master.css" />
-</head>
-
-<body>
-	<!-- Side menu navigation [start] -->
-	<aside class="navigation">
-		<nav>
-			<div class="navigation__user">
-				<img class="navigation__user__avatar" src="images/menu/avatar.jpg" alt="User avatar">
-				<div class="px-3">
-					<div class="navigation__user__username">USERNAME</div>
-					<div>Level</div>
+	<body>
+		<!-- Side menu navigation [start] -->
+		<aside class="navigation">
+			<nav>
+				<div class="navigation__user">
+					<img
+						class="navigation__user__avatar"
+						src="images/menu/avatar.jpg"
+						alt="User avatar"
+					/>
+					<div class="px-3">
+						<div class="navigation__user__username">USERNAME</div>
+						<div>Level</div>
+					</div>
 				</div>
-			</div>
-			<div class="navigation__list">
-				<!-- <a href="javascript:void(0)" id="closeBtn" class="navigation__closeButton">
+				<div class="navigation__list">
+					<!-- <a href="javascript:void(0)" id="closeBtn" class="navigation__closeButton">
 					<img src="images/cancel.svg" alt="cancel">
 				</a> -->
-				<a href="https://www.google.com">
-					<span><img src="images/menu/home.svg"></span> Home
-				</a>
-				<a href="https://www.google.com">
-					<span><img src="images/menu/instant-play.svg"></span>Instant Play
-				</a>
-				<a href="https://www.google.com">
-					<span><img src="images/menu/download.svg"></span>Download
-					Casino
-				</a>
-				<a href="https://www.google.com">
-					<span><img src="images/menu/promos.svg"></span>Promos
-				</a>
-				<a href="https://www.google.com">
-					<span><img src="images/menu/vip.svg"></span>VIP
-					Program
-				</a>
-				<a href="https://www.google.com">
-					<span><img src="images/menu/banking.svg"></span>Banking
-				</a>
-				<a href="https://www.google.com">
-					<span><img src="images/menu/contact.svg"></span>Contact
-				</a>
-				<a href="https://www.google.com">
-					<span><img src="images/menu/terms.svg"></span>Terms &
-					Conditions
-				</a>
-			</div>
-			<a href="#" class="navigation__logout">
-				LOG OUT
-			</a>
-		</nav>
-	</aside>
-	<!-- Side menu navigation [end] -->
-
-	<!-- Navbar [start]-->
-	<div id="navbar" class="container-fluid navbar">
-		<div class="row d-flex justify-content-between align-items-center py-3">
-			<div class="col-auto col-md-4 col-xl-5">
-				<ul class="d-flex align-items-center mb-0">
-
-					<!-- Hamburger of Rascia [start]-->
-					<li class="nav-toggle position" style="font-size:30px;cursor:pointer">
-						&#9776;
-					</li>
-					<!-- Hamburger of Rascia [end]-->
-
-					<li class="desktop-nav d-none d-xl-block"><a href="#">INSTANT PLAY</a></li>
-					<li class="desktop-nav d-none d-xl-block"><a href="#">DOWNLOAD CASINO</a></li>
-				</ul>
-			</div>
-
-			<div class="col col-md-3 col-md-4 col-xl-2 text-left text-md-center px-0">
-				<img class="logo" src="images/logo.png" alt="Royal Ace" />
-			</div>
-
-			<div class="col-auto col-md-4 col-xl-5">
-				<ul class="d-flex align-items-center justify-content-end mb-0">
-					<li class="desktop-nav d-none d-xl-block"><a href="#">PROMOTIONS</a></li>
-					<li class="bordered px-2 px-md-3 mx-1 mx-md-2"><a href="#">LOGIN</a></li>
-					<li class="bordered px-2 px-md-3 mx-1 mx-md-2"><a href="#">SIGN UP</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- Navbar [end]-->
-
-	<main>
-		<div class="container px-3 px-xl-5 pt-5">
-			<!-- Hero section [start] -->
-			<div class="row align-items-center justify-content-center">
-				<div class="col-12 col-xl-6 order-2 order-xl-1">
-					<p class="heading py-2">Banking</p>
-					<p class="pb-2 violet">Royal Ace offers players a number of easy-to-use deposit and withdrawal
-						methods. All major credit cards are accepted but you can also fund your account using NETeller
-						or Bitcoin, and withdraw money through bank wires and checks as well. Need a different deposit
-						or withdrawal method? Just contact Customer Service and ask!</p>
+					<a href="/">
+						<span><img src="images/menu/home.svg"/></span> Home
+					</a>
+					<a href="#">
+						<span><img src="images/menu/instant-play.svg"/></span
+						>Instant Play
+					</a>
+					<a href="#">
+						<span><img src="images/menu/download.svg"/></span
+						>Download Casino</a
+					>
+					<a href="/page-promotion">
+						<span><img src="images/menu/promos.svg"/></span
+						>Promos</a
+					>
+					<a href="https://www.google.com">
+						<span><img src="images/menu/vip.svg"/></span>VIP
+						Program</a
+					>
+					<a href="/page-banking">
+						<span><img src="images/menu/banking.svg"/></span
+						>Banking</a
+					>
+					<a href="/page-contact">
+						<span><img src="images/menu/contact.svg"/></span
+						>Contact</a
+					>
+					<a href="#">
+						<span><img src="images/menu/terms.svg"/></span>Terms &
+						Conditions</a
+					>
 				</div>
+				<a href="#" class="navigation__logout">
+					LOG OUT
+				</a>
+			</nav>
+		</aside>
+		<!-- Side menu navigation [end] -->
 
-				<div class="col-12 col-xl-6 order-1 order-xl-2">
-					<img class="img-fluid" src="images/banking/slide-1.png" alt="New game release" />
-				</div>
-			</div>
-			<!-- Hero section [end] -->
+		<!-- Navbar [start]-->
+		<div id="navbar" class="container-fluid navbar">
+			<div
+				class="row d-flex justify-content-between align-items-center py-3"
+			>
+				<div class="col-auto col-md-4 col-xl-5">
+					<ul class="d-flex align-items-center mb-0">
+						<!-- Hamburger of Rascia [start]-->
+						<li
+							class="nav-toggle position"
+							style="font-size:30px;cursor:pointer"
+						>
+							&#9776;
+						</li>
+						<!-- Hamburger of Rascia [end]-->
 
-			<div class="row justify-content-center">
-				<!-- Deposit Methods [start] -->
-				<div class="col-12 col-xl-6 py-4 px-xl-4">
-					<p class="subheading--smaller light-golden py-2 pb-4">Deposit Methods</p>
-					<!-- Visa -->
-					<div class="pb-4">
-						<img class="deposit-image visa pb-2"
-							src="https://www.royalacecasino.com/images/banking/visa.svg" alt="Visa">
-						<p>Deposit directly into your casino account using your
-							credit card for instant access
-							to your
-							funds. </p>
-					</div>
-					<!-- MasterCard -->
-					<div class="pb-4">
-						<img class="deposit-image mastercard pb-2"
-							src="https://www.royalacecasino.com/images/banking/mastercard.svg" alt="MasterCard">
-						<p>You can make quick and easy credit card deposits
-							directly through cashier after you sign into your account.</p>
-					</div>
-					<!-- NETeller -->
-					<div class="pb-4">
-						<img class="deposit-image neteller pb-2"
-							src="https://www.royalacecasino.com/images/banking/neteller.svg" alt="NETeller">
-						<p>Neteller is the best option for quick and easy deposits
-							without added fees and in one easy step.</p>
-					</div>
-					<!-- Bitcoin -->
-					<div class="pb-4">
-						<img class="deposit-image bitcoin pb-2"
-							src="https://www.royalacecasino.com/images/banking/bitcoin.svg" alt="Bitcoin">
-						<p>You cans deposit directly into your casino account using
-							your BitCoin Wallet so you can be in complete control of your bankroll.</p>
-					</div>
-				</div>
-				<!-- Deposit Methods [end] -->
-
-				<!-- Withdraw methods [start]-->
-				<div class="col-12 col-xl-6 py-4 px-xl-4">
-					<p class="subheading--smaller light-golden py-2 pb-4">Withdraw Methods</p>
-					<div class="pb-4">
-						<img class="deposit-image neteller pb-2"
-							src="https://www.royalacecasino.com/images/banking/neteller.svg" alt="NETeller">
-						<p>NETeller provides fast payouts and excellent security in 26 different currencies, so you
-							don’t lose money in exchange or surprise fees.</p>
-					</div>
-					<div class="pb-4">
-						<img class="deposit-image bitcoin pb-2"
-							src="https://www.royalacecasino.com/images/banking/bitcoin.svg" alt="Bitcoin">
-						<p>A quick, easy and safe way to get your winnings out of your casino account and into your
-							hands. </p>
-					</div>
-					<div class="pb-4">
-						<img class="deposit-image neteller pb-2"
-							src="https://www.royalacecasino.com/images/banking/bank-wire.svg" alt="Bank wire">
-						<p>Want to get the money directly into your bank account? Bank wires are one of the fastest –
-							and safest-- ways to withdraw money.</p>
-					</div>
-					<div class="pb-4">
-						<img class="deposit-image neteller pb-2"
-							src="https://www.royalacecasino.com/images/banking/bank-checks.svg" alt="Bank checks">
-						<p>Checks are one of the most frill-free payment methods available – just let us know you want
-							to withdraw your winnings and we’ll handle the rest. </p>
-					</div>
-				</div>
-				<!-- Withdraw methods [end]-->
-
-				<div class="col-12 col-xl-6 py-4 px-xl-4 mr-auto">
-					<p class="subheading--smaller light-golden py-2 pb-4">More methods</p>
-					<p>
-						Need access to your winnings but can’t use any of these methods? Get in touch with Customer
-						Support and we’ll figure out the best way to get the money to you.
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- Footer for Desktop [start] -->
-		<div class="container footer d-none d-sm-block">
-			<div class="row align-items-start py-5">
-				<div class="col d-none d-md-block text-center px-4">
-					<ul>
-						<li class="pb-3"><img src="images/logo.png" alt="Logo"></li>
-						<li class="py-3"><img src="images/footer/shields.png" alt="Logo"></li>
+						<li class="desktop-nav d-none d-xl-block">
+							<a href="#">INSTANT PLAY</a>
+						</li>
+						<li class="desktop-nav d-none d-xl-block">
+							<a href="#">DOWNLOAD CASINO</a>
+						</li>
 					</ul>
 				</div>
-				<div class="col">
-					<p class="footer__heading pb-3">Games</p>
-					<ul>
-						<li class="py-2 footer__link"><a href="#">Slots</a></li>
-						<li class="py-2 footer__link"><a href="#">Blackjack</a></li>
-						<li class="py-2 footer__link"><a href="#">Video Poker</a></li>
-						<li class="py-2 footer__link"><a href="#">Roulette</a></li>
-						<li class="py-2 footer__link"><a href="#">Mobile Casino</a></li>
-					</ul>
+
+				<div
+					class="col col-md-3 col-md-4 col-xl-2 text-left text-md-center px-0"
+				>
+					<a href="/">
+						<img
+							class="logo"
+							src="images/logo.png"
+							alt="Royal Ace"
+						/>
+					</a>
 				</div>
-				<div class="col">
-					<p class="footer__heading pb-3">Royal Ace</p>
-					<ul>
-						<li class="py-2 footer__link"><a href="#">Home</a></li>
-						<li class="py-2 footer__link"><a href="#">Webplay</a></li>
-						<li class="py-2 footer__link"><a href="#">VIP Program</a></li>
-						<li class="py-2 footer__link"><a href="#">Banking</a></li>
-					</ul>
-				</div>
-				<div class="col">
-					<p class="footer__heading pb-3">Promotions</p>
-					<ul>
-						<li class="py-2 footer__link"><a href="#">Bonus Codes</a></li>
-						<li class="py-2 footer__link"><a href="#">VIP Bonuses</a></li>
-					</ul>
-				</div>
-				<div class="col">
-					<p class="footer__heading pb-3">Information</p>
-					<ul>
-						<li class="py-2 footer__link"><a href="#">Contact</a></li>
-						<li class="py-2 footer__link"><a href="#">Terms & Conditions</a></li>
+
+				<div class="col-auto col-md-4 col-xl-5">
+					<ul
+						class="d-flex align-items-center justify-content-end mb-0"
+					>
+						<li class="desktop-nav d-none d-xl-block">
+							<a href="/page-promotion">PROMOTIONS</a>
+						</li>
+						<li class="bordered px-2 px-md-3 mx-1 mx-md-2">
+							<a href="#">LOGIN</a>
+						</li>
+						<li class="bordered px-2 px-md-3 mx-1 mx-md-2">
+							<a href="#">SIGN UP</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<!-- Footer for Desktop [end] -->
+		<!-- Navbar [end]-->
 
-		<!-- Footer for Mobile [start] -->
-		<div class="container footer d-block d-sm-none pt-5 px-4">
-			<img src="images/logo.png" alt="Royal Ace">
-			<div class="row py-3">
-				<div class="col-6">
-					<ul>
-						<li class="py-1 footer__link"><a href="#">Home</a></li>
-						<li class="py-1 footer__link"><a href="#">Games</a></li>
-						<li class="py-1 footer__link"><a href="#">Promotions</a></li>
-						<li class="py-1 footer__link"><a href="#">Concierge</a></li>
-					</ul>
+		<main>
+			<div class="container px-3 px-xl-5 pt-5">
+				<!-- Hero section [start] -->
+				<div class="row align-items-center justify-content-center">
+					<div class="col-12 col-xl-6 order-2 order-xl-1">
+						<p class="heading py-2">Banking</p>
+						<p class="pb-2 violet">
+							Royal Ace offers players a number of easy-to-use
+							deposit and withdrawal methods. All major credit
+							cards are accepted but you can also fund your
+							account using NETeller or Bitcoin, and withdraw
+							money through bank wires and checks as well. Need a
+							different deposit or withdrawal method? Just contact
+							Customer Service and ask!
+						</p>
+					</div>
+
+					<div class="col-12 col-xl-6 order-1 order-xl-2">
+						<img
+							class="img-fluid"
+							src="images/banking/slide-1.png"
+							alt="New game release"
+						/>
+					</div>
 				</div>
-				<div class="col-6">
-					<ul>
-						<li class="py-1 footer__link"><a href="#">VIP Program</a></li>
-						<li class="py-1 footer__link"><a href="#">Banking</a></li>
-						<li class="py-1 footer__link"><a href="#">Contact</a></li>
-						<li class="py-1 footer__link"><a href="#">Terms</a></li>
-					</ul>
+				<!-- Hero section [end] -->
+
+				<div class="row justify-content-center">
+					<!-- Deposit Methods [start] -->
+					<div class="col-12 col-xl-6 py-4 px-xl-4">
+						<p class="subheading--smaller light-golden py-2 pb-4">
+							Deposit Methods
+						</p>
+						<!-- Visa -->
+						<div class="pb-4">
+							<img
+								class="deposit-image visa pb-2"
+								src="https://www.royalacecasino.com/images/banking/visa.svg"
+								alt="Visa"
+							/>
+							<p>
+								Deposit directly into your casino account using
+								your credit card for instant access to your
+								funds.
+							</p>
+						</div>
+						<!-- MasterCard -->
+						<div class="pb-4">
+							<img
+								class="deposit-image mastercard pb-2"
+								src="https://www.royalacecasino.com/images/banking/mastercard.svg"
+								alt="MasterCard"
+							/>
+							<p>
+								You can make quick and easy credit card deposits
+								directly through cashier after you sign into
+								your account.
+							</p>
+						</div>
+						<!-- NETeller -->
+						<div class="pb-4">
+							<img
+								class="deposit-image neteller pb-2"
+								src="https://www.royalacecasino.com/images/banking/neteller.svg"
+								alt="NETeller"
+							/>
+							<p>
+								Neteller is the best option for quick and easy
+								deposits without added fees and in one easy
+								step.
+							</p>
+						</div>
+						<!-- Bitcoin -->
+						<div class="pb-4">
+							<img
+								class="deposit-image bitcoin pb-2"
+								src="https://www.royalacecasino.com/images/banking/bitcoin.svg"
+								alt="Bitcoin"
+							/>
+							<p>
+								You cans deposit directly into your casino
+								account using your BitCoin Wallet so you can be
+								in complete control of your bankroll.
+							</p>
+						</div>
+					</div>
+					<!-- Deposit Methods [end] -->
+
+					<!-- Withdraw methods [start]-->
+					<div class="col-12 col-xl-6 py-4 px-xl-4">
+						<p class="subheading--smaller light-golden py-2 pb-4">
+							Withdraw Methods
+						</p>
+						<div class="pb-4">
+							<img
+								class="deposit-image neteller pb-2"
+								src="https://www.royalacecasino.com/images/banking/neteller.svg"
+								alt="NETeller"
+							/>
+							<p>
+								NETeller provides fast payouts and excellent
+								security in 26 different currencies, so you
+								don’t lose money in exchange or surprise fees.
+							</p>
+						</div>
+						<div class="pb-4">
+							<img
+								class="deposit-image bitcoin pb-2"
+								src="https://www.royalacecasino.com/images/banking/bitcoin.svg"
+								alt="Bitcoin"
+							/>
+							<p>
+								A quick, easy and safe way to get your winnings
+								out of your casino account and into your hands.
+							</p>
+						</div>
+						<div class="pb-4">
+							<img
+								class="deposit-image neteller pb-2"
+								src="https://www.royalacecasino.com/images/banking/bank-wire.svg"
+								alt="Bank wire"
+							/>
+							<p>
+								Want to get the money directly into your bank
+								account? Bank wires are one of the fastest – and
+								safest-- ways to withdraw money.
+							</p>
+						</div>
+						<div class="pb-4">
+							<img
+								class="deposit-image neteller pb-2"
+								src="https://www.royalacecasino.com/images/banking/bank-checks.svg"
+								alt="Bank checks"
+							/>
+							<p>
+								Checks are one of the most frill-free payment
+								methods available – just let us know you want to
+								withdraw your winnings and we’ll handle the
+								rest.
+							</p>
+						</div>
+					</div>
+					<!-- Withdraw methods [end]-->
+
+					<div class="col-12 col-xl-6 py-4 px-xl-4 mr-auto">
+						<p class="subheading--smaller light-golden py-2 pb-4">
+							More methods
+						</p>
+						<p>
+							Need access to your winnings but can’t use any of
+							these methods? Get in touch with Customer Support
+							and we’ll figure out the best way to get the money
+							to you.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!-- Footer for Mobile [end] -->
 
-		<!-- Bottom bar [start]-->
-		<div class="container-fluid bottom-bar">
-			<div class="row justify-content-center p-2">
-				<div class="bottom-bar__partners p-2">
-					<img src="images/bottom-bar/partners.png" alt="Partners">
-				</div>
-				<div class="bottom-bar__deposit p-2">
-					<img class="deposit-methods img-fluid"
-						src="https://www.royalacecasino.com/modules/core/images/dep-usd.svg" alt="Deposit methods">
+			<!-- Footer for Desktop [start] -->
+			<div class="container footer d-none d-sm-block">
+				<div class="row align-items-start py-5">
+					<div class="col d-none d-md-block text-center px-4">
+						<ul>
+							<li class="pb-3">
+								<img src="images/logo.png" alt="Logo" />
+							</li>
+							<li class="py-3">
+								<img
+									src="images/footer/shields.png"
+									alt="Logo"
+								/>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<p class="footer__heading pb-3">Games</p>
+						<ul>
+							<li class="py-2 footer__link">
+								<a href="#">Slots</a>
+							</li>
+							<li class="py-2 footer__link">
+								<a href="#">Blackjack</a>
+							</li>
+							<li class="py-2 footer__link">
+								<a href="#">Video Poker</a>
+							</li>
+							<li class="py-2 footer__link">
+								<a href="#">Roulette</a>
+							</li>
+							<li class="py-2 footer__link">
+								<a href="#">Mobile Casino</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<p class="footer__heading pb-3">Royal Ace</p>
+						<ul>
+							<li class="py-2 footer__link">
+								<a href="#">Home</a>
+							</li>
+							<li class="py-2 footer__link">
+								<a href="#">Webplay</a>
+							</li>
+							<li class="py-2 footer__link">
+								<a href="#">VIP Program</a>
+							</li>
+							<li class="py-2 footer__link">
+								<a href="#">Banking</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<p class="footer__heading pb-3">Promotions</p>
+						<ul>
+							<li class="py-2 footer__link">
+								<a href="#">Bonus Codes</a>
+							</li>
+							<li class="py-2 footer__link">
+								<a href="#">VIP Bonuses</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<p class="footer__heading pb-3">Information</p>
+						<ul>
+							<li class="py-2 footer__link">
+								<a href="#">Contact</a>
+							</li>
+							<li class="py-2 footer__link">
+								<a href="#">Terms & Conditions</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!-- Bottom bar [end]-->
-	</main>
+			<!-- Footer for Desktop [end] -->
 
-	<!-- SCRIPTS -->
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<!-- master script -->
-	<script src="js/master.js"></script>
-</body>
+			<!-- Footer for Mobile [start] -->
+			<div class="container footer d-block d-sm-none pt-5 px-4">
+				<img src="images/logo.png" alt="Royal Ace" />
+				<div class="row py-3">
+					<div class="col-6">
+						<ul>
+							<li class="py-1 footer__link">
+								<a href="#">Home</a>
+							</li>
+							<li class="py-1 footer__link">
+								<a href="#">Games</a>
+							</li>
+							<li class="py-1 footer__link">
+								<a href="#">Promotions</a>
+							</li>
+							<li class="py-1 footer__link">
+								<a href="#">Concierge</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<ul>
+							<li class="py-1 footer__link">
+								<a href="#">VIP Program</a>
+							</li>
+							<li class="py-1 footer__link">
+								<a href="#">Banking</a>
+							</li>
+							<li class="py-1 footer__link">
+								<a href="#">Contact</a>
+							</li>
+							<li class="py-1 footer__link">
+								<a href="#">Terms</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Footer for Mobile [end] -->
 
+			<!-- Bottom bar [start]-->
+			<div class="container-fluid bottom-bar">
+				<div class="row justify-content-center p-2">
+					<div class="bottom-bar__partners p-2">
+						<img
+							src="images/bottom-bar/partners.png"
+							alt="Partners"
+						/>
+					</div>
+					<div class="bottom-bar__deposit p-2">
+						<img
+							class="deposit-methods img-fluid"
+							src="https://www.royalacecasino.com/modules/core/images/dep-usd.svg"
+							alt="Deposit methods"
+						/>
+					</div>
+				</div>
+			</div>
+			<!-- Bottom bar [end]-->
+		</main>
+
+		<!-- SCRIPTS -->
+		<!-- jQuery -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<!-- master script -->
+		<script src="js/master.js"></script>
+	</body>
 </html>
