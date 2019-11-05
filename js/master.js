@@ -2,28 +2,18 @@
 //www.taniarascia.com/off-canvas-navigation/
 $(document).ready(function() {
 	$(function() {
-		// DOM Ready
-		// Toggle navigation
 		$(".nav-toggle").click(function(event) {
 			this.classList.toggle("active");
 			if ($("body").hasClass("show-nav")) {
 				$("body").removeClass("show-nav");
-				// $('#navbar').css('width', '100vw');
 				$(".desktop-nav").fadeTo(100, 1);
 			} else {
 				$("body").addClass("show-nav");
 				$(".desktop-nav").fadeTo(100, 0);
-				// $('#navbar').css('width', '100vw').css('width', '-=250px');
 			}
-			event.stopPropagation();		
+			event.stopPropagation();
 		});
 
-		// Close side navigation clicking on close button icon
-		// $("#closeBtn").click(function() {
-		// 	$("body").removeClass("show-nav");
-		// });
-
-		// Hide menu clicking outside of side navigation
 		$(document).click(function(e) {
 			if ($(e.target).closest(".navigation").length === 0) {
 				$("body").removeClass("show-nav");
@@ -34,8 +24,6 @@ $(document).ready(function() {
 });
 // Hamburger Menu [end]
 
-
-
 // Slick carousel [start]
 $(document).ready(function() {
 	// Slick - Main slider
@@ -45,9 +33,6 @@ $(document).ready(function() {
 		dots: true,
 		// "rows" deletes nested div in .slick-slide (https://github.com/kenwheeler/slick/issues/3110)
 		rows: 0
-		// autoplay: true,
-		// autoplaySpeed: 3000,
-		// speed: 800
 	});
 	// Slick - Game filter
 	$(".games-slider-container").slick({
@@ -141,26 +126,22 @@ $(document).ready(function() {
 	});
 
 	// Slick - Promotion page slider
-	$('#promotion-slider-for').slick({
-		// autoplay: true,
-		// autoplaySpeed: 3000,
-		// speed: 800,
-		// "rows" deletes nested div in .slick-slide
+	$("#promotion-slider-for").slick({
 		rows: 0,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
-		fade: true,		
-		asNavFor: '#promotion-slider-nav'
-	  });
-	$('#promotion-slider-nav').slick({
+		fade: true,
+		asNavFor: "#promotion-slider-nav"
+	});
+	$("#promotion-slider-nav").slick({
 		slidesToShow: 4,
 		arrows: false,
 		dots: false,
 		arrows: false,
 		focusOnSelect: true,
-		asNavFor: '#promotion-slider-for',
-		responsive: [	
+		asNavFor: "#promotion-slider-for",
+		responsive: [
 			{
 				breakpoint: 868,
 				settings: {
@@ -168,7 +149,7 @@ $(document).ready(function() {
 					dots: true,
 					infinite: true
 				}
-			},		
+			},
 			{
 				breakpoint: 576,
 				settings: {
@@ -181,7 +162,6 @@ $(document).ready(function() {
 	});
 });
 // Slick carousel [end]
-
 
 // Jackpot amount counter [start] -----------------------------
 (function(factory) {
